@@ -1,5 +1,6 @@
 import './App.css';
-import Contact from './sections/Contact/Contact';
+// import Contact from './sections/Contact/Contact';
+import Experience from './sections/Experience/Experience';
 import Footer from './sections/Footer/Footer';
 import Photosec from './sections/photosec/photosec';
 import Projects from './sections/Projects/Projects';
@@ -12,7 +13,7 @@ function App() {
       <Photosec/>
       <Projects />
       <Skills />
-      <Contact />
+      <Experience />
       <Footer />
     </>
   );

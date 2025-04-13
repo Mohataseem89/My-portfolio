@@ -31,7 +31,7 @@ function Projects() {
         />
         <ProjectCard
           src={weather}
-          link="https://github.com/Mohataseem89/Weather-Vista"
+          link="https://mohataseem89.github.io/Weather-Vista/"
           h3="weather-vista"
           p="Weather App"
         />

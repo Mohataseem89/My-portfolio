@@ -1,0 +1,77 @@
+
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+  max-width: 900px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.experienceItem {
+  text-align: left;
+  background-color: var(--background-color);
+  padding: 24px 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.6s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 6px solid var(--btn-color);
+}
+
+.experienceItem:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.experienceItem h2 {
+  margin: 0;
+  font-size: 26px;
+  color: var(--btn-color);
+  font-weight: 600;
+}
+
+.experienceItem h4 {
+  margin: 6px 0 12px;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--form-text-color);
+}
+
+.experienceItem p {
+  margin: 0 0 16px;
+  color: #666;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.experienceItem ul {
+  padding-left: 18px;
+  color: var(--form-text-color);
+  font-size: 16px;
+  list-style: disc;
+}
+
+.experienceItem li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+/* Optional for better mobile experience */
+@media (max-width: 600px) {
+  .experienceItem {
+    padding: 20px;
+  }
+
+  .experienceItem h2 {
+    font-size: 22px;
+  }
+
+  .experienceItem h4,
+  .experienceItem p,
+  .experienceItem li {
+    font-size: 14px;
+  }
+}
