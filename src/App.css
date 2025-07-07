@@ -1,0 +1,145 @@
+/* Light & Dark Mode */
+:root {
+  --background-color: #fff;
+  --btn-color: #0987f2;
+  --btn-text-color: #fff;
+  --project-card-bg: rgba(0, 0, 0, 0.05);
+  --text-color: #222;
+  --form-text-color: #555;
+  --footer-text-color: #888;
+  --transition-speed: 0.3s;
+}
+
+[data-theme='dark'] {
+  --background-color: #181818;
+  --btn-color: #f2a007;
+  --btn-text-color: #181818;
+  --project-card-bg: rgba(255, 255, 255, 0.1);
+  --text-color: #f2f2f2;
+  --form-text-color: #ddd;
+  --footer-text-color: #bbb;
+}
+
+/* Global Styles */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 3.75rem;
+  font-family: 'Roboto Mono', monospace;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+}
+
+h1, h2, h3, p {
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  transition: color var(--transition-speed);
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--btn-color);
+  transform: scaleX(0);
+  transition: transform 0.4s ease-in-out;
+}
+
+h1:hover::after {
+  transform: scaleX(1);
+}
+
+h2, h3 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+/* Utility Classes */
+.sectionTitle {
+  margin-bottom: 1.875rem;
+  text-align: center;
+  position: relative;
+  animation: fadeInUp 0.6s ease-in-out;
+}
+
+.hover {
+  cursor: pointer;
+  transition: transform var(--transition-speed);
+}
+
+.hover:hover {
+  transform: scale(1.05);
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (min-width: 800px) {
+  #root {
+    gap: 6.25rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .sectionTitle {
+    margin-bottom: 3.75rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  #root {
+    gap: 12.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .sectionTitle {
+    margin-bottom: 4.6875rem;
+  }
+}
