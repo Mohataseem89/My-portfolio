@@ -32,7 +32,7 @@ Visit the live website here:
 ## 🚀 Getting Started Locally
 
 To set up this project locally on your system:
-
+```bash
 # Clone the repo
 git clone https://github.com/Mohataseem89/My-portfolio.git
 
@@ -44,6 +44,12 @@ npm install
 
 # Start the development server
 npm run dev
+```
+
+## 🧑‍💻 Author
+
+**Mohataseem Khan**
+📧 Connect with me: [LinkedIn](https://www.linkedin.com/in/mohataseem-khan/) • [GitHub](https://github.com/Mohataseem89)
 
 
 
