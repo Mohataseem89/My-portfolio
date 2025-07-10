@@ -96,9 +96,9 @@ function Experience() {
               animationDelay: `${index * 0.2}s`
             }}
           >
-            <div className={styles.timelineMarker}>
+{/*             <div className={styles.timelineMarker}>
               <span className={styles.experienceLogo}>{exp.logo}</span>
-            </div>
+            </div> */}
 
             <div className={styles.experienceContent}>
               <div className={styles.experienceHeader}>
