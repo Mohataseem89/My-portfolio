@@ -33,7 +33,7 @@ function Experience() {
       company: "Prodigy Infotech",
       location: "Remote",
       type: "Internship",
-      logo: "🚀",
+      logo: "",
       color: "#FF6B6B",
       skills: ["HTML5", "CSS3", "JavaScript", "UI/UX", "Git"],
       achievements: [
@@ -54,7 +54,7 @@ function Experience() {
       company: "Zidio Development Pvt. Ltd.",
       location: "Remote",
       type: "Internship",
-      logo: "⚡",
+      logo: "",
       color: "#4ECDC4",
       skills: ["React", "Node.js", "MongoDB", "Express", "MERN Stack"],
       achievements: [
