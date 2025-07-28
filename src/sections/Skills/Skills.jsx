@@ -37,7 +37,7 @@ function Skills() {
   const skillCategories = [
     {
       title: "Frontend Development",
-      icon: "🎨",
+      icon: "",
       description: "Building beautiful and responsive user interfaces",
       color: "#ff6b9d",
       skills: [
@@ -51,7 +51,7 @@ function Skills() {
     },
     {
       title: "UI/UX & Frameworks",
-      icon: "🎯",
+      icon: "",
       description: "Creating seamless user experiences with modern tools",
       color: "#c471ed",
       skills: [
@@ -64,7 +64,7 @@ function Skills() {
     },
     {
       title: "Backend & Database",
-      icon: "🛠️",
+      icon: "",
       description: "Robust server-side solutions and data management",
       color: "#12c2e9",
       skills: [
@@ -77,7 +77,7 @@ function Skills() {
     },
     {
       title: "Tools & Deployment",
-      icon: "🚀",
+      icon: "",
       description: "Version control and cloud deployment platforms",
       color: "#ff6b9d",
       skills: [
