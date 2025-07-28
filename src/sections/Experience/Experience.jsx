@@ -34,11 +34,7 @@ function Experience() {
       location: "Remote",
       type: "Internship",
       logo: "",
-<<<<<<< HEAD
       color: "#ff6b9d",
-=======
-      color: "#FF6B6B",
->>>>>>> 89f9bfca6ad8266a2f7905cbe2d48a74c302c603
       skills: ["HTML5", "CSS3", "JavaScript", "UI/UX", "Git"],
       achievements: [
         "Built interactive web applications using HTML, CSS, and JavaScript",
@@ -59,11 +55,7 @@ function Experience() {
       location: "Remote",
       type: "Internship",
       logo: "",
-<<<<<<< HEAD
       color: "#c471ed",
-=======
-      color: "#4ECDC4",
->>>>>>> 89f9bfca6ad8266a2f7905cbe2d48a74c302c603
       skills: ["React", "Node.js", "MongoDB", "Express", "MERN Stack"],
       achievements: [
         "Developed Zidio Task Management – a MERN-based collaborative platform",
@@ -115,14 +107,10 @@ function Experience() {
               animationDelay: `${index * 0.2}s`
             }}
           >
-{/*             <div className={styles.timelineMarker}>
+            <div className={styles.timelineMarker}>
               <span className={styles.experienceLogo}>{exp.logo}</span>
-<<<<<<< HEAD
               <div className={styles.markerGlow}></div>
             </div>
-=======
-            </div> */}
->>>>>>> 89f9bfca6ad8266a2f7905cbe2d48a74c302c603
 
             <div className={styles.experienceContent}>
               <div className={styles.experienceHeader}>
