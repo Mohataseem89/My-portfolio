@@ -33,8 +33,8 @@ function Experience() {
       company: "Prodigy Infotech",
       location: "Remote",
       type: "Internship",
-      logo: "🚀",
-      color: "#FF6B6B",
+      logo: "",
+      color: "#ff6b9d",
       skills: ["HTML5", "CSS3", "JavaScript", "UI/UX", "Git"],
       achievements: [
         "Built interactive web applications using HTML, CSS, and JavaScript",
@@ -54,8 +54,8 @@ function Experience() {
       company: "Zidio Development Pvt. Ltd.",
       location: "Remote",
       type: "Internship",
-      logo: "⚡",
-      color: "#4ECDC4",
+      logo: "",
+      color: "#c471ed",
       skills: ["React", "Node.js", "MongoDB", "Express", "MERN Stack"],
       achievements: [
         "Developed Zidio Task Management – a MERN-based collaborative platform",
@@ -76,6 +76,17 @@ function Experience() {
 
   return (
     <section id="experience" className={`${styles.container} ${isVisible ? styles.visible : ''}`}>
+      {/* Enhanced Background Elements */}
+      <div className={styles.backgroundElements}>
+        <div className={styles.floatingShape1}></div>
+        <div className={styles.floatingShape2}></div>
+        <div className={styles.particleField}>
+          {[...Array(10)].map((_, i) => (
+            <div key={i} className={`${styles.particle} ${styles[`particle${i + 1}`]}`} />
+          ))}
+        </div>
+      </div>
+
       <div className={styles.header}>
         <h1 className={styles.sectionTitle}>Professional Experience</h1>
         <p className={styles.sectionSubtitle}>
@@ -98,6 +109,7 @@ function Experience() {
           >
             <div className={styles.timelineMarker}>
               <span className={styles.experienceLogo}>{exp.logo}</span>
+              <div className={styles.markerGlow}></div>
             </div>
 
             <div className={styles.experienceContent}>
@@ -143,14 +155,14 @@ function Experience() {
                     </div>
                   </div>
 
-                  {/* Offer Letter Button */}
                   {exp.company === "Prodigy Infotech" && (
                     <a
                       href={prodigy}
                       download="Prodigy.pdf"
                       className={styles.offerDownload}
                     >
-                      📄 Download Offer Letter
+                      <span className={styles.downloadIcon}>📄</span>
+                      <span>Download Offer Letter</span>
                     </a>
                   )}
 
@@ -160,7 +172,8 @@ function Experience() {
                       download="zidio.pdf"
                       className={styles.offerDownload}
                     >
-                      📄 Download Offer Letter
+                      <span className={styles.downloadIcon}>📄</span>
+                      <span>Download Offer Letter</span>
                     </a>
                   )}
                 </>
@@ -179,6 +192,15 @@ function Experience() {
               className={styles.overviewSkill}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
+              <span className={styles.skillIcon}>
+                {skill === 'React' ? '⚛️' : 
+                 skill === 'Node.js' ? '🟢' : 
+                 skill === 'MongoDB' ? '🍃' : 
+                 skill === 'JavaScript' ? '⚡' : 
+                 skill === 'HTML5' ? '🌐' : 
+                 skill === 'CSS3' ? '🎨' : 
+                 skill === 'Git' ? '📚' : '🛠️'}
+              </span>
               {skill}
             </span>
           ))}

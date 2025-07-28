@@ -17,6 +17,7 @@ function Photosec() {
   const [isVisible, setIsVisible] = useState(false);
   const [currentText, setCurrentText] = useState('');
   const [isTyping, setIsTyping] = useState(true);
+  const [emailCopied, setEmailCopied] = useState(false);
 
   const roles = [
     'Full Stack Developer',
@@ -78,31 +79,46 @@ function Photosec() {
   }, []);
 
   const handleSocialClick = (platform) => {
-    // Add analytics or tracking here if needed
     console.log(`Clicked ${platform}`);
   };
 
-  const copyEmail = () => {
-    navigator.clipboard.writeText('mohataseem89@gmail.com');
-    // You could add a toast notification here
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText('mohataseem89@gmail.com');
+      setEmailCopied(true);
+      setTimeout(() => setEmailCopied(false), 2000);
+    } catch (err) {
+      console.error('Failed to copy email:', err);
+    }
   };
 
   return (
     <section id="phootu" className={styles.container}>
-      {/* Floating particles background */}
+      {/* Enhanced floating particles background */}
       <div className={styles.particles}>
-        {[...Array(6)].map((_, i) => (
+        {[...Array(12)].map((_, i) => (
           <div key={i} className={`${styles.particle} ${styles[`particle${i + 1}`]}`} />
         ))}
       </div>
 
+      {/* Animated background shapes */}
+      <div className={styles.backgroundShapes}>
+        <div className={styles.shape1}></div>
+        <div className={styles.shape2}></div>
+        <div className={styles.shape3}></div>
+      </div>
+
       <div className={`${styles.colorModeContainer} ${isVisible ? styles.slideInLeft : ''}`}>
         <div className={styles.profileWrapper}>
-          <img
-            src={me}
-            className={styles.phootu}
-            alt="Profile picture of mohataseem khan"
-          />
+          <div className={styles.profileImageContainer}>
+            <img
+              src={me}
+              className={styles.phootu}
+              alt="Profile picture of mohataseem khan"
+            />
+            <div className={styles.profileRing}></div>
+            <div className={styles.profileGlow}></div>
+          </div>
           <div className={styles.profileOverlay}>
             <div className={styles.statusIndicator}>
               <span className={styles.statusDot}></span>
@@ -110,19 +126,19 @@ function Photosec() {
             </div>
           </div>
         </div>
-        <img
+        <button
           className={styles.colorMode}
-          src={themeIcon}
-          alt="Color mode icon"
           onClick={toggleTheme}
-          tabIndex="0"
-          onKeyDown={(e) => e.key === 'Enter' && toggleTheme()}
-        />
+          aria-label="Toggle theme"
+        >
+          <img src={themeIcon} alt="Color mode icon" />
+        </button>
       </div>
 
       <div className={`${styles.info} ${isVisible ? styles.slideInRight : ''}`}>
         <div className={styles.greetingContainer}>
-          <span className={styles.greeting}> Hi, I'm</span>
+          <span className={styles.greeting}>Hi, I'm</span>
+          <div className={styles.waveEmoji}>👋</div>
         </div>
         
         <h1 className={styles.name}>
@@ -136,7 +152,7 @@ function Photosec() {
         </h2>
         
         <p className={styles.tagline}>
-           I turn ideas into pixel-perfect web experiences
+          I turn ideas into pixel-perfect web experiences
         </p>
 
         <div className={styles.socialContainer}>
@@ -179,35 +195,36 @@ function Photosec() {
           </div>
         </div>
 
-       
-
         <p className={styles.description}>
-           Passionate about crafting modern, scalable web applications using the MERN stack. 
+          Passionate about crafting modern, scalable web applications using the MERN stack. 
           I specialize in creating seamless user experiences and robust backend architectures 
           for businesses of all sizes.
         </p>
 
         <div className={styles.buttonContainer}>
           <a href={CV} download className={styles.primaryButton}>
-            <button className={`${styles.resumeBtn} hover`}>
-              <span>📄 Download Resume</span>
-            </button>
+            <span className={styles.buttonIcon}>📄</span>
+            <span>Download Resume</span>
+            <div className={styles.buttonRipple}></div>
           </a>
           
           <a href="#projects" className={styles.secondaryButton}>
-            <span>🔍 View Projects</span>
+            <span className={styles.buttonIcon}>🔍</span>
+            <span>View Projects</span>
           </a>
         </div>
 
         <div className={styles.quickActions}>
           <button 
-            className={styles.quickAction}
+            className={`${styles.quickAction} ${emailCopied ? styles.copied : ''}`}
             onClick={copyEmail}
             title="Copy Email"
           >
-            📧 Copy Email
+            <span className={styles.quickActionIcon}>
+              {emailCopied ? '✅' : '📧'}
+            </span>
+            <span>{emailCopied ? 'Email Copied!' : 'Copy Email'}</span>
           </button>
-          
         </div>
       </div>
     </section>
