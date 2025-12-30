@@ -193,13 +193,13 @@ function Experience() {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <span className={styles.skillIcon}>
-                {skill === 'React' ? '⚛️' : 
-                 skill === 'Node.js' ? '🟢' : 
-                 skill === 'MongoDB' ? '🍃' : 
-                 skill === 'JavaScript' ? '⚡' : 
-                 skill === 'HTML5' ? '🌐' : 
-                 skill === 'CSS3' ? '🎨' : 
-                 skill === 'Git' ? '📚' : '🛠️'}
+                {skill === 'React' ? '' : 
+                 skill === 'Node.js' ? '' : 
+                 skill === 'MongoDB' ? '' : 
+                 skill === 'JavaScript' ? '' : 
+                 skill === 'HTML5' ? '' : 
+                 skill === 'CSS3' ? '' : 
+                 skill === 'Git' ? '' : ''}
               </span>
               {skill}
             </span>
