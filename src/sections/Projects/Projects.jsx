@@ -56,9 +56,9 @@ function Projects() {
   ];
 
   const categories = [
-    { key: 'all', label: 'All Projects', icon: '🚀' },
-    { key: 'fullstack', label: 'Full Stack', icon: '⚡' },
-    { key: 'frontend', label: 'Frontend', icon: '🎨' }
+    { key: 'all', label: 'All Projects', icon: '' },
+    { key: 'fullstack', label: 'Full Stack', icon: '' },
+    { key: 'frontend', label: 'Frontend', icon: '' }
   ];
 
   useEffect(() => {
