@@ -126,17 +126,17 @@ function Skills() {
         {/* Enhanced Stats Section */}
         <div className={styles.statsGrid}>
           <div className={styles.statCard}>
-            <div className={styles.statIcon}>🚀</div>
+            <div className={styles.statIcon}></div>
             <div className={styles.statNumber}>{totalSkills}+</div>
             <div className={styles.statLabel}>Technologies</div>
           </div>
           <div className={styles.statCard}>
-            <div className={styles.statIcon}>⭐</div>
+            <div className={styles.statIcon}></div>
             <div className={styles.statNumber}>{averageLevel}%</div>
             <div className={styles.statLabel}>Average Proficiency</div>
           </div>
           <div className={styles.statCard}>
-            <div className={styles.statIcon}>💼</div>
+            <div className={styles.statIcon}></div>
             <div className={styles.statNumber}>4</div>
             <div className={styles.statLabel}>Categories</div>
           </div>
@@ -225,13 +225,13 @@ function Skills() {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <span className={styles.quickSkillIcon}>
-                  {skill === 'React' ? '⚛️' : 
-                   skill === 'Node.js' ? '🟢' : 
-                   skill === 'MongoDB' ? '🍃' : 
-                   skill === 'JavaScript' ? '⚡' : 
-                   skill === 'TailwindCSS' ? '🌊' : 
-                   skill === 'AWS' ? '☁️' : 
-                   skill === 'Git' ? '📚' : '🎨'}
+                  {skill === 'React' ? '' : 
+                   skill === 'Node.js' ? '' : 
+                   skill === 'MongoDB' ? '' : 
+                   skill === 'JavaScript' ? '' : 
+                   skill === 'TailwindCSS' ? '' : 
+                   skill === 'AWS' ? '' : 
+                   skill === 'Git' ? '' : ''}
                 </span>
                 {skill}
               </span>
