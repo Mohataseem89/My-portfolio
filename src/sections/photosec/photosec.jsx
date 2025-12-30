@@ -138,7 +138,7 @@ function Photosec() {
       <div className={`${styles.info} ${isVisible ? styles.slideInRight : ''}`}>
         <div className={styles.greetingContainer}>
           <span className={styles.greeting}>Hi, I'm</span>
-          <div className={styles.waveEmoji}>👋</div>
+          <div className={styles.waveEmoji}></div>
         </div>
         
         <h1 className={styles.name}>
@@ -209,7 +209,7 @@ function Photosec() {
           </a>
           
           <a href="#projects" className={styles.secondaryButton}>
-            <span className={styles.buttonIcon}>🔍</span>
+            <span className={styles.buttonIcon}></span>
             <span>View Projects</span>
           </a>
         </div>
