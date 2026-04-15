@@ -1,27 +1,27 @@
 
-# 💼 Mohataseem Khan — Developer Portfolio
+#  Mohataseem Khan — Developer Portfolio
 
-Welcome to my personal portfolio website! 🚀  
+Welcome to my personal portfolio website! 
 This is a fully responsive developer portfolio built with **React**, **Vite**, and **CSS Modules**, showcasing my skills, projects, and experiences in modern web development.
 
 Visit the live website here:  
-➡️ [My-portfolio](https://mohataseem-portfolio.vercel.app/)
+ [My-portfolio](https://mohataseem-portfolio.vercel.app/)
 
 ---
 
-## 🧩 Features
+##  Features
 
-- 🌗 Light/Dark mode toggle
-- 🎯 Dynamic typing effect for role titles
-- ✨ Animated profile section and particle background
-- 🧠 Skills, Projects, and Experience timeline
-- 📥 Resume and offer letter downloads
-- 🌐 Social media integration (GitHub, LinkedIn, Email)
-- 📱 Fully responsive across devices
+-  Light/Dark mode toggle
+-  Dynamic typing effect for role titles
+-  Animated profile section and particle background
+-  Skills, Projects, and Experience timeline
+-  Resume and offer letter downloads
+-  Social media integration (GitHub, LinkedIn, Email)
+-  Fully responsive across devices
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend:** React, Vite, CSS Modules
 - **Animations:** CSS Keyframes, Intersection Observer
@@ -29,7 +29,7 @@ Visit the live website here:
 
 ---
 
-## 🚀 Getting Started Locally
+##  Getting Started Locally
 
 To set up this project locally on your system:
 ```bash
@@ -49,7 +49,7 @@ npm run dev
 ## 🧑‍💻 Author
 
 **Mohataseem Khan**
-📧 Connect with me: [LinkedIn](https://www.linkedin.com/in/mohataseem-khan/) • [GitHub](https://github.com/Mohataseem89)
+ Connect with me: [LinkedIn](https://www.linkedin.com/in/mohataseem-khan/) • [GitHub](https://github.com/Mohataseem89)
 
 
 
