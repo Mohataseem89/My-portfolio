@@ -1,22 +1,26 @@
-import { Link } from 'react-scroll';
 import styles from './NavbarStyles.module.css';
-import { useTheme } from '../../common/ThemeContext';
 
-const NAV_LINKS = ['projects', 'skills', 'experience', 'opensource', 'contact'];
+const links = [
+  { label: 'Projects',    href: '#projects' },
+  { label: 'Skills',      href: '#skills' },
+  { label: 'Experience',  href: '#experience' },
+  { label: 'Open Source', href: '#opensource' },
+  { label: 'Contact',     href: '#contact' },
+];
 
 function Navbar() {
-  const { theme, toggleTheme } = useTheme();
   return (
-    <nav className={styles.navbar}>
-      <span className={styles.logo}>MK</span>
-      <div className={styles.links}>
-        {NAV_LINKS.map(link => (
-          <Link key={link} to={link} smooth duration={500} className={styles.link}>
-            {link.charAt(0).toUpperCase() + link.slice(1)}
-          </Link>
-        ))}
+    <nav className={styles.nav}>
+      <div className={styles.inner}>
+        <a href="#home" className={styles.logo}>MK</a>
+        <div className={styles.links}>
+          {links.map(l => (
+            <a key={l.label} href={l.href} className={styles.link}>{l.label}</a>
+          ))}
+        </div>
       </div>
     </nav>
   );
 }
+
 export default Navbar;
