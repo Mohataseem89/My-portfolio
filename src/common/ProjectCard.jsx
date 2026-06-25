@@ -2,38 +2,42 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './ProjectCardStyles.module.css';
 
-function ProjectCard({ src, link, h3, p, tech }) {
+function ProjectCard({ src, link, liveLink, h3, p, tech }) {
+  const techList = tech ? tech.split(' · ') : [];
+
   return (
-    <div className={styles.projectCard}>
-      <a href={link} target="_blank" rel="noopener noreferrer" className={styles.cardLink}>
-        <div className={styles.imageContainer}>
-          {/* <img src={src} alt={h3} className={styles.projectImage} /> */}
-          {src ? <img src={src} alt={h3} />: <div className={styles.imagePlaceholder}><span>{h3[0]}</span></div>}
-          <div className={styles.overlay}>
-            <span className={styles.viewProject}>View Project</span>
-          </div>
-        </div>
-        <div className={styles.cardContent}>
-          <h3 className={styles.projectTitle}>{h3}</h3>
-          <p className={styles.projectDescription}>{p}</p>
-          {tech && (
-            <div className={styles.techContainer}>
-              {tech.split(', ').map((technology, index) => (
-                <span key={index} className={styles.techTag}>
-                  {technology}
-                </span>
-              ))}
-            </div>
+    <div className={styles.project}>
+      <div className={styles.projectHeader}>
+        <h3 className={styles.projectTitle}>{h3}</h3>
+        <div className={styles.projectLinks}>
+          {link && (
+            <a href={link} target="_blank" rel="noopener noreferrer" className={styles.link}>
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+          )}
+          {liveLink && (
+            <a href={liveLink} target="_blank" rel="noopener noreferrer" className={styles.link}>
+              Live <span aria-hidden="true">↗</span>
+            </a>
           )}
         </div>
-      </a>
+      </div>
+      <p className={styles.projectDesc}>{p}</p>
+      {techList.length > 0 && (
+        <div className={styles.techList}>
+          {techList.map((t, i) => (
+            <span key={i} className={styles.tag}>{t}</span>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
 
 ProjectCard.propTypes = {
-  src: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
+  src: PropTypes.string,
+  link: PropTypes.string,
+  liveLink: PropTypes.string,
   h3: PropTypes.string.isRequired,
   p: PropTypes.string.isRequired,
   tech: PropTypes.string,
