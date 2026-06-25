@@ -1,46 +1,34 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './ProjectCardStyles.module.css';
+import styles from './ProjectCardStyles.module.css'
 
-function ProjectCard({ src, link, liveLink, h3, p, tech }) {
-  const techList = tech ? tech.split(' · ') : [];
-
+export default function ProjectCard({ project }) {
   return (
-    <div className={styles.project}>
-      <div className={styles.projectHeader}>
-        <h3 className={styles.projectTitle}>{h3}</h3>
-        <div className={styles.projectLinks}>
-          {link && (
-            <a href={link} target="_blank" rel="noopener noreferrer" className={styles.link}>
-              GitHub <span aria-hidden="true">↗</span>
-            </a>
-          )}
-          {liveLink && (
-            <a href={liveLink} target="_blank" rel="noopener noreferrer" className={styles.link}>
-              Live <span aria-hidden="true">↗</span>
-            </a>
-          )}
+    <article className={styles.card}>
+      <div className={styles.header}>
+        <div>
+          <p className={styles.period}>{project.period}</p>
+          <h3>{project.title}</h3>
+          <p className={styles.role}>{project.role}</p>
         </div>
+        {project.link ? (
+          <a className={styles.link} href={project.link} target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        ) : null}
       </div>
-      <p className={styles.projectDesc}>{p}</p>
-      {techList.length > 0 && (
-        <div className={styles.techList}>
-          {techList.map((t, i) => (
-            <span key={i} className={styles.tag}>{t}</span>
-          ))}
-        </div>
-      )}
-    </div>
-  );
+
+      <p className={styles.description}>{project.description}</p>
+
+      <div className={styles.stack}>
+        {project.stack.map((item) => (
+          <span key={item}>{item}</span>
+        ))}
+      </div>
+
+      <ul className={styles.points}>
+        {project.highlights.map((point) => (
+          <li key={point}>{point}</li>
+        ))}
+      </ul>
+    </article>
+  )
 }
-
-ProjectCard.propTypes = {
-  src: PropTypes.string,
-  link: PropTypes.string,
-  liveLink: PropTypes.string,
-  h3: PropTypes.string.isRequired,
-  p: PropTypes.string.isRequired,
-  tech: PropTypes.string,
-};
-
-export default ProjectCard;

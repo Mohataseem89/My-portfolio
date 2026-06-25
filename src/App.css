@@ -1,86 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.appShell {
+  width: 100%;
+  min-height: 100vh;
 }
 
-:root {
-  --bg:     #0f0f0f;
-  --bg2:    #161616;
-  --border: #262626;
-  --text:   #e5e5e5;
-  --muted:  #737373;
-  --accent: #64ffda;
-  --font:   'Inter', sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: var(--font);
-  font-size: 15px;
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Remove old data-theme attribute side effects */
-body[data-theme] {
-  background: var(--bg);
-  color: var(--text);
-}
-
-section {
-  max-width: 720px;
+.mainContent {
+  width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 80px 24px;
+  padding: 24px 0 64px;
+  display: grid;
+  gap: 28px;
 }
 
-h1 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  color: var(--text);
-}
-
-h2.section-label {
-  font-size: 0.72rem;
-  font-weight: 500;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 28px;
-}
-
-h3 {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--text);
-}
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-p {
-  color: var(--muted);
-}
-
-.tag {
-  display: inline-block;
-  font-size: 0.72rem;
-  padding: 2px 8px;
-  border-radius: 4px;
-  border: 1px solid var(--border);
-  color: var(--muted);
+@media (min-width: 768px) {
+  .mainContent {
+    padding-top: 32px;
+    gap: 36px;
+  }
 }

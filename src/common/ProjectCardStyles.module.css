@@ -1,64 +1,84 @@
-.project {
-  padding: 20px 0;
-  border-bottom: 1px solid var(--border);
+.card {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 24px;
+  padding: 22px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(14px);
 }
 
-.project:last-child {
-  border-bottom: none;
-}
-
-.projectHeader {
+.header {
   display: flex;
-  align-items: baseline;
   justify-content: space-between;
   gap: 16px;
-  margin-bottom: 6px;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 14px;
 }
 
-.projectTitle {
+.period {
+  color: #c084fc;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  color: #f8fafc;
+}
+
+.role {
+  color: #cbd5e1;
+  margin-top: 4px;
   font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--text);
-  margin: 0;
-}
-
-.projectLinks {
-  display: flex;
-  gap: 12px;
-  flex-shrink: 0;
 }
 
 .link {
-  font-size: 0.8rem;
-  color: var(--muted);
-  text-decoration: none;
-  transition: color 0.15s;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(192, 132, 252, 0.35);
+  color: #f5d0fe;
+  background: rgba(192, 132, 252, 0.08);
+  transition: 0.2s ease;
 }
 
 .link:hover {
-  color: var(--accent);
-  text-decoration: none;
+  transform: translateY(-1px);
 }
 
-.projectDesc {
-  font-size: 0.875rem;
-  color: var(--muted);
-  line-height: 1.6;
-  margin: 0 0 10px 0;
+.description {
+  color: #dbe4f0;
+  margin-bottom: 14px;
 }
 
-.techList {
+.stack {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 10px;
+  margin-bottom: 16px;
 }
 
-.tag {
-  font-size: 0.72rem;
-  padding: 2px 8px;
-  border-radius: 4px;
-  border: 1px solid var(--border);
-  color: var(--muted);
-  background: transparent;
+.stack span {
+  font-size: 0.85rem;
+  color: #e2e8f0;
+  background: rgba(148, 163, 184, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 999px;
+  padding: 7px 11px;
+}
+
+.points {
+  padding-left: 18px;
+  color: #cbd5e1;
+  display: grid;
+  gap: 8px;
+}
+
+.points li {
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .header {
+    flex-direction: column;
+  }
 }
