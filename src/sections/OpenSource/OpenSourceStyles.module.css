@@ -1,0 +1,119 @@
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 80px 24px;
+  border-top: 1px solid var(--border);
+}
+
+.label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.intro {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.list { display: flex; flex-direction: column; }
+
+.entry {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.entry:last-child { border-bottom: none; }
+
+.entryHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.repo {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.pr {
+  font-size: 0.72rem;
+  color: var(--muted);
+  opacity: 0.6;
+}
+
+.merged {
+  font-size: 0.68rem;
+  padding: 1px 7px;
+  border-radius: 10px;
+  border: 1px solid #1a4a2e;
+  color: #3fb950;
+  background: rgba(63, 185, 80, 0.08);
+  font-weight: 500;
+}
+
+.prLink {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: color 0.15s;
+}
+
+.prLink:hover { color: var(--accent); text-decoration: none; }
+
+.title {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.desc {
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.tag {
+  font-size: 0.68rem;
+  padding: 2px 7px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.viewAll {
+  display: inline-block;
+  margin-top: 24px;
+  font-size: 0.82rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.viewAll:hover { color: var(--accent); text-decoration: none; }
+
+@media (max-width: 480px) {
+  .container { padding: 60px 20px; }
+}
