@@ -152,8 +152,7 @@ function Photosec() {
         </h2>
         
         <p className={styles.tagline}>
-          I turn ideas into pixel-perfect web experiences
-        </p>
+        Compouter Science Engineer · MERN Developer · Cloud & DevOps Enthusiast"        </p>
 
         <div className={styles.socialContainer}>
           <div className={styles.socialIcons}>

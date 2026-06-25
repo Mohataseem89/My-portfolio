@@ -7,7 +7,8 @@ function ProjectCard({ src, link, h3, p, tech }) {
     <div className={styles.projectCard}>
       <a href={link} target="_blank" rel="noopener noreferrer" className={styles.cardLink}>
         <div className={styles.imageContainer}>
-          <img src={src} alt={h3} className={styles.projectImage} />
+          {/* <img src={src} alt={h3} className={styles.projectImage} /> */}
+          {src ? <img src={src} alt={h3} />: <div className={styles.imagePlaceholder}><span>{h3[0]}</span></div>}
           <div className={styles.overlay}>
             <span className={styles.viewProject}>View Project</span>
           </div>

@@ -35,6 +35,36 @@ function Skills() {
   }, []);
 
   const skillCategories = [
+
+
+    {
+  title: "Cloud & DevOps",
+  // icon: "☁️",
+  description: "Infrastructure, containers, and deployment pipelines",
+  color: "#12c2e9",
+  skills: [
+    { name: "Docker", level: 72 },
+    { name: "Kubernetes", level: 65 },
+    { name: "AWS", level: 70 },
+    { name: "Google Cloud", level: 65 },
+    { name: "Terraform", level: 60 },
+    { name: "Jenkins", level: 62 }
+  ]
+},
+{
+  title: "ML & AI",
+  // icon: "🤖",
+  description: "Machine learning, deep learning, and data science",
+  color: "#ff9f43",
+  skills: [
+    { name: "Python", level: 82 },
+    { name: "TensorFlow", level: 70 },
+    { name: "Scikit-learn", level: 72 },
+    { name: "NumPy", level: 78 },
+    { name: "OpenCV", level: 65 },
+    { name: "Pandas", level: 75 }
+  ]
+},
     {
       title: "Frontend Development",
       icon: "",

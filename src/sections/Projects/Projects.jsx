@@ -1,64 +1,20 @@
+
 import React, { useState, useEffect } from 'react';
 import styles from './ProjectsStyles.module.css';
-import Moseeqi from '../../assets/music.png';
-import flix from '../../assets/netflix.png';
-import webpage from '../../assets/htcss.png';
-import weather from '../../assets/weather.png';
-import food from '../../assets/logo.svg';
-import cinema from '../../assets/logofav.jpg';
 import ProjectCard from '../../common/ProjectCard';
-
+import { projects } from '../../data/projects.js';
 function Projects() {
   const [isVisible, setIsVisible] = useState(false);
   const [filter, setFilter] = useState('all');
 
-  const projects = [
-    {
-      id: 1,
-      src: food,
-      link: "https://yummigo-food.vercel.app/",
-      h3: "Yummigo",
-      p: "Food Ordering Website",
-      tech: "React, Node.js, MongoDB",
-      category: "fullstack",
-      featured: true
-    },
-    {
-      id: 2,
-      src: cinema,
-      link: "https://cine-maxapp.vercel.app/",
-      h3: "CineMax",
-      p: "Movie Explorer",
-      tech: "React, API Integration",
-      category: "frontend",
-      featured: true
-    },
-    {
-      id: 3,
-      src: weather,
-      link: "https://mohataseem89.github.io/Weather-Vista/",
-      h3: "Weather-Forecast-JS",
-      p: "Weather App",
-      tech: "JavaScript, Weather API",
-      category: "frontend",
-      featured: false
-    },
-    {
-      id: 4,
-      src: Moseeqi,
-      link: "https://github.com/Mohataseem89/Moseeqi-a-music-player",
-      h3: "Moseeqi",
-      p: "A music player",
-      tech: "JavaScript, Web Audio API",
-      category: "frontend",
-      featured: false
-    }
-  ];
+ 
 
   const categories = [
     { key: 'all', label: 'All Projects', icon: '' },
     { key: 'fullstack', label: 'Full Stack', icon: '' },
+    { key: 'ml',        label: 'ML / AI',      icon: '' },
     { key: 'frontend', label: 'Frontend', icon: '' }
+
   ];
 
   useEffect(() => {
@@ -127,7 +83,7 @@ function Projects() {
             <span className={styles.statLabel}>Featured</span>
           </div>
           <div className={styles.stat}>
-            <span className={styles.statNumber}>5+</span>
+            <span className={styles.statNumber}>10+</span>
             <span className={styles.statLabel}>Technologies</span>
           </div>
         </div>
