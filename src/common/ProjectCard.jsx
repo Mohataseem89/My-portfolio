@@ -1,34 +1,45 @@
-import styles from './ProjectCardStyles.module.css'
+import PropTypes from 'prop-types';
+import styles from './ProjectCardStyles.module.css';
 
 export default function ProjectCard({ project }) {
+  const { h3, p, tech, link, liveLink } = project;
+  const techList = tech ? tech.split(' · ') : [];
+
   return (
-    <article className={styles.card}>
-      <div className={styles.header}>
-        <div>
-          <p className={styles.period}>{project.period}</p>
-          <h3>{project.title}</h3>
-          <p className={styles.role}>{project.role}</p>
+    <div className={styles.card}>
+      <div className={styles.cardHeader}>
+        <span className={styles.title}>{h3}</span>
+        <div className={styles.links}>
+          {link && (
+            <a href={link} target="_blank" rel="noopener noreferrer" className={styles.link}>
+              GitHub ↗
+            </a>
+          )}
+          {liveLink && (
+            <a href={liveLink} target="_blank" rel="noopener noreferrer" className={styles.link}>
+              Live ↗
+            </a>
+          )}
         </div>
-        {project.link ? (
-          <a className={styles.link} href={project.link} target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-        ) : null}
       </div>
-
-      <p className={styles.description}>{project.description}</p>
-
-      <div className={styles.stack}>
-        {project.stack.map((item) => (
-          <span key={item}>{item}</span>
-        ))}
-      </div>
-
-      <ul className={styles.points}>
-        {project.highlights.map((point) => (
-          <li key={point}>{point}</li>
-        ))}
-      </ul>
-    </article>
-  )
+      <p className={styles.desc}>{p}</p>
+      {techList.length > 0 && (
+        <div className={styles.tech}>
+          {techList.map((t, i) => (
+            <span key={i} className={styles.tag}>{t}</span>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 }
+
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    h3: PropTypes.string.isRequired,
+    p: PropTypes.string.isRequired,
+    tech: PropTypes.string,
+    link: PropTypes.string,
+    liveLink: PropTypes.string,
+  }).isRequired,
+};
