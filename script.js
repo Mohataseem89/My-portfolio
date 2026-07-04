@@ -328,44 +328,83 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ----------------------------------------------------------
      9. CONTACT FORM HANDLING
-     Constructs a mailto URL from form fields and opens it.
-     Shows a brief success notification that fades out.
+     Submits the form to Web3Forms so messages land directly in
+     the inbox, regardless of whether the visitor has a mail
+     client configured. Shows loading / success / error states.
   ---------------------------------------------------------- */
   const contactForm = document.querySelector('.contact-form');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    const submitBtn = contactForm.querySelector('.btn-send');
+    const submitBtnText = contactForm.querySelector('.btn-send-text');
+    const originalBtnLabel = submitBtnText ? submitBtnText.textContent : 'Send Message';
+
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
-      const name = contactForm.querySelector('[name="name"]')?.value || '';
-      const email = contactForm.querySelector('[name="email"]')?.value || '';
-      const subject = contactForm.querySelector('[name="subject"]')?.value || '';
-      const message = contactForm.querySelector('[name="message"]')?.value || '';
+      // Basic honeypot spam check — if a bot filled this hidden field, silently drop it
+      const botcheck = contactForm.querySelector('[name="botcheck"]');
+      if (botcheck && botcheck.checked) {
+        return;
+      }
 
-      const mailtoUrl =
-        'mailto:mohataseem89@gmail.com' +
-        '?subject=' +
-        encodeURIComponent(subject) +
-        '&body=' +
-        encodeURIComponent(
-          'From: ' + name + '\nEmail: ' + email + '\n\n' + message
-        );
+      const accessKey = contactForm.querySelector('[name="access_key"]')?.value || '';
+      if (!accessKey || accessKey === 'YOUR_WEB3FORMS_ACCESS_KEY') {
+        showNotification('Form is not fully configured yet — add a Web3Forms access key.', 'error');
+        return;
+      }
 
-      window.location.href = mailtoUrl;
+      // Set loading state
+      submitBtn.disabled = true;
+      submitBtn.style.opacity = '0.7';
+      submitBtn.style.cursor = 'not-allowed';
+      if (submitBtnText) submitBtnText.textContent = 'Sending...';
 
-      // Show success notification
-      showNotification('Message prepared! Your email client should open shortly.');
+      try {
+        const formData = new FormData(contactForm);
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { Accept: 'application/json' },
+          body: formData,
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.success) {
+          showNotification("Message sent! I'll get back to you soon.", 'success');
+          contactForm.reset();
+        } else {
+          showNotification(
+            result.message || 'Something went wrong sending your message. Please try again.',
+            'error'
+          );
+        }
+      } catch (error) {
+        showNotification('Network error — please check your connection and try again.', 'error');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.style.opacity = '';
+        submitBtn.style.cursor = '';
+        if (submitBtnText) submitBtnText.textContent = originalBtnLabel;
+      }
     });
   }
 
   /**
    * Creates and displays a brief notification toast.
-   * Auto-fades and removes itself after 3 seconds.
+   * Auto-fades and removes itself after a few seconds.
+   * type: 'success' | 'error' — controls the toast color.
    */
-  function showNotification(text) {
+  function showNotification(text, type = 'success') {
     const notification = document.createElement('div');
     notification.className = 'notification-toast';
     notification.textContent = text;
+
+    const background =
+      type === 'error'
+        ? 'linear-gradient(135deg, #ef4444, #dc2626)'
+        : 'linear-gradient(135deg, #6366f1, #8b5cf6)';
+    const shadowColor = type === 'error' ? 'rgba(239, 68, 68, 0.35)' : 'rgba(99, 102, 241, 0.35)';
 
     // Inline styles for the toast (self-contained, no CSS dependency)
     Object.assign(notification.style, {
@@ -373,17 +412,19 @@ document.addEventListener('DOMContentLoaded', () => {
       bottom: '30px',
       left: '50%',
       transform: 'translateX(-50%)',
-      background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
+      background,
       color: '#fff',
       padding: '14px 28px',
       borderRadius: '12px',
       fontSize: '0.95rem',
       fontWeight: '500',
-      boxShadow: '0 8px 32px rgba(99, 102, 241, 0.35)',
+      boxShadow: '0 8px 32px ' + shadowColor,
       zIndex: '10000',
       opacity: '0',
       transition: 'opacity 0.4s ease, transform 0.4s ease',
       pointerEvents: 'none',
+      maxWidth: '90vw',
+      textAlign: 'center',
     });
 
     document.body.appendChild(notification);
@@ -394,7 +435,8 @@ document.addEventListener('DOMContentLoaded', () => {
       notification.style.transform = 'translateX(-50%) translateY(-10px)';
     });
 
-    // Fade out and remove after 3 seconds
+    // Fade out and remove after a few seconds (longer for errors so they can be read)
+    const displayDuration = type === 'error' ? 4500 : 3000;
     setTimeout(() => {
       notification.style.opacity = '0';
       notification.style.transform = 'translateX(-50%) translateY(10px)';
