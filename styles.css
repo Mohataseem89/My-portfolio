@@ -43,7 +43,6 @@ img {
 
 .info-text,
 .info-text a,
-.footer-tagline,
 .hero-intro {
   overflow-wrap: break-word;
   word-break: break-word;
@@ -1266,6 +1265,9 @@ footer {
   font-size: 0.85rem;
   color: var(--color-accent-light);
   margin-bottom: 1rem;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  
 }
 
 .footer-social {
