@@ -332,6 +332,7 @@ section {
 
 .about-description {
   font-size: 1rem;
+  text-align: justify;
   line-height: 1.9;
   color: var(--color-text-light);
   margin-bottom: 2rem;
