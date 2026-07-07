@@ -974,7 +974,8 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  animation: kenBurns 20s infinite alternate;
+  /* animation: kenBurns 20s infinite alternate; */
+  /* animate-on-scroll: zoom-in; */
 }
 
 .achievement-content {
