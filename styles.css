@@ -1584,7 +1584,7 @@ footer {
   .hero-content { padding: 1.5rem; }
   .hero-intro { font-size: 0.95rem; }
   /* .experience{margin-top: 600px} */
-  .experience {margin-top: 600px; }
+  /* .experience {margin-top: 600px; } */
 
 
   .about-photo-wrapper img { width: 240px; height: 320px; }
@@ -1610,7 +1610,7 @@ footer {
   .section-padding { padding: 3rem 4%; }
   .section-title { font-size: 1.75rem; }
   /* .experience{margin-top: 600p} */
-  #experience {margin-top: -70px; }
+  #experience {margin-top: -50px; }
 
 
   .section-subtitle { font-size: 1rem; }
