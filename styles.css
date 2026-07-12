@@ -59,7 +59,6 @@ body {
 section {
   min-height: 100vh;
   position: relative;
-
 }
 
 .section-padding {
@@ -69,14 +68,11 @@ section {
 }
 
 .section-header {
-
   text-align: center;
   margin-bottom: 3rem;
 }
 
 .section-title {
-  /* margin-top: -150px; */
-
   font-size: 2.5rem;
   font-weight: 800;
   color: var(--color-brown-dark);
@@ -430,9 +426,7 @@ section {
    ======================================== */
 #experience {
   background: var(--color-cream);
-
-  margin-top: -80px;
-
+  margin-top: -70px;
 }
 
 .experience-card {
@@ -982,7 +976,6 @@ section {
   height: 100%;
   object-fit: cover;
   /* animation: kenBurns 20s infinite alternate; */
-  /* animate-on-scroll: zoom-in; */
 }
 
 .achievement-content {
@@ -1275,7 +1268,6 @@ footer {
   margin-bottom: 1rem;
   overflow-wrap: break-word;
   word-break: break-word;
-  
 }
 
 .footer-social {
@@ -1509,7 +1501,7 @@ footer {
   .about-photo-wrapper { width: 100%; }
   .about-text { width: 100%; }
 
-  /* .mission-vision { flex-direction: column; } */
+  .mission-vision { flex-direction: column; }
 
   .experience-card { flex-direction: column; }
   .exp-dark-panel { width: 100% !important; min-width: unset !important; padding: 1.5rem !important; }
@@ -1582,10 +1574,9 @@ footer {
   .section-padding { padding: 3.5rem 5%; }
 
   .hero-content { padding: 1.5rem; }
-  .hero-intro { font-size: 0.95rem; }
-  /* .experience{margin-top: 600px} */
-  /* .experience {margin-top: 600px; } */
+  .hero-intro { font-size: 0.95rem; line-height: 1.65; }
 
+  .about-description { line-height: 1.65; }
 
   .about-photo-wrapper img { width: 240px; height: 320px; }
 
@@ -1606,18 +1597,16 @@ footer {
   .hero-name { font-size: 2rem !important; }
   .hero-logo { font-size: 2.5rem !important; }
   .hero-designations { font-size: 0.9rem; }
+  #experience {margin-top: -40px; }
+
 
   .section-padding { padding: 3rem 4%; }
   .section-title { font-size: 1.75rem; }
-  /* .experience{margin-top: 600p} */
-  #experience {margin-top: -50px; }
-
-
   .section-subtitle { font-size: 1rem; }
 
   .cta-buttons { flex-direction: column; align-items: center; }
 
-  .about-photo-wrapper img { width: 300px; height: 380px;margin-top: -30px }
+  .about-photo-wrapper img { width: 200px; height: 280px; }
 
   .mv-card { padding: 1.25rem; }
 
@@ -1652,9 +1641,7 @@ footer {
   .hero-logo { font-size: 2.1rem !important; }
 
   .section-padding { padding: 2.5rem 4%; }
-  .section-title { font-size: 1.5rem;   }
-  /* #experience {margin-top: 600px; } */
-
+  .section-title { font-size: 1.5rem; }
 
   .about-photo-wrapper img { width: 170px; height: 240px; }
 
