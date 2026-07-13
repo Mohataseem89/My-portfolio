@@ -1574,9 +1574,9 @@ footer {
   .section-padding { padding: 3.5rem 5%; }
 
   .hero-content { padding: 1.5rem; }
-  .hero-intro { font-size: 0.95rem; line-height: 1.65; }
+  .hero-intro { font-size: 0.95rem; line-height: 1.65;word-spacing: -1px; }
 
-  .about-description { line-height: 1.65; }
+  .about-description { line-height: 1.65;word-spacing: -1px; }
 
   .about-photo-wrapper img { width: 240px; height: 320px; }
 
