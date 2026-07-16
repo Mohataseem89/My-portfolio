@@ -1574,9 +1574,9 @@ footer {
   .section-padding { padding: 3.5rem 5%; }
 
   .hero-content { padding: 1.5rem; }
-  .hero-intro { font-size: 0.95rem; line-height: 1.65;word-spacing: -1px; }
+  .hero-intro { font-size: 0.95rem; line-height: 1.65;word-spacing: -2px; }
 
-  .about-description { line-height: 1.65;word-spacing: -1px; }
+  .about-description { line-height: 1.65;word-spacing: -2px; }
 
   .about-photo-wrapper img { width: 240px; height: 320px; }
 
@@ -1597,7 +1597,9 @@ footer {
   .hero-name { font-size: 2rem !important; }
   .hero-logo { font-size: 2.5rem !important; }
   .hero-designations { font-size: 0.9rem; }
-  #experience {margin-top: -40px; }
+  #experience {margin-top: -40px;word-spacing: -2px; }
+  .about-description { line-height: 1.65;word-spacing: -2px; }
+
 
 
   .section-padding { padding: 3rem 4%; }
