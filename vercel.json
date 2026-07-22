@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "mohataseem-portfolio.vercel.app"
+        }
+      ],
+      "destination": "https://www.mohataseem.com/:path*",
+      "permanent": true
+    }
+  ]
+}
