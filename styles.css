@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+/* Inter font is now loaded via <link rel="preconnect"> + <link rel="stylesheet"> in index.html's <head> instead of @import, so it doesn't block CSS parsing. */
 
 /* ========================================
    CSS CUSTOM PROPERTIES
@@ -39,6 +39,18 @@ html {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* ========================================
+   ICON SVGs (replaces Font Awesome font icons)
+   ======================================== */
+.icon-svg {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -0.125em;
+  fill: currentColor;
+  flex-shrink: 0;
 }
 
 .info-text,

@@ -452,8 +452,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const certCards = document.querySelectorAll('.cert-card');
 
   certCards.forEach((card) => {
+    let cachedRect = null;
+
+    card.addEventListener('mouseenter', () => {
+      cachedRect = card.getBoundingClientRect();
+    });
+
     card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
+      if (!cachedRect) cachedRect = card.getBoundingClientRect();
+      const rect = cachedRect;
       const cardCenterX = rect.left + rect.width / 2;
       const cardCenterY = rect.top + rect.height / 2;
 
@@ -465,12 +472,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const rotateY = offsetX * maxRotation;   // horizontal tilt
       const rotateX = -offsetY * maxRotation;  // vertical tilt (inverted)
 
-      card.style.transform =
-        `perspective(800px) rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
-      card.style.transition = 'transform 0.1s ease';
+      requestAnimationFrame(() => {
+        card.style.transform =
+          `perspective(800px) rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
+        card.style.transition = 'transform 0.1s ease';
+      });
     });
 
     card.addEventListener('mouseleave', () => {
+      cachedRect = null;
       card.style.transform = 'none';
       card.style.transition = 'transform 0.5s ease';
     });
