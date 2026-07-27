@@ -311,6 +311,12 @@ section {
 
 .about-text {
   flex: 1.4;
+  text-align: justify;
+  /* text-align: left;
+  line-height: 1.8; */
+  /* hyphens: auto; */
+  /* max-width: 65ch; */
+
 }
 
 .about-photo-wrapper {
@@ -1499,7 +1505,7 @@ footer {
 
   .about-content { flex-direction: column; }
   .about-photo-wrapper { width: 100%; }
-  .about-text { width: 100%; }
+  .about-text { width: 100%;text-align: left; line-height: 1.8; }
 
   .mission-vision { flex-direction: column; }
 
