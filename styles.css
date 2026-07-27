@@ -60,6 +60,10 @@ section {
   min-height: 100vh;
   position: relative;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .section-padding {
   padding: 5rem 8%;
@@ -1504,8 +1508,9 @@ footer {
   .hero-logo { font-size: 3.5rem !important; }
 
   .about-content { flex-direction: column; }
-  .about-photo-wrapper { width: 100%; }
+  .about-photo-wrapper { width: 100%;margin-top: -30px; }
   .about-text { width: 100%;text-align: left; line-height: 1.8; }
+  .about-photo-wrapper img { width: 280px; height: 460px; }
 
   .mission-vision { flex-direction: column; }
 
