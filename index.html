@@ -44,7 +44,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="styles.css">
+    </noscript>
 
     <!-- Google Fonts: loaded non-blocking (preload, then swapped to stylesheet on load) -->
     <link rel="preload" as="style"
@@ -104,72 +106,102 @@
             <span></span>
         </button>
     </nav>
+    <main>
+        <section id="landing">
+            <div class="hero-content">
+                <div class="hero-logo" style="opacity:0;transform:translateY(20px)">MK</div>
+                <h1 class="hero-name" style="opacity:0;transform:translateY(20px)">Mohataseem Khan</h1>
+                <p class="hero-designations" style="opacity:0;transform:translateY(20px)">Computer Engineering Graduate
+                    &nbsp;·&nbsp; Full Stack Developer &nbsp;·&nbsp; DevOps Engineer </p>
+                <p class="hero-intro" style="opacity:0;transform:translateY(20px)">Computer Engineering graduate and
+                    Full
+                    Stack Developer with hands-on experience in building scalable web applications and cloud-native
+                    solutions. I work across React.js, Node.js, MongoDB, AWS, Docker, Kubernetes, Terraform, and Jenkins
+                    to
+                    build dependable, modern digital products. My background combines frontend development, backend
+                    APIs,
+                    and deployment workflows, giving me a practical understanding of the full product lifecycle. I focus
+                    on
+                    creating responsive, user-friendly applications that are clean to use and solid to maintain. If you
+                    are
+                    looking for a developer who can move from idea to implementation with speed and structure, I am
+                    ready to
+                    contribute.</p>
 
-    <section id="landing">
-        <div class="hero-content">
-            <div class="hero-logo" style="opacity:0;transform:translateY(20px)">MK</div>
-            <h1 class="hero-name" style="opacity:0;transform:translateY(20px)">Mohataseem Khan</h1>
-            <p class="hero-designations" style="opacity:0;transform:translateY(20px)">Computer Engineering Graduate
-                &nbsp;·&nbsp; Full Stack Developer &nbsp;·&nbsp; DevOps Engineer </p>
-            <p class="hero-intro" style="opacity:0;transform:translateY(20px)">Computer Engineering graduate and Full
-                Stack Developer with hands-on experience in building scalable web applications and cloud-native
-                solutions. I work across React.js, Node.js, MongoDB, AWS, Docker, Kubernetes, Terraform, and Jenkins to
-                build dependable, modern digital products. My background combines frontend development, backend APIs,
-                and deployment workflows, giving me a practical understanding of the full product lifecycle. I focus on
-                creating responsive, user-friendly applications that are clean to use and solid to maintain. If you are
-                looking for a developer who can move from idea to implementation with speed and structure, I am ready to
-                contribute.</p>
+                <div class="cta-buttons" style="opacity:1;transform:translateY(-20px)">
+                    <a href="Mohataseem_resume_.pdf" target="_blank" rel="noopener noreferrer" download
+                        class="btn-primary">
+                        <svg class="icon-svg fa-download" viewBox="0 0 448 512" aria-hidden="true" focusable="false">
+                            <path fill="currentColor"
+                                d="M256 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 210.7-41.4-41.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 242.7 256 32zM64 320c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-46.9 0-56.6 56.6c-31.2 31.2-81.9 31.2-113.1 0L110.9 320 64 320zm304 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
+                        </svg> Download Resume
+                    </a>
+                    <a href="#about" class="btn-secondary">
+                        <svg class="icon-svg fa-user" viewBox="0 0 448 512" aria-hidden="true" focusable="false">
+                            <path fill="currentColor"
+                                d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z" />
+                        </svg> Learn More About Me
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <svg class="icon-svg fa-envelope" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+                            <path fill="currentColor"
+                                d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z" />
+                        </svg> Get In Touch
+                    </a>
+                </div>
 
-            <div class="cta-buttons" style="opacity:1;transform:translateY(-20px)">
-                <a href="Mohataseem_resume_.pdf" target="_blank" rel="noopener noreferrer" download class="btn-primary">
-                    <svg class="icon-svg fa-download" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M256 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 210.7-41.4-41.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 242.7 256 32zM64 320c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-46.9 0-56.6 56.6c-31.2 31.2-81.9 31.2-113.1 0L110.9 320 64 320zm304 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg> Download Resume
-                </a>
-                <a href="#about" class="btn-secondary">
-                    <svg class="icon-svg fa-user" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z"/></svg> Learn More About Me
-                </a>
-                <a href="#contact" class="btn-secondary">
-                    <svg class="icon-svg fa-envelope" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/></svg> Get In Touch
-                </a>
+                <div class="social-icons" style="opacity:0;transform:translateY(20px)">
+                    <a href="https://github.com/Mohataseem89" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub">
+                        <svg class="icon-svg fa-github" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+                            <path fill="currentColor"
+                                d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohataseem-khan/" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+                        <svg class="icon-svg fa-linkedin-in" viewBox="0 0 448 512" aria-hidden="true" focusable="false">
+                            <path fill="currentColor"
+                                d="M100.3 448l-92.9 0 0-299.1 92.9 0 0 299.1zM53.8 108.1C24.1 108.1 0 83.5 0 53.8 0 39.5 5.7 25.9 15.8 15.8s23.8-15.8 38-15.8 27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3zM447.9 448l-92.7 0 0-145.6c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7l0 148.1-92.8 0 0-299.1 89.1 0 0 40.8 1.3 0c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3l0 164.3-.1 0z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:mohataseem89@gmail.com" aria-label="Email">
+                        <svg class="icon-svg fa-envelope" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+                            <path fill="currentColor"
+                                d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z" />
+                        </svg>
+                    </a>
+                </div>
             </div>
+        </section>
 
-            <div class="social-icons" style="opacity:0;transform:translateY(20px)">
-                <a href="https://github.com/Mohataseem89" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <svg class="icon-svg fa-github" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg>
-                </a>
-                <a href="https://www.linkedin.com/in/mohataseem-khan/" target="_blank" rel="noopener noreferrer"
-                    aria-label="LinkedIn">
-                    <svg class="icon-svg fa-linkedin-in" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M100.3 448l-92.9 0 0-299.1 92.9 0 0 299.1zM53.8 108.1C24.1 108.1 0 83.5 0 53.8 0 39.5 5.7 25.9 15.8 15.8s23.8-15.8 38-15.8 27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3zM447.9 448l-92.7 0 0-145.6c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7l0 148.1-92.8 0 0-299.1 89.1 0 0 40.8 1.3 0c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3l0 164.3-.1 0z"/></svg>
-                </a>
-                <a href="mailto:mohataseem89@gmail.com" aria-label="Email">
-                    <svg class="icon-svg fa-envelope" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/></svg>
-                </a>
-            </div>
-        </div>
-    </section>
+        <!--PAGE 2 — ABOUT ME -->
+        <section id="about">
+            <div class="section-padding">
+                <div class="section-header animate-on-scroll fade-up">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">A closer look at who I am and what drives me</p>
+                </div>
 
-    <!--PAGE 2 — ABOUT ME -->
-    <section id="about">
-        <div class="section-padding">
-            <div class="section-header animate-on-scroll fade-up">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">A closer look at who I am and what drives me</p>
-            </div>
+                <div class="about-content">
+                    <div class="about-text animate-on-scroll fade-up">
+                        <p class="about-description">I am a Computer Engineering graduate and Full Stack Developer with
+                            practical experience in building scalable web applications and cloud-native solutions. My
+                            stack
+                            includes React.js, Node.js, MongoDB, AWS, Docker, Kubernetes, Terraform, and Jenkins, along
+                            with
+                            strong familiarity in REST APIs and JWT-based authentication. I have worked on frontend web
+                            development during my internship at Prodigy Infotech, where I built a portfolio site, a
+                            weather
+                            app, and several mini web applications. My academic background from Rizvi College of
+                            Engineering
+                            supports my technical foundation in software development and deployment. I stand out for
+                            combining frontend polish, backend logic, and deployment awareness into one development
+                            workflow. I am especially interested in building modern, responsive, and production-ready
+                            digital experiences.</p>
 
-            <div class="about-content">
-                <div class="about-text animate-on-scroll fade-up">
-                    <p class="about-description">I am a Computer Engineering graduate and Full Stack Developer with
-                        practical experience in building scalable web applications and cloud-native solutions. My stack
-                        includes React.js, Node.js, MongoDB, AWS, Docker, Kubernetes, Terraform, and Jenkins, along with
-                        strong familiarity in REST APIs and JWT-based authentication. I have worked on frontend web
-                        development during my internship at Prodigy Infotech, where I built a portfolio site, a weather
-                        app, and several mini web applications. My academic background from Rizvi College of Engineering
-                        supports my technical foundation in software development and deployment. I stand out for
-                        combining frontend polish, backend logic, and deployment awareness into one development
-                        workflow. I am especially interested in building modern, responsive, and production-ready
-                        digital experiences.</p>
-
-                    <!-- Mission & Vision -->
-                    <!-- <div class="mission-vision">
+                        <!-- Mission & Vision -->
+                        <!-- <div class="mission-vision">
                         <div class="mv-card animate-on-scroll flip-in">
                             <h3><svg class="icon-svg fa-rocket" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M128 320L24.5 320c-24.9 0-40.2-27.1-27.4-48.5L50 183.3C58.7 168.8 74.3 160 91.2 160l95 0c76.1-128.9 189.6-135.4 265.5-124.3 12.8 1.9 22.8 11.9 24.6 24.6 11.1 75.9 4.6 189.4-124.3 265.5l0 95c0 16.9-8.8 32.5-23.3 41.2l-88.2 52.9c-21.3 12.8-48.5-2.6-48.5-27.4L192 384c0-35.3-28.7-64-64-64l-.1 0zM400 160a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg> Mission</h3>
                             <p>To build scalable, responsive, and reliable web applications that solve real problems
@@ -182,859 +214,1023 @@
                         </div>
                     </div> -->
 
-                    <!-- View My Work Buttons -->
-                    <div class="view-work-buttons">
-                        <a href="#experience" class="view-work-btn animate-on-scroll fade-up" data-delay="0.1">
-                            <svg class="icon-svg fa-briefcase btn-icon" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M200 48l112 0c4.4 0 8 3.6 8 8l0 40-128 0 0-40c0-4.4 3.6-8 8-8zm-56 8l0 40-80 0C28.7 96 0 124.7 0 160l0 96 512 0 0-96c0-35.3-28.7-64-64-64l-80 0 0-40c0-30.9-25.1-56-56-56L200 0c-30.9 0-56 25.1-56 56zM512 304l-192 0 0 16c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-16-192 0 0 112c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-112z"/></svg> Work Experience
-                        </a>
-                        <a href="#education" class="view-work-btn animate-on-scroll fade-up" data-delay="0.2">
-                            <svg class="icon-svg fa-graduation-cap btn-icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M48 195.8l209.2 86.1c9.8 4 20.2 6.1 30.8 6.1s21-2.1 30.8-6.1l242.4-99.8c9-3.7 14.8-12.4 14.8-22.1s-5.8-18.4-14.8-22.1L318.8 38.1C309 34.1 298.6 32 288 32s-21 2.1-30.8 6.1L14.8 137.9C5.8 141.6 0 150.3 0 160L0 456c0 13.3 10.7 24 24 24s24-10.7 24-24l0-260.2zm48 71.7L96 384c0 53 86 96 192 96s192-43 192-96l0-116.6-142.9 58.9c-15.6 6.4-32.2 9.7-49.1 9.7s-33.5-3.3-49.1-9.7L96 267.4z"/></svg> Education
-                        </a>
-                        <a href="#projects" class="view-work-btn animate-on-scroll fade-up" data-delay="0.3">
-                            <svg class="icon-svg fa-code btn-icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 150.6 182.6c12.5-12.5 12.5-32.8 0-45.3z"/></svg> Projects
-                        </a>
-                        <a href="#skills" class="view-work-btn animate-on-scroll fade-up" data-delay="0.4">
-                            <svg class="icon-svg fa-cogs btn-icon" viewBox="0 0 640 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M415.9 210.5c12.2-3.3 25 2.5 30.5 13.8L465 261.9c10.3 1.4 20.4 4.2 29.9 8.1l35-23.3c10.5-7 24.4-5.6 33.3 3.3l19.2 19.2c8.9 8.9 10.3 22.9 3.3 33.3l-23.3 34.9c1.9 4.7 3.6 9.6 5 14.7 1.4 5.1 2.3 10.1 3 15.2l37.7 18.6c11.3 5.6 17.1 18.4 13.8 30.5l-7 26.2c-3.3 12.1-14.6 20.3-27.2 19.5l-42-2.7c-6.3 8.1-13.6 15.6-21.9 22l2.7 41.9c.8 12.6-7.4 24-19.5 27.2l-26.2 7c-12.2 3.3-24.9-2.5-30.5-13.8l-18.6-37.6c-10.3-1.4-20.4-4.2-29.9-8.1l-35 23.3c-10.5 7-24.4 5.6-33.3-3.3l-19.2-19.2c-8.9-8.9-10.3-22.8-3.3-33.3l23.3-35c-1.9-4.7-3.6-9.6-5-14.7s-2.3-10.2-3-15.2l-37.7-18.6c-11.3-5.6-17-18.4-13.8-30.5l7-26.2c3.3-12.1 14.6-20.3 27.2-19.5l41.9 2.7c6.3-8.1 13.6-15.6 21.9-22l-2.7-41.8c-.8-12.6 7.4-24 19.5-27.2l26.2-7zM448.4 340a44 44 0 1 0 .1 88 44 44 0 1 0 -.1-88zM224.9-45.5l26.2 7c12.1 3.3 20.3 14.7 19.5 27.2l-2.7 41.8c8.3 6.4 15.6 13.8 21.9 22l42-2.7c12.5-.8 23.9 7.4 27.2 19.5l7 26.2c3.2 12.1-2.5 24.9-13.8 30.5l-37.7 18.6c-.7 5.1-1.7 10.2-3 15.2s-3.1 10-5 14.7l23.3 35c7 10.5 5.6 24.4-3.3 33.3L307.3 262c-8.9 8.9-22.8 10.3-33.3 3.3L239 242c-9.5 3.9-19.6 6.7-29.9 8.1l-18.6 37.6c-5.6 11.3-18.4 17-30.5 13.8l-26.2-7c-12.2-3.3-20.3-14.7-19.5-27.2l2.7-41.9c-8.3-6.4-15.6-13.8-21.9-22l-42 2.7c-12.5 .8-23.9-7.4-27.2-19.5l-7-26.2c-3.2-12.1 2.5-24.9 13.8-30.5l37.7-18.6c.7-5.1 1.7-10.1 3-15.2 1.4-5.1 3-10 5-14.7L55.1 46.5c-7-10.5-5.6-24.4 3.3-33.3L77.6-6c8.9-8.9 22.8-10.3 33.3-3.3l35 23.3c9.5-3.9 19.6-6.7 29.9-8.1l18.6-37.6c5.6-11.3 18.3-17 30.5-13.8zM192.4 84a44 44 0 1 0 0 88 44 44 0 1 0 0-88z"/></svg> Skills
-                        </a>
-                        <a href="#certifications" class="view-work-btn animate-on-scroll fade-up" data-delay="0.5">
-                            <svg class="icon-svg fa-certificate btn-icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M239.2-8c-6.1-6.2-15-8.7-23.4-6.4S200.9-5.6 198.8 2.8L183.5 63c-1.1 4.4-5.6 7-9.9 5.7L113.8 51.9c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l16.9 59.8c1.2 4.3-1.4 8.8-5.7 9.9L35.1 166.5c-8.4 2.1-15 8.7-17.3 17.1s.2 17.3 6.4 23.4l44.5 43.3c3.2 3.1 3.2 8.3 0 11.5L24.3 305.1c-6.2 6.1-8.7 15-6.4 23.4s8.9 14.9 17.3 17.1l60.2 15.3c4.4 1.1 7 5.6 5.7 9.9L84.2 430.5c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l59.8-16.9c4.3-1.2 8.8 1.4 9.9 5.7l15.3 60.2c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l43.3-44.5c3.1-3.2 8.3-3.2 11.5 0L337.3 520c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3L393.1 449c1.1-4.4 5.6-7 9.9-5.7l59.8 16.9c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-16.9-59.8c-1.2-4.3 1.4-8.8 5.7-9.9l60.2-15.3c8.4-2.1 15-8.7 17.3-17.1s-.2-17.4-6.4-23.4l-44.5-43.3c-3.2-3.1-3.2-8.3 0-11.5l44.5-43.3c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-60.2-15.3c-4.4-1.1-7-5.6-5.7-9.9l16.9-59.8c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1L403 68.8c-4.3 1.2-8.8-1.4-9.9-5.7L377.8 2.8c-2.1-8.4-8.7-15-17.1-17.3s-17.3 .2-23.4 6.4L294 36.5c-3.1 3.2-8.3 3.2-11.5 0L239.2-8z"/></svg> Certifications
-                        </a>
+                        <!-- View My Work Buttons -->
+                        <div class="view-work-buttons">
+                            <a href="#experience" class="view-work-btn animate-on-scroll fade-up" data-delay="0.1">
+                                <svg class="icon-svg fa-briefcase btn-icon" viewBox="0 0 512 512" aria-hidden="true"
+                                    focusable="false">
+                                    <path fill="currentColor"
+                                        d="M200 48l112 0c4.4 0 8 3.6 8 8l0 40-128 0 0-40c0-4.4 3.6-8 8-8zm-56 8l0 40-80 0C28.7 96 0 124.7 0 160l0 96 512 0 0-96c0-35.3-28.7-64-64-64l-80 0 0-40c0-30.9-25.1-56-56-56L200 0c-30.9 0-56 25.1-56 56zM512 304l-192 0 0 16c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-16-192 0 0 112c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-112z" />
+                                </svg> Work Experience
+                            </a>
+                            <a href="#education" class="view-work-btn animate-on-scroll fade-up" data-delay="0.2">
+                                <svg class="icon-svg fa-graduation-cap btn-icon" viewBox="0 0 576 512"
+                                    aria-hidden="true" focusable="false">
+                                    <path fill="currentColor"
+                                        d="M48 195.8l209.2 86.1c9.8 4 20.2 6.1 30.8 6.1s21-2.1 30.8-6.1l242.4-99.8c9-3.7 14.8-12.4 14.8-22.1s-5.8-18.4-14.8-22.1L318.8 38.1C309 34.1 298.6 32 288 32s-21 2.1-30.8 6.1L14.8 137.9C5.8 141.6 0 150.3 0 160L0 456c0 13.3 10.7 24 24 24s24-10.7 24-24l0-260.2zm48 71.7L96 384c0 53 86 96 192 96s192-43 192-96l0-116.6-142.9 58.9c-15.6 6.4-32.2 9.7-49.1 9.7s-33.5-3.3-49.1-9.7L96 267.4z" />
+                                </svg> Education
+                            </a>
+                            <a href="#projects" class="view-work-btn animate-on-scroll fade-up" data-delay="0.3">
+                                <svg class="icon-svg fa-code btn-icon" viewBox="0 0 576 512" aria-hidden="true"
+                                    focusable="false">
+                                    <path fill="currentColor"
+                                        d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 150.6 182.6c12.5-12.5 12.5-32.8 0-45.3z" />
+                                </svg> Projects
+                            </a>
+                            <a href="#skills" class="view-work-btn animate-on-scroll fade-up" data-delay="0.4">
+                                <svg class="icon-svg fa-cogs btn-icon" viewBox="0 0 640 512" aria-hidden="true"
+                                    focusable="false">
+                                    <path fill="currentColor"
+                                        d="M415.9 210.5c12.2-3.3 25 2.5 30.5 13.8L465 261.9c10.3 1.4 20.4 4.2 29.9 8.1l35-23.3c10.5-7 24.4-5.6 33.3 3.3l19.2 19.2c8.9 8.9 10.3 22.9 3.3 33.3l-23.3 34.9c1.9 4.7 3.6 9.6 5 14.7 1.4 5.1 2.3 10.1 3 15.2l37.7 18.6c11.3 5.6 17.1 18.4 13.8 30.5l-7 26.2c-3.3 12.1-14.6 20.3-27.2 19.5l-42-2.7c-6.3 8.1-13.6 15.6-21.9 22l2.7 41.9c.8 12.6-7.4 24-19.5 27.2l-26.2 7c-12.2 3.3-24.9-2.5-30.5-13.8l-18.6-37.6c-10.3-1.4-20.4-4.2-29.9-8.1l-35 23.3c-10.5 7-24.4 5.6-33.3-3.3l-19.2-19.2c-8.9-8.9-10.3-22.8-3.3-33.3l23.3-35c-1.9-4.7-3.6-9.6-5-14.7s-2.3-10.2-3-15.2l-37.7-18.6c-11.3-5.6-17-18.4-13.8-30.5l7-26.2c3.3-12.1 14.6-20.3 27.2-19.5l41.9 2.7c6.3-8.1 13.6-15.6 21.9-22l-2.7-41.8c-.8-12.6 7.4-24 19.5-27.2l26.2-7zM448.4 340a44 44 0 1 0 .1 88 44 44 0 1 0 -.1-88zM224.9-45.5l26.2 7c12.1 3.3 20.3 14.7 19.5 27.2l-2.7 41.8c8.3 6.4 15.6 13.8 21.9 22l42-2.7c12.5-.8 23.9 7.4 27.2 19.5l7 26.2c3.2 12.1-2.5 24.9-13.8 30.5l-37.7 18.6c-.7 5.1-1.7 10.2-3 15.2s-3.1 10-5 14.7l23.3 35c7 10.5 5.6 24.4-3.3 33.3L307.3 262c-8.9 8.9-22.8 10.3-33.3 3.3L239 242c-9.5 3.9-19.6 6.7-29.9 8.1l-18.6 37.6c-5.6 11.3-18.4 17-30.5 13.8l-26.2-7c-12.2-3.3-20.3-14.7-19.5-27.2l2.7-41.9c-8.3-6.4-15.6-13.8-21.9-22l-42 2.7c-12.5 .8-23.9-7.4-27.2-19.5l-7-26.2c-3.2-12.1 2.5-24.9 13.8-30.5l37.7-18.6c.7-5.1 1.7-10.1 3-15.2 1.4-5.1 3-10 5-14.7L55.1 46.5c-7-10.5-5.6-24.4 3.3-33.3L77.6-6c8.9-8.9 22.8-10.3 33.3-3.3l35 23.3c9.5-3.9 19.6-6.7 29.9-8.1l18.6-37.6c5.6-11.3 18.3-17 30.5-13.8zM192.4 84a44 44 0 1 0 0 88 44 44 0 1 0 0-88z" />
+                                </svg> Skills
+                            </a>
+                            <a href="#certifications" class="view-work-btn animate-on-scroll fade-up" data-delay="0.5">
+                                <svg class="icon-svg fa-certificate btn-icon" viewBox="0 0 576 512" aria-hidden="true"
+                                    focusable="false">
+                                    <path fill="currentColor"
+                                        d="M239.2-8c-6.1-6.2-15-8.7-23.4-6.4S200.9-5.6 198.8 2.8L183.5 63c-1.1 4.4-5.6 7-9.9 5.7L113.8 51.9c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l16.9 59.8c1.2 4.3-1.4 8.8-5.7 9.9L35.1 166.5c-8.4 2.1-15 8.7-17.3 17.1s.2 17.3 6.4 23.4l44.5 43.3c3.2 3.1 3.2 8.3 0 11.5L24.3 305.1c-6.2 6.1-8.7 15-6.4 23.4s8.9 14.9 17.3 17.1l60.2 15.3c4.4 1.1 7 5.6 5.7 9.9L84.2 430.5c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l59.8-16.9c4.3-1.2 8.8 1.4 9.9 5.7l15.3 60.2c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l43.3-44.5c3.1-3.2 8.3-3.2 11.5 0L337.3 520c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3L393.1 449c1.1-4.4 5.6-7 9.9-5.7l59.8 16.9c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-16.9-59.8c-1.2-4.3 1.4-8.8 5.7-9.9l60.2-15.3c8.4-2.1 15-8.7 17.3-17.1s-.2-17.4-6.4-23.4l-44.5-43.3c-3.2-3.1-3.2-8.3 0-11.5l44.5-43.3c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-60.2-15.3c-4.4-1.1-7-5.6-5.7-9.9l16.9-59.8c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1L403 68.8c-4.3 1.2-8.8-1.4-9.9-5.7L377.8 2.8c-2.1-8.4-8.7-15-17.1-17.3s-17.3 .2-23.4 6.4L294 36.5c-3.1 3.2-8.3 3.2-11.5 0L239.2-8z" />
+                                </svg> Certifications
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="about-photo-wrapper animate-on-scroll slide-right">
+                        <img src="profile-pic.webp" alt="Mohataseem Khan - Profile Photo" loading="lazy">
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="about-photo-wrapper animate-on-scroll slide-right">
-                    <img src="profile-pic.webp" alt="Mohataseem Khan - Profile Photo" loading="lazy">
+        <section id="experience">
+            <div class="section-padding">
+                <div class="section-header animate-on-scroll fade-up">
+                    <h2 class="section-title">Work Experience</h2>
+                    <p class="section-subtitle">Professional roles and contributions</p>
+                </div>
+
+                <!-- Prodigy Infotech -->
+                <div class="experience-card animate-on-scroll slide-left">
+                    <div class="exp-dark-panel">
+                        <div class="company-name">Prodigy Infotech</div>
+                        <span class="employment-badge">Internship</span>
+                        <div class="location"><svg class="icon-svg fa-map-marker-alt" viewBox="0 0 384 512"
+                                aria-hidden="true" focusable="false">
+                                <path fill="currentColor"
+                                    d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z" />
+                            </svg> Remote</div>
+                        <div class="duration"><svg class="icon-svg fa-calendar-alt" viewBox="0 0 448 512"
+                                aria-hidden="true" focusable="false">
+                                <path fill="currentColor"
+                                    d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-32c0-17.7 14.3-32 32-32zM64 240l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 368l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z" />
+                            </svg> 2025</div>
+                    </div>
+                    <div class="exp-content">
+                        <h3>Front-End Web Development Intern</h3>
+                        <h4>Key Responsibilities</h4>
+                        <ul>
+                            <li>Designed and developed responsive web interfaces using HTML5, CSS3, and JavaScript,
+                                ensuring
+                                cross-browser compatibility and mobile-first design principles.</li>
+                            <li>Built a personal portfolio website with interactive sections, smooth animations, and
+                                optimised performance for a polished end-user experience.</li>
+                            <li>Created a weather application integrating third-party APIs to fetch and display
+                                real-time
+                                meteorological data with dynamic UI updates.</li>
+                            <li>Developed multiple mini web applications as assigned tasks, demonstrating rapid
+                                prototyping
+                                skills and adherence to modern frontend standards.</li>
+                        </ul>
+                        <h4>Key Achievements</h4>
+                        <ul>
+                            <li><strong>Delivered 100% of assigned projects</strong> before their respective deadlines,
+                                receiving positive feedback for code quality and design consistency.</li>
+                            <li><strong>Improved portfolio load time by ~40%</strong> through image optimisation, lazy
+                                loading, and CSS minification techniques during the internship.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="experience">
-        <div class="section-padding">
-            <div class="section-header animate-on-scroll fade-up">
-                <h2 class="section-title">Work Experience</h2>
-                <p class="section-subtitle">Professional roles and contributions</p>
-            </div>
-
-            <!-- Prodigy Infotech -->
-            <div class="experience-card animate-on-scroll slide-left">
-                <div class="exp-dark-panel">
-                    <div class="company-name">Prodigy Infotech</div>
-                    <span class="employment-badge">Internship</span>
-                    <div class="location"><svg class="icon-svg fa-map-marker-alt" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z"/></svg> Remote</div>
-                    <div class="duration"><svg class="icon-svg fa-calendar-alt" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-32c0-17.7 14.3-32 32-32zM64 240l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 368l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z"/></svg> 2025</div>
+        <!-- ═══════════════ PAGE 4 — EDUCATION ═══════════════ -->
+        <section id="education">
+            <div class="section-padding">
+                <div class="section-header animate-on-scroll fade-up">
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-subtitle">Academic foundations and qualifications</p>
                 </div>
-                <div class="exp-content">
-                    <h3>Front-End Web Development Intern</h3>
-                    <h4>Key Responsibilities</h4>
-                    <ul>
-                        <li>Designed and developed responsive web interfaces using HTML5, CSS3, and JavaScript, ensuring
-                            cross-browser compatibility and mobile-first design principles.</li>
-                        <li>Built a personal portfolio website with interactive sections, smooth animations, and
-                            optimised performance for a polished end-user experience.</li>
-                        <li>Created a weather application integrating third-party APIs to fetch and display real-time
-                            meteorological data with dynamic UI updates.</li>
-                        <li>Developed multiple mini web applications as assigned tasks, demonstrating rapid prototyping
-                            skills and adherence to modern frontend standards.</li>
+
+                <!-- BE Computer Engineering -->
+                <div class="edu-card animate-on-scroll drop-in">
+                    <div class="edu-header">
+                        <div>
+                            <h3><span class="edu-icon"></span> Bachelor of Engineering — Computer Engineering [CGPI:
+                                8.20]
+                            </h3>
+                            <p class="edu-institution">Rizvi College of Engineering, Mumbai</p>
+                            <p class="edu-mode">Full-time</p>
+                        </div>
+                        <span class="edu-duration">2022 – 2026</span>
+                    </div>
+                    <h4 style="font-size:0.95rem;color:var(--color-text-light);margin-bottom:0.75rem;font-weight:600;">
+                        Key
+                        Highlights</h4>
+                    <ul class="edu-highlights">
+                        <li>Studied core subjects including Data Structures, Algorithms, Database Management, Operating
+                            Systems, Computer Networks, and Software Engineering.</li>
+                        <li>Completed capstone and research projects on attendance optimisation systems and
+                            cybersecurity
+                            (CyberSentinel), both of which resulted in published papers.</li>
+                        <li>Gained hands-on experience with full-stack development, cloud platforms (AWS),
+                            containerisation
+                            (Docker, Kubernetes), and CI/CD pipelines during coursework and self-directed learning.</li>
                     </ul>
-                    <h4>Key Achievements</h4>
-                    <ul>
-                        <li><strong>Delivered 100% of assigned projects</strong> before their respective deadlines,
-                            receiving positive feedback for code quality and design consistency.</li>
-                        <li><strong>Improved portfolio load time by ~40%</strong> through image optimisation, lazy
-                            loading, and CSS minification techniques during the internship.</li>
+                </div>
+
+                <!-- HSC -->
+                <div class="edu-card animate-on-scroll rise-up">
+                    <div class="edu-header">
+                        <div>
+                            <h3><span class="edu-icon"></span> Higher Secondary Certificate (HSC) — Science</h3>
+                            <p class="edu-institution">Maharashtra State Board</p>
+                            <p class="edu-mode">Full-time</p>
+                        </div>
+                        <span class="edu-duration">2020 – 2022</span>
+                    </div>
+                    <h4 style="font-size:0.95rem;color:var(--color-text-light);margin-bottom:0.75rem;font-weight:600;">
+                        Key
+                        Highlights</h4>
+                    <ul class="edu-highlights">
+                        <li>Studied Physics, Chemistry, and Mathematics with a focus on applied sciences and logical
+                            problem-solving.</li>
+                        <li>Built foundational knowledge in analytical thinking and mathematical modelling that directly
+                            supports software engineering work.</li>
+                        <li>Participated in science projects and technical workshops that sparked early interest in
+                            computer
+                            science and programming.</li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ═══════════════ PAGE 4 — EDUCATION ═══════════════ -->
-    <section id="education">
-        <div class="section-padding">
-            <div class="section-header animate-on-scroll fade-up">
-                <h2 class="section-title">Education</h2>
-                <p class="section-subtitle">Academic foundations and qualifications</p>
-            </div>
-
-            <!-- BE Computer Engineering -->
-            <div class="edu-card animate-on-scroll drop-in">
-                <div class="edu-header">
-                    <div>
-                        <h3><span class="edu-icon"></span> Bachelor of Engineering — Computer Engineering [CGPI: 8.20]
-                        </h3>
-                        <p class="edu-institution">Rizvi College of Engineering, Mumbai</p>
-                        <p class="edu-mode">Full-time</p>
-                    </div>
-                    <span class="edu-duration">2022 – 2026</span>
+        <!-- ═══════════════ PAGE 5 — PROJECTS ═══════════════ -->
+        <section id="projects">
+            <div class="section-padding">
+                <div class="section-header animate-on-scroll fade-up">
+                    <h2 class="section-title">Projects</h2>
+                    <p class="section-subtitle">Top picks from my real-world applications and solutions</p>
                 </div>
-                <h4 style="font-size:0.95rem;color:var(--color-text-light);margin-bottom:0.75rem;font-weight:600;">Key
-                    Highlights</h4>
-                <ul class="edu-highlights">
-                    <li>Studied core subjects including Data Structures, Algorithms, Database Management, Operating
-                        Systems, Computer Networks, and Software Engineering.</li>
-                    <li>Completed capstone and research projects on attendance optimisation systems and cybersecurity
-                        (CyberSentinel), both of which resulted in published papers.</li>
-                    <li>Gained hands-on experience with full-stack development, cloud platforms (AWS), containerisation
-                        (Docker, Kubernetes), and CI/CD pipelines during coursework and self-directed learning.</li>
-                </ul>
-            </div>
 
-            <!-- HSC -->
-            <div class="edu-card animate-on-scroll rise-up">
-                <div class="edu-header">
-                    <div>
-                        <h3><span class="edu-icon"></span> Higher Secondary Certificate (HSC) — Science</h3>
-                        <p class="edu-institution">Maharashtra State Board</p>
-                        <p class="edu-mode">Full-time</p>
+                <!-- Project 1: CyberSentinel -->
+                <div class="project-card animate-on-scroll slide-left">
+                    <div class="project-dark-panel animate-on-scroll blur-to-sharp">
+                        <span class="project-type-badge">Research & Development</span>
+                        <h3>CyberSentinel</h3>
+                        <p class="project-duration"><svg class="icon-svg fa-calendar-alt" viewBox="0 0 448 512"
+                                aria-hidden="true" focusable="false">
+                                <path fill="currentColor"
+                                    d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-32c0-17.7 14.3-32 32-32zM64 240l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 368l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z" />
+                            </svg> 2025 – 2026</p>
                     </div>
-                    <span class="edu-duration">2020 – 2022</span>
-                </div>
-                <h4 style="font-size:0.95rem;color:var(--color-text-light);margin-bottom:0.75rem;font-weight:600;">Key
-                    Highlights</h4>
-                <ul class="edu-highlights">
-                    <li>Studied Physics, Chemistry, and Mathematics with a focus on applied sciences and logical
-                        problem-solving.</li>
-                    <li>Built foundational knowledge in analytical thinking and mathematical modelling that directly
-                        supports software engineering work.</li>
-                    <li>Participated in science projects and technical workshops that sparked early interest in computer
-                        science and programming.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══════════════ PAGE 5 — PROJECTS ═══════════════ -->
-    <section id="projects">
-        <div class="section-padding">
-            <div class="section-header animate-on-scroll fade-up">
-                <h2 class="section-title">Projects</h2>
-                <p class="section-subtitle">Top picks from my real-world applications and solutions</p>
-            </div>
-
-            <!-- Project 1: CyberSentinel -->
-            <div class="project-card animate-on-scroll slide-left">
-                <div class="project-dark-panel animate-on-scroll blur-to-sharp">
-                    <span class="project-type-badge">Research & Development</span>
-                    <h3>CyberSentinel</h3>
-                    <p class="project-duration"><svg class="icon-svg fa-calendar-alt" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-32c0-17.7 14.3-32 32-32zM64 240l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 368l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z"/></svg> 2025 – 2026</p>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">A cybersecurity-focused research project aimed at detecting and
-                        mitigating network-level threats using machine learning techniques. The system analyses traffic
-                        patterns and flags anomalies in real time, contributing to a published research paper.</p>
-                    <div class="project-outcomes">
-                        <div class="outcome-box animate-on-scroll pop-in" data-delay="0.1">
-                            <span class="outcome-number">1</span>
-                            <span class="outcome-text">Published a research paper on cybersecurity threat detection
-                                using ML-based classification algorithms.</span>
+                    <div class="project-content">
+                        <p class="project-description">A cybersecurity-focused research project aimed at detecting and
+                            mitigating network-level threats using machine learning techniques. The system analyses
+                            traffic
+                            patterns and flags anomalies in real time, contributing to a published research paper.</p>
+                        <div class="project-outcomes">
+                            <div class="outcome-box animate-on-scroll pop-in" data-delay="0.1">
+                                <span class="outcome-number">1</span>
+                                <span class="outcome-text">Published a research paper on cybersecurity threat detection
+                                    using ML-based classification algorithms.</span>
+                            </div>
+                            <div class="outcome-box animate-on-scroll pop-in" data-delay="0.2">
+                                <span class="outcome-number">2</span>
+                                <span class="outcome-text">Achieved ~92% accuracy in threat classification by training
+                                    models on real-world network traffic datasets.</span>
+                            </div>
+                            <div class="outcome-box animate-on-scroll pop-in" data-delay="0.3">
+                                <span class="outcome-number">3</span>
+                                <span class="outcome-text">Built a real-time anomaly dashboard for visualising flagged
+                                    traffic and system alerts.</span>
+                            </div>
                         </div>
-                        <div class="outcome-box animate-on-scroll pop-in" data-delay="0.2">
-                            <span class="outcome-number">2</span>
-                            <span class="outcome-text">Achieved ~92% accuracy in threat classification by training
-                                models on real-world network traffic datasets.</span>
+                        <div class="project-tech">
+                            <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.1">Python</span>
+                            <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.15">Machine
+                                Learning</span>
+                            <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.2">Scikit-learn</span>
+                            <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.25">Network
+                                Security</span>
+                            <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.3">Data
+                                Analysis</span>
                         </div>
-                        <div class="outcome-box animate-on-scroll pop-in" data-delay="0.3">
-                            <span class="outcome-number">3</span>
-                            <span class="outcome-text">Built a real-time anomaly dashboard for visualising flagged
-                                traffic and system alerts.</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.1">Python</span>
-                        <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.15">Machine
-                            Learning</span>
-                        <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.2">Scikit-learn</span>
-                        <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.25">Network
-                            Security</span>
-                        <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.3">Data Analysis</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Mohataseem89/CyberSentinel" target="_blank"
-                            rel="noopener noreferrer" class="project-link-btn">
-                            <svg class="icon-svg fa-github" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg> GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2: EngageDev -->
-            <div class="project-card animate-on-scroll slide-right">
-                <div class="project-dark-panel animate-on-scroll blur-to-sharp">
-                    <span class="project-type-badge">Full Stack Application</span>
-                    <h3>EngageDev</h3>
-                    <p class="project-duration"><svg class="icon-svg fa-calendar-alt" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-32c0-17.7 14.3-32 32-32zM64 240l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 368l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z"/></svg> 2025</p>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">A full-stack developer engagement platform built with a separate
-                        front-end and back-end codebase, covering end-to-end functionality from UI to API to data layer.
-                    </p>
-                    <div class="project-outcomes">
-                        <div class="outcome-box animate-on-scroll pop-in" data-delay="0.1">
-                            <span class="outcome-number">1</span>
-                            <span class="outcome-text">Built a decoupled front-end and back-end architecture for
-                                independent development and deployment.</span>
-                        </div>
-                        <div class="outcome-box animate-on-scroll pop-in" data-delay="0.2">
-                            <span class="outcome-number">2</span>
-                            <span class="outcome-text">Implemented core application logic and API integration across the
-                                stack.</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.1">React.js</span>
-                        <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.15">Node.js</span>
-                        <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.2">Express.js</span>
-                        <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.25">MongoDB</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Mohataseem89/engageDevFE" target="_blank" rel="noopener noreferrer"
-                            class="project-link-btn">
-                            <svg class="icon-svg fa-github" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg> Frontend
-                        </a>
-                        <a href="https://github.com/Mohataseem89/EngageDevs" target="_blank" rel="noopener noreferrer"
-                            class="project-link-btn">
-                            <svg class="icon-svg fa-github" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg> Backend
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3: CineMax -->
-            <div class="project-card animate-on-scroll slide-left">
-                <div class="project-dark-panel animate-on-scroll blur-to-sharp">
-                    <span class="project-type-badge">Web Application</span>
-                    <h3>CineMax — Movie Explorer</h3>
-                    <p class="project-duration"><svg class="icon-svg fa-calendar-alt" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-32c0-17.7 14.3-32 32-32zM64 240l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 368l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z"/></svg> 2025</p>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">A movie discovery web app that lets users browse, search, and explore
-                        films with a clean, responsive interface, deployed live on Vercel.</p>
-                    <div class="project-outcomes">
-                        <div class="outcome-box animate-on-scroll pop-in" data-delay="0.1">
-                            <span class="outcome-number">1</span>
-                            <span class="outcome-text">Integrated a movie data API to power dynamic search, browsing,
-                                and detail views.</span>
-                        </div>
-                        <div class="outcome-box animate-on-scroll pop-in" data-delay="0.2">
-                            <span class="outcome-number">2</span>
-                            <span class="outcome-text">Built a fully responsive UI and deployed a live production build
-                                on Vercel.</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.1">React.js</span>
-                        <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.15">JavaScript</span>
-                        <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.2">REST API</span>
-                        <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.25">Vercel</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Mohataseem89/CineMax-Movie_Explorer_Web_App" target="_blank"
-                            rel="noopener noreferrer" class="project-link-btn">
-                            <svg class="icon-svg fa-github" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg> GitHub
-                        </a>
-                        <a href="https://cine-maxapp.vercel.app/" target="_blank" rel="noopener noreferrer"
-                            class="project-link-btn project-link-live">
-                            <svg class="icon-svg fa-external-link-alt" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M290.4 19.8C295.4 7.8 307.1 0 320 0L480 0c17.7 0 32 14.3 32 32l0 160c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9L400 157.3 246.6 310.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L354.7 112 297.4 54.6c-9.2-9.2-11.9-22.9-6.9-34.9zM0 176c0-44.2 35.8-80 80-80l80 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-80 0c-8.8 0-16 7.2-16 16l0 256c0 8.8 7.2 16 16 16l256 0c8.8 0 16-7.2 16-16l0-80c0-17.7 14.3-32 32-32s32 14.3 32 32l0 80c0 44.2-35.8 80-80 80L80 512c-44.2 0-80-35.8-80-80L0 176z"/></svg> Live Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4: Crime Classifier -->
-            <div class="project-card animate-on-scroll slide-right">
-                <div class="project-dark-panel animate-on-scroll blur-to-sharp">
-                    <span class="project-type-badge">Machine Learning</span>
-                    <h3>Crime Classifier</h3>
-                    <p class="project-duration"><svg class="icon-svg fa-calendar-alt" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-32c0-17.7 14.3-32 32-32zM64 240l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 368l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z"/></svg> 2025</p>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">A machine learning-powered web app that classifies crime-related
-                        data, packaged with an accessible web interface and deployed live on Vercel.</p>
-                    <div class="project-outcomes">
-                        <div class="outcome-box animate-on-scroll pop-in" data-delay="0.1">
-                            <span class="outcome-number">1</span>
-                            <span class="outcome-text">Built and integrated a classification model into a usable web
-                                interface.</span>
-                        </div>
-                        <div class="outcome-box animate-on-scroll pop-in" data-delay="0.2">
-                            <span class="outcome-number">2</span>
-                            <span class="outcome-text">Deployed a live, publicly accessible production build on
-                                Vercel.</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.1">Python</span>
-                        <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.15">Machine
-                            Learning</span>
-                        <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.2">Data
-                            Classification</span>
-                        <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.25">Vercel</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Mohataseem89/crime-classifier" target="_blank"
-                            rel="noopener noreferrer" class="project-link-btn">
-                            <svg class="icon-svg fa-github" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg> GitHub
-                        </a>
-                        <a href="https://crime-classifier.vercel.app/" target="_blank" rel="noopener noreferrer"
-                            class="project-link-btn project-link-live">
-                            <svg class="icon-svg fa-external-link-alt" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M290.4 19.8C295.4 7.8 307.1 0 320 0L480 0c17.7 0 32 14.3 32 32l0 160c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9L400 157.3 246.6 310.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L354.7 112 297.4 54.6c-9.2-9.2-11.9-22.9-6.9-34.9zM0 176c0-44.2 35.8-80 80-80l80 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-80 0c-8.8 0-16 7.2-16 16l0 256c0 8.8 7.2 16 16 16l256 0c8.8 0 16-7.2 16-16l0-80c0-17.7 14.3-32 32-32s32 14.3 32 32l0 80c0 44.2-35.8 80-80 80L80 512c-44.2 0-80-35.8-80-80L0 176z"/></svg> Live Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- More Projects CTA -->
-            <div class="more-projects-cta animate-on-scroll fade-up">
-                <a href="https://github.com/Mohataseem89?tab=repositories" target="_blank" rel="noopener noreferrer"
-                    class="view-work-btn">
-                    <svg class="icon-svg fa-github btn-icon" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg> More Projects on GitHub
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══════════════ PAGE 6 — SKILLS ═══════════════ -->
-    <section id="skills">
-        <div class="section-padding">
-            <div class="section-header animate-on-scroll fade-up">
-                <h2 class="section-title">Skills</h2>
-                <p class="section-subtitle">Technologies and tools I work with</p>
-            </div>
-
-            <div class="skills-grid">
-                <!-- Frontend Development -->
-                <div class="skill-category-card animate-on-scroll grid-wave" data-delay="0">
-                    <div class="category-header">
-                        <!-- <span class="category-icon"></span> -->
-                        <span class="category-name">Frontend Development</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">React.js</span>
-                            <span class="skill-percentage" data-target="75">0%</span>
-                        </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="75"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">HTML5 / CSS3</span>
-                            <span class="skill-percentage" data-target="80">0%</span>
-                        </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="80"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">JavaScript (ES6+)</span>
-                            <span class="skill-percentage" data-target="78">0%</span>
-                        </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="78"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Responsive Design</span>
-                            <span class="skill-percentage" data-target="80">0%</span>
-                        </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="80"></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mohataseem89/CyberSentinel" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn">
+                                <svg class="icon-svg fa-github" viewBox="0 0 512 512" aria-hidden="true"
+                                    focusable="false">
+                                    <path fill="currentColor"
+                                        d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z" />
+                                </svg> GitHub
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Backend Development -->
-                <div class="skill-category-card animate-on-scroll grid-wave" data-delay="0.1">
-                    <div class="category-header">
-                        <!-- <span class="category-icon">⚙️</span> -->
-                        <span class="category-name">Backend Development</span>
+                <!-- Project 2: EngageDev -->
+                <div class="project-card animate-on-scroll slide-right">
+                    <div class="project-dark-panel animate-on-scroll blur-to-sharp">
+                        <span class="project-type-badge">Full Stack Application</span>
+                        <h3>EngageDev</h3>
+                        <p class="project-duration"><svg class="icon-svg fa-calendar-alt" viewBox="0 0 448 512"
+                                aria-hidden="true" focusable="false">
+                                <path fill="currentColor"
+                                    d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-32c0-17.7 14.3-32 32-32zM64 240l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 368l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z" />
+                            </svg> 2025</p>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Node.js</span>
-                            <span class="skill-percentage" data-target="72">0%</span>
+                    <div class="project-content">
+                        <p class="project-description">A full-stack developer engagement platform built with a separate
+                            front-end and back-end codebase, covering end-to-end functionality from UI to API to data
+                            layer.
+                        </p>
+                        <div class="project-outcomes">
+                            <div class="outcome-box animate-on-scroll pop-in" data-delay="0.1">
+                                <span class="outcome-number">1</span>
+                                <span class="outcome-text">Built a decoupled front-end and back-end architecture for
+                                    independent development and deployment.</span>
+                            </div>
+                            <div class="outcome-box animate-on-scroll pop-in" data-delay="0.2">
+                                <span class="outcome-number">2</span>
+                                <span class="outcome-text">Implemented core application logic and API integration across
+                                    the
+                                    stack.</span>
+                            </div>
                         </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="72"></div>
+                        <div class="project-tech">
+                            <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.1">React.js</span>
+                            <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.15">Node.js</span>
+                            <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.2">Express.js</span>
+                            <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.25">MongoDB</span>
                         </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">REST APIs</span>
-                            <span class="skill-percentage" data-target="75">0%</span>
-                        </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="75"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">JWT Authentication</span>
-                            <span class="skill-percentage" data-target="70">0%</span>
-                        </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="70"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Express.js</span>
-                            <span class="skill-percentage" data-target="70">0%</span>
-                        </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="70"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Database -->
-                <div class="skill-category-card animate-on-scroll grid-wave" data-delay="0.2">
-                    <div class="category-header">
-                        <!-- <span class="category-icon">🗄️</span> -->
-                        <span class="category-name">Database</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">MongoDB</span>
-                            <span class="skill-percentage" data-target="75">0%</span>
-                        </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="75"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">SQL</span>
-                            <span class="skill-percentage" data-target="60">0%</span>
-                        </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="60"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Database Design</span>
-                            <span class="skill-percentage" data-target="65">0%</span>
-                        </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="65"></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mohataseem89/engageDevFE" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn">
+                                <svg class="icon-svg fa-github" viewBox="0 0 512 512" aria-hidden="true"
+                                    focusable="false">
+                                    <path fill="currentColor"
+                                        d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z" />
+                                </svg> Frontend
+                            </a>
+                            <a href="https://github.com/Mohataseem89/EngageDevs" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn">
+                                <svg class="icon-svg fa-github" viewBox="0 0 512 512" aria-hidden="true"
+                                    focusable="false">
+                                    <path fill="currentColor"
+                                        d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z" />
+                                </svg> Backend
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Cloud & DevOps -->
-                <div class="skill-category-card animate-on-scroll grid-wave" data-delay="0.3">
-                    <div class="category-header">
-                        <!-- <span class="category-icon">☁️</span> -->
-                        <span class="category-name">Cloud & DevOps</span>
+                <!-- Project 3: CineMax -->
+                <div class="project-card animate-on-scroll slide-left">
+                    <div class="project-dark-panel animate-on-scroll blur-to-sharp">
+                        <span class="project-type-badge">Web Application</span>
+                        <h3>CineMax — Movie Explorer</h3>
+                        <p class="project-duration"><svg class="icon-svg fa-calendar-alt" viewBox="0 0 448 512"
+                                aria-hidden="true" focusable="false">
+                                <path fill="currentColor"
+                                    d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-32c0-17.7 14.3-32 32-32zM64 240l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 368l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z" />
+                            </svg> 2025</p>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">AWS</span>
-                            <span class="skill-percentage" data-target="68">0%</span>
+                    <div class="project-content">
+                        <p class="project-description">A movie discovery web app that lets users browse, search, and
+                            explore
+                            films with a clean, responsive interface, deployed live on Vercel.</p>
+                        <div class="project-outcomes">
+                            <div class="outcome-box animate-on-scroll pop-in" data-delay="0.1">
+                                <span class="outcome-number">1</span>
+                                <span class="outcome-text">Integrated a movie data API to power dynamic search,
+                                    browsing,
+                                    and detail views.</span>
+                            </div>
+                            <div class="outcome-box animate-on-scroll pop-in" data-delay="0.2">
+                                <span class="outcome-number">2</span>
+                                <span class="outcome-text">Built a fully responsive UI and deployed a live production
+                                    build
+                                    on Vercel.</span>
+                            </div>
                         </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="68"></div>
+                        <div class="project-tech">
+                            <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.1">React.js</span>
+                            <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.15">JavaScript</span>
+                            <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.2">REST API</span>
+                            <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.25">Vercel</span>
                         </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Docker</span>
-                            <span class="skill-percentage" data-target="60">0%</span>
-                        </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="60"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Kubernetes</span>
-                            <span class="skill-percentage" data-target="55">0%</span>
-                        </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="55"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Terraform</span>
-                            <span class="skill-percentage" data-target="55">0%</span>
-                        </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="55"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CI/CD & Tools -->
-                <div class="skill-category-card animate-on-scroll grid-wave" data-delay="0.4">
-                    <div class="category-header">
-                        <!-- <span class="category-icon">🔧</span> -->
-                        <span class="category-name">CI/CD & Tools</span>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Jenkins</span>
-                            <span class="skill-percentage" data-target="55">0%</span>
-                        </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="55"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Git / GitHub</span>
-                            <span class="skill-percentage" data-target="78">0%</span>
-                        </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="78"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">CI/CD Pipelines</span>
-                            <span class="skill-percentage" data-target="64">0%</span>
-                        </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="64"></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mohataseem89/CineMax-Movie_Explorer_Web_App" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn">
+                                <svg class="icon-svg fa-github" viewBox="0 0 512 512" aria-hidden="true"
+                                    focusable="false">
+                                    <path fill="currentColor"
+                                        d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z" />
+                                </svg> GitHub
+                            </a>
+                            <a href="https://cine-maxapp.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                class="project-link-btn project-link-live">
+                                <svg class="icon-svg fa-external-link-alt" viewBox="0 0 512 512" aria-hidden="true"
+                                    focusable="false">
+                                    <path fill="currentColor"
+                                        d="M290.4 19.8C295.4 7.8 307.1 0 320 0L480 0c17.7 0 32 14.3 32 32l0 160c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9L400 157.3 246.6 310.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L354.7 112 297.4 54.6c-9.2-9.2-11.9-22.9-6.9-34.9zM0 176c0-44.2 35.8-80 80-80l80 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-80 0c-8.8 0-16 7.2-16 16l0 256c0 8.8 7.2 16 16 16l256 0c8.8 0 16-7.2 16-16l0-80c0-17.7 14.3-32 32-32s32 14.3 32 32l0 80c0 44.2-35.8 80-80 80L80 512c-44.2 0-80-35.8-80-80L0 176z" />
+                                </svg> Live Demo
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Programming Languages -->
-                <div class="skill-category-card animate-on-scroll grid-wave" data-delay="0.5">
-                    <div class="category-header">
-                        <!-- <span class="category-icon">💻</span> -->
-                        <span class="category-name">Programming Languages</span>
+                <!-- Project 4: Crime Classifier -->
+                <div class="project-card animate-on-scroll slide-right">
+                    <div class="project-dark-panel animate-on-scroll blur-to-sharp">
+                        <span class="project-type-badge">Machine Learning</span>
+                        <h3>Crime Classifier</h3>
+                        <p class="project-duration"><svg class="icon-svg fa-calendar-alt" viewBox="0 0 448 512"
+                                aria-hidden="true" focusable="false">
+                                <path fill="currentColor"
+                                    d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 32 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l32 0 0-32c0-17.7 14.3-32 32-32zM64 240l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 368l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z" />
+                            </svg> 2025</p>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">JavaScript</span>
-                            <span class="skill-percentage" data-target="78">0%</span>
+                    <div class="project-content">
+                        <p class="project-description">A machine learning-powered web app that classifies crime-related
+                            data, packaged with an accessible web interface and deployed live on Vercel.</p>
+                        <div class="project-outcomes">
+                            <div class="outcome-box animate-on-scroll pop-in" data-delay="0.1">
+                                <span class="outcome-number">1</span>
+                                <span class="outcome-text">Built and integrated a classification model into a usable web
+                                    interface.</span>
+                            </div>
+                            <div class="outcome-box animate-on-scroll pop-in" data-delay="0.2">
+                                <span class="outcome-number">2</span>
+                                <span class="outcome-text">Deployed a live, publicly accessible production build on
+                                    Vercel.</span>
+                            </div>
                         </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="78"></div>
+                        <div class="project-tech">
+                            <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.1">Python</span>
+                            <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.15">Machine
+                                Learning</span>
+                            <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.2">Data
+                                Classification</span>
+                            <span class="tech-tag animate-on-scroll elastic-bounce" data-delay="0.25">Vercel</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mohataseem89/crime-classifier" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn">
+                                <svg class="icon-svg fa-github" viewBox="0 0 512 512" aria-hidden="true"
+                                    focusable="false">
+                                    <path fill="currentColor"
+                                        d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z" />
+                                </svg> GitHub
+                            </a>
+                            <a href="https://crime-classifier.vercel.app/" target="_blank" rel="noopener noreferrer"
+                                class="project-link-btn project-link-live">
+                                <svg class="icon-svg fa-external-link-alt" viewBox="0 0 512 512" aria-hidden="true"
+                                    focusable="false">
+                                    <path fill="currentColor"
+                                        d="M290.4 19.8C295.4 7.8 307.1 0 320 0L480 0c17.7 0 32 14.3 32 32l0 160c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9L400 157.3 246.6 310.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L354.7 112 297.4 54.6c-9.2-9.2-11.9-22.9-6.9-34.9zM0 176c0-44.2 35.8-80 80-80l80 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-80 0c-8.8 0-16 7.2-16 16l0 256c0 8.8 7.2 16 16 16l256 0c8.8 0 16-7.2 16-16l0-80c0-17.7 14.3-32 32-32s32 14.3 32 32l0 80c0 44.2-35.8 80-80 80L80 512c-44.2 0-80-35.8-80-80L0 176z" />
+                                </svg> Live Demo
+                            </a>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">Python</span>
-                            <span class="skill-percentage" data-target="72">0%</span>
-                        </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="72"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">C / C++</span>
-                            <span class="skill-percentage" data-target="65">0%</span>
-                        </div>
-                        <div class="progress-bar-track">
-                            <div class="progress-bar-fill" data-percentage="65"></div>
-                        </div>
-                    </div>
+                </div>
+
+                <!-- More Projects CTA -->
+                <div class="more-projects-cta animate-on-scroll fade-up">
+                    <a href="https://github.com/Mohataseem89?tab=repositories" target="_blank" rel="noopener noreferrer"
+                        class="view-work-btn">
+                        <svg class="icon-svg fa-github btn-icon" viewBox="0 0 512 512" aria-hidden="true"
+                            focusable="false">
+                            <path fill="currentColor"
+                                d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z" />
+                        </svg> More Projects on GitHub
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ═══════════════ PAGE 7 — CERTIFICATIONS ═══════════════ -->
-    <section id="certifications">
-        <div class="section-padding">
-            <div class="section-header animate-on-scroll fade-up">
-                <h2 class="section-title">Certifications</h2>
-                <p class="section-subtitle">Professional certifications and credentials</p>
+        <!-- ═══════════════ PAGE 6 — SKILLS ═══════════════ -->
+        <section id="skills">
+            <div class="section-padding">
+                <div class="section-header animate-on-scroll fade-up">
+                    <h2 class="section-title">Skills</h2>
+                    <p class="section-subtitle">Technologies and tools I work with</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Frontend Development -->
+                    <div class="skill-category-card animate-on-scroll grid-wave" data-delay="0">
+                        <div class="category-header">
+                            <!-- <span class="category-icon"></span> -->
+                            <span class="category-name">Frontend Development</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React.js</span>
+                                <span class="skill-percentage" data-target="75">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5 / CSS3</span>
+                                <span class="skill-percentage" data-target="80">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript (ES6+)</span>
+                                <span class="skill-percentage" data-target="78">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Responsive Design</span>
+                                <span class="skill-percentage" data-target="80">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="80"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Development -->
+                    <div class="skill-category-card animate-on-scroll grid-wave" data-delay="0.1">
+                        <div class="category-header">
+                            <!-- <span class="category-icon">⚙️</span> -->
+                            <span class="category-name">Backend Development</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-percentage" data-target="72">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="72"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">REST APIs</span>
+                                <span class="skill-percentage" data-target="75">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JWT Authentication</span>
+                                <span class="skill-percentage" data-target="70">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Express.js</span>
+                                <span class="skill-percentage" data-target="70">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="70"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database -->
+                    <div class="skill-category-card animate-on-scroll grid-wave" data-delay="0.2">
+                        <div class="category-header">
+                            <!-- <span class="category-icon">🗄️</span> -->
+                            <span class="category-name">Database</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-percentage" data-target="75">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-percentage" data-target="60">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Database Design</span>
+                                <span class="skill-percentage" data-target="65">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="65"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud & DevOps -->
+                    <div class="skill-category-card animate-on-scroll grid-wave" data-delay="0.3">
+                        <div class="category-header">
+                            <!-- <span class="category-icon">☁️</span> -->
+                            <span class="category-name">Cloud & DevOps</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">AWS</span>
+                                <span class="skill-percentage" data-target="68">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="68"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Docker</span>
+                                <span class="skill-percentage" data-target="60">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Kubernetes</span>
+                                <span class="skill-percentage" data-target="55">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="55"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Terraform</span>
+                                <span class="skill-percentage" data-target="55">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="55"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CI/CD & Tools -->
+                    <div class="skill-category-card animate-on-scroll grid-wave" data-delay="0.4">
+                        <div class="category-header">
+                            <!-- <span class="category-icon">🔧</span> -->
+                            <span class="category-name">CI/CD & Tools</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Jenkins</span>
+                                <span class="skill-percentage" data-target="55">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="55"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git / GitHub</span>
+                                <span class="skill-percentage" data-target="78">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CI/CD Pipelines</span>
+                                <span class="skill-percentage" data-target="64">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="64"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Programming Languages -->
+                    <div class="skill-category-card animate-on-scroll grid-wave" data-delay="0.5">
+                        <div class="category-header">
+                            <!-- <span class="category-icon">💻</span> -->
+                            <span class="category-name">Programming Languages</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage" data-target="78">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage" data-target="72">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="72"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C / C++</span>
+                                <span class="skill-percentage" data-target="65">0%</span>
+                            </div>
+                            <div class="progress-bar-track">
+                                <div class="progress-bar-fill" data-percentage="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="cert-grid">
-                <!-- AWS Cloud Foundations -->
-                <a href="https://www.linkedin.com/posts/mohataseem_reactjs-webdevelopment-scaler-activity-7346150469532012545-KvkU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFZS5zwBJH16ZdS_tuHGx8ZbrMCAoK_Xhq0"
-                    target="_blank" rel="noopener noreferrer">
-                    <div class="cert-card animate-on-scroll waterfall" data-delay="0" style="--initial-rotation: -2deg">
-                        <img src="certificates/AWS Academy Cloud Foundations.webp"
-                            alt="AWS Academy Cloud Foundations Certificate" class="cert-image" loading="lazy">
-                        <div class="cert-info">
-                            <h3>AWS Cloud Foundations</h3>
-                            <span class="cert-provider"><svg class="icon-svg fa-aws" viewBox="0 0 640 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M180.4 203c-.7 22.6 10.6 32.7 10.9 39-.1 1.3-.6 2.5-1.3 3.6s-1.7 2-2.8 2.6l-12.8 9c-1.7 1.2-3.6 1.8-5.6 1.9-.4 0-8.2 1.8-20.5-25.6-7.5 9.4-17 16.9-27.9 22s-22.7 7.7-34.7 7.5c-16.3 .9-60.4-9.2-58.1-56.2-1.6-38.3 34.1-62.1 70.9-60 7.1 0 21.6 .4 47 6.3l0-15.6c2.7-26.5-14.7-47-44.8-43.9-2.4 0-19.4-.5-45.8 10.1-7.4 3.4-8.3 2.8-10.8 2.8-7.4 0-4.4-21.5-2.9-24.2 5.2-6.4 35.9-18.4 65.9-18.2 20.1-1.8 40.1 4.4 55.7 17.3 6.3 7.1 11.2 15.4 14.2 24.4s4.2 18.5 3.5 28l0 69.3zM94 235.4c32.4-.5 46.2-20 49.3-30.5 2.5-10.1 2.1-16.4 2.1-27.4-9.7-2.3-23.6-4.9-39.6-4.9-15.2-1.1-42.8 5.6-41.7 32.3-1.2 16.8 11.1 31.4 30 30.5zm170.9 23.1c-7.9 .7-11.5-4.9-12.7-10.4L202.4 83.4c-1-2.8-1.6-5.6-1.9-8.6-.2-1.2 .1-2.4 .8-3.4s1.8-1.6 3-1.8c.2 0-2.1 0 22.2 0 8.8-.9 11.6 6 12.6 10.4L274.9 220.8 308.1 80c.5-3.2 2.9-11.1 12.8-10.2l17.2 0c2.2-.2 11.1-.5 12.7 10.4L384.1 222.7 421 80.1c.5-2.2 2.7-11.4 12.7-10.4l19.7 0c.9-.1 6.2-.8 5.3 8.6-.4 1.8 3.4-10.7-52.8 169.9-1.1 5.5-4.8 11.1-12.7 10.4l-18.7 0c-10.9 1.2-12.5-9.7-12.7-10.7l-33.2-137.1-32.8 137c-.2 1.1-1.7 11.9-12.7 10.7l-18.3 0 0 0zm273.5 5.6c-5.9 0-33.9-.3-57.4-12.3-2.3-1-4.3-2.6-5.7-4.8s-2.1-4.6-2.1-7.1l0-10.7c0-8.5 6.2-6.9 8.8-5.9 10 4.1 16.5 7.1 28.8 9.6 36.7 7.5 52.8-2.3 56.7-4.5 13.2-7.8 14.2-25.7 5.3-34.9-10.5-8.8-15.5-9.1-53.1-21-4.6-1.3-43.7-13.6-43.8-52.4-.6-28.2 25-56.2 69.5-56 12.7 0 46.4 4.1 55.6 15.6 1.4 2.1 2 4.6 1.9 7l0 10.1c0 4.4-1.6 6.7-4.9 6.7-7.7-.9-21.4-11.2-49.2-10.8-6.9-.4-39.9 .9-38.4 25-.4 19 26.6 26.1 29.7 26.9 36.5 11 48.6 12.8 63.1 29.6 17.1 22.2 7.9 48.3 4.3 55.4-19.1 37.5-68.4 34.4-69.3 34.4zm40.2 104.9c-70 51.7-171.7 79.2-258.5 79.2-117.1 .8-230.3-42.3-317.3-120.7-6.5-5.9-.8-14 7.2-9.5 96.5 55.2 205.7 84.2 316.9 84.1 83-.4 165.1-17.3 241.6-49.5 11.8-5 21.8 7.8 10.1 16.4zm29.2-33.3c-9-11.5-59.3-5.4-81.8-2.7-6.8 .8-7.9-5.1-1.8-9.5 40.1-28.2 105.9-20.1 113.4-10.6 7.5 9.5-2.1 75.4-39.6 106.9-5.8 4.9-11.3 2.3-8.7-4.1 8.4-21.3 27.4-68.5 18.4-80z"/></svg> AWS Academy</span>
+        <!-- ═══════════════ PAGE 7 — CERTIFICATIONS ═══════════════ -->
+        <section id="certifications">
+            <div class="section-padding">
+                <div class="section-header animate-on-scroll fade-up">
+                    <h2 class="section-title">Certifications</h2>
+                    <p class="section-subtitle">Professional certifications and credentials</p>
+                </div>
+
+                <div class="cert-grid">
+                    <!-- AWS Cloud Foundations -->
+                    <a href="https://www.linkedin.com/posts/mohataseem_reactjs-webdevelopment-scaler-activity-7346150469532012545-KvkU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFZS5zwBJH16ZdS_tuHGx8ZbrMCAoK_Xhq0"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="cert-card animate-on-scroll waterfall" data-delay="0"
+                            style="--initial-rotation: -2deg">
+                            <img src="certificates/AWS Academy Cloud Foundations.webp"
+                                alt="AWS Academy Cloud Foundations Certificate" class="cert-image" loading="lazy">
+                            <div class="cert-info">
+                                <h3>AWS Cloud Foundations</h3>
+                                <span class="cert-provider"><svg class="icon-svg fa-aws" viewBox="0 0 640 512"
+                                        aria-hidden="true" focusable="false">
+                                        <path fill="currentColor"
+                                            d="M180.4 203c-.7 22.6 10.6 32.7 10.9 39-.1 1.3-.6 2.5-1.3 3.6s-1.7 2-2.8 2.6l-12.8 9c-1.7 1.2-3.6 1.8-5.6 1.9-.4 0-8.2 1.8-20.5-25.6-7.5 9.4-17 16.9-27.9 22s-22.7 7.7-34.7 7.5c-16.3 .9-60.4-9.2-58.1-56.2-1.6-38.3 34.1-62.1 70.9-60 7.1 0 21.6 .4 47 6.3l0-15.6c2.7-26.5-14.7-47-44.8-43.9-2.4 0-19.4-.5-45.8 10.1-7.4 3.4-8.3 2.8-10.8 2.8-7.4 0-4.4-21.5-2.9-24.2 5.2-6.4 35.9-18.4 65.9-18.2 20.1-1.8 40.1 4.4 55.7 17.3 6.3 7.1 11.2 15.4 14.2 24.4s4.2 18.5 3.5 28l0 69.3zM94 235.4c32.4-.5 46.2-20 49.3-30.5 2.5-10.1 2.1-16.4 2.1-27.4-9.7-2.3-23.6-4.9-39.6-4.9-15.2-1.1-42.8 5.6-41.7 32.3-1.2 16.8 11.1 31.4 30 30.5zm170.9 23.1c-7.9 .7-11.5-4.9-12.7-10.4L202.4 83.4c-1-2.8-1.6-5.6-1.9-8.6-.2-1.2 .1-2.4 .8-3.4s1.8-1.6 3-1.8c.2 0-2.1 0 22.2 0 8.8-.9 11.6 6 12.6 10.4L274.9 220.8 308.1 80c.5-3.2 2.9-11.1 12.8-10.2l17.2 0c2.2-.2 11.1-.5 12.7 10.4L384.1 222.7 421 80.1c.5-2.2 2.7-11.4 12.7-10.4l19.7 0c.9-.1 6.2-.8 5.3 8.6-.4 1.8 3.4-10.7-52.8 169.9-1.1 5.5-4.8 11.1-12.7 10.4l-18.7 0c-10.9 1.2-12.5-9.7-12.7-10.7l-33.2-137.1-32.8 137c-.2 1.1-1.7 11.9-12.7 10.7l-18.3 0 0 0zm273.5 5.6c-5.9 0-33.9-.3-57.4-12.3-2.3-1-4.3-2.6-5.7-4.8s-2.1-4.6-2.1-7.1l0-10.7c0-8.5 6.2-6.9 8.8-5.9 10 4.1 16.5 7.1 28.8 9.6 36.7 7.5 52.8-2.3 56.7-4.5 13.2-7.8 14.2-25.7 5.3-34.9-10.5-8.8-15.5-9.1-53.1-21-4.6-1.3-43.7-13.6-43.8-52.4-.6-28.2 25-56.2 69.5-56 12.7 0 46.4 4.1 55.6 15.6 1.4 2.1 2 4.6 1.9 7l0 10.1c0 4.4-1.6 6.7-4.9 6.7-7.7-.9-21.4-11.2-49.2-10.8-6.9-.4-39.9 .9-38.4 25-.4 19 26.6 26.1 29.7 26.9 36.5 11 48.6 12.8 63.1 29.6 17.1 22.2 7.9 48.3 4.3 55.4-19.1 37.5-68.4 34.4-69.3 34.4zm40.2 104.9c-70 51.7-171.7 79.2-258.5 79.2-117.1 .8-230.3-42.3-317.3-120.7-6.5-5.9-.8-14 7.2-9.5 96.5 55.2 205.7 84.2 316.9 84.1 83-.4 165.1-17.3 241.6-49.5 11.8-5 21.8 7.8 10.1 16.4zm29.2-33.3c-9-11.5-59.3-5.4-81.8-2.7-6.8 .8-7.9-5.1-1.8-9.5 40.1-28.2 105.9-20.1 113.4-10.6 7.5 9.5-2.1 75.4-39.6 106.9-5.8 4.9-11.3 2.3-8.7-4.1 8.4-21.3 27.4-68.5 18.4-80z" />
+                                    </svg> AWS Academy</span>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-                <!-- React.js Course -->
-                <a href="https://www.linkedin.com/posts/mohataseem_reactjs-webdevelopment-scaler-activity-7346150469532012545-KvkU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFZS5zwBJH16ZdS_tuHGx8ZbrMCAoK_Xhq0"
-                    target="_blank" rel="noopener noreferrer">
-                    <div class="cert-card animate-on-scroll waterfall" data-delay="0.1"
-                        style="--initial-rotation: 1deg">
-                        <img src="certificates/reactjs.webp" alt="React.js Course Certificate" class="cert-image"
-                            loading="lazy">
-                        <div class="cert-info">
-                            <h3>React.js Course</h3>
-                            <span class="cert-provider"><svg class="icon-svg fa-react" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1 .9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2 .6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9-53.4 18.5-91.7 47.7-91.7 77.9 0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zM167.2 307.5c5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5 4.6 8.8 9.3 17.5 14.3 26.1zM136.9 187.2c14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26-6.3-14.9-11.6-29.5-16-43.6zm27.4 68.9c6.6-13.8 13.8-27.3 21.4-40.6s15.8-26.2 24.4-38.9c15-1.1 30.3-1.7 45.9-1.7s31 .6 45.9 1.7c8.5 12.6 16.6 25.5 24.3 38.7s14.9 26.7 21.7 40.4c-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6s-30.9-.5-45.6-1.4c-8.7-12.7-16.9-25.7-24.6-39s-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zM115.7 320.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6 .4 19.5 .6 29.5 .6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8 .9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zM256 301.8a45.8 45.8 0 1 0 0-91.6 45.8 45.8 0 1 0 0 91.6z"/></svg> Online Certification</span>
+                    <!-- React.js Course -->
+                    <a href="https://www.linkedin.com/posts/mohataseem_reactjs-webdevelopment-scaler-activity-7346150469532012545-KvkU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFZS5zwBJH16ZdS_tuHGx8ZbrMCAoK_Xhq0"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="cert-card animate-on-scroll waterfall" data-delay="0.1"
+                            style="--initial-rotation: 1deg">
+                            <img src="certificates/reactjs.webp" alt="React.js Course Certificate" class="cert-image"
+                                loading="lazy">
+                            <div class="cert-info">
+                                <h3>React.js Course</h3>
+                                <span class="cert-provider"><svg class="icon-svg fa-react" viewBox="0 0 512 512"
+                                        aria-hidden="true" focusable="false">
+                                        <path fill="currentColor"
+                                            d="M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1 .9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2 .6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9-53.4 18.5-91.7 47.7-91.7 77.9 0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zM167.2 307.5c5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5 4.6 8.8 9.3 17.5 14.3 26.1zM136.9 187.2c14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26-6.3-14.9-11.6-29.5-16-43.6zm27.4 68.9c6.6-13.8 13.8-27.3 21.4-40.6s15.8-26.2 24.4-38.9c15-1.1 30.3-1.7 45.9-1.7s31 .6 45.9 1.7c8.5 12.6 16.6 25.5 24.3 38.7s14.9 26.7 21.7 40.4c-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6s-30.9-.5-45.6-1.4c-8.7-12.7-16.9-25.7-24.6-39s-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zM115.7 320.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6 .4 19.5 .6 29.5 .6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8 .9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zM256 301.8a45.8 45.8 0 1 0 0-91.6 45.8 45.8 0 1 0 0 91.6z" />
+                                    </svg> Online Certification</span>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-                <!-- Frontend Internship -->
-                <a href="https://www.linkedin.com/posts/mohataseem_webdevelopment-internship-prodigyinfotech-activity-7303734866339151875-4Ddg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFZS5zwBJH16ZdS_tuHGx8ZbrMCAoK_Xhq0"
-                    target="_blank" rel="noopener noreferrer">
-                    <div class="cert-card animate-on-scroll waterfall" data-delay="0.2"
-                        style="--initial-rotation: 2deg">
-                        <img src="certificates/Intership certificate.webp" alt="Frontend Internship Certificate"
-                            class="cert-image" loading="lazy">
-                        <div class="cert-info">
-                            <h3>Frontend Internship</h3>
-                            <span class="cert-provider"><svg class="icon-svg fa-building" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-384c0-35.3-28.7-64-64-64L64 0zM176 352l32 0c17.7 0 32 14.3 32 32l0 80-96 0 0-80c0-17.7 14.3-32 32-32zM96 112c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM240 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zM96 240c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zm144-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16z"/></svg> Prodigy Infotech</span>
+                    <!-- Frontend Internship -->
+                    <a href="https://www.linkedin.com/posts/mohataseem_webdevelopment-internship-prodigyinfotech-activity-7303734866339151875-4Ddg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFZS5zwBJH16ZdS_tuHGx8ZbrMCAoK_Xhq0"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="cert-card animate-on-scroll waterfall" data-delay="0.2"
+                            style="--initial-rotation: 2deg">
+                            <img src="certificates/Intership certificate.webp" alt="Frontend Internship Certificate"
+                                class="cert-image" loading="lazy">
+                            <div class="cert-info">
+                                <h3>Frontend Internship</h3>
+                                <span class="cert-provider"><svg class="icon-svg fa-building" viewBox="0 0 384 512"
+                                        aria-hidden="true" focusable="false">
+                                        <path fill="currentColor"
+                                            d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-384c0-35.3-28.7-64-64-64L64 0zM176 352l32 0c17.7 0 32 14.3 32 32l0 80-96 0 0-80c0-17.7 14.3-32 32-32zM96 112c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM240 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zM96 240c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zm144-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16z" />
+                                    </svg> Prodigy Infotech</span>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-                <!-- Introduction to MCP -->
-                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7483924915696328704/" target="_blank"
+                    <!-- Introduction to MCP -->
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7483924915696328704/" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="cert-card animate-on-scroll waterfall" data-delay="0.3"
+                            style="--initial-rotation: -1deg">
+                            <img src="certificates/model context protocol.webp" alt="Introduction to MCP Certificate"
+                                class="cert-image" loading="lazy">
+                            <div class="cert-info">
+                                <h3>Introduction to MCP</h3>
+                                <span class="cert-provider"><svg class="icon-svg fa-brain" viewBox="0 0 512 512"
+                                        aria-hidden="true" focusable="false">
+                                        <path fill="currentColor"
+                                            d="M120 56c0-30.9 25.1-56 56-56l24 0c17.7 0 32 14.3 32 32l0 448c0 17.7-14.3 32-32 32l-32 0c-29.8 0-54.9-20.4-62-48-.7 0-1.3 0-2 0-44.2 0-80-35.8-80-80 0-18 6-34.6 16-48-19.4-14.6-32-37.8-32-64 0-30.9 17.6-57.8 43.2-71.1-7.1-12-11.2-26-11.2-40.9 0-44.2 35.8-80 80-80l0-24zm272 0l0 24c44.2 0 80 35.8 80 80 0 15-4.1 29-11.2 40.9 25.7 13.3 43.2 40.1 43.2 71.1 0 26.2-12.6 49.4-32 64 10 13.4 16 30 16 48 0 44.2-35.8 80-80 80-.7 0-1.3 0-2 0-7.1 27.6-32.2 48-62 48l-32 0c-17.7 0-32-14.3-32-32l0-448c0-17.7 14.3-32 32-32l24 0c30.9 0 56 25.1 56 56z" />
+                                    </svg> Model Context Protocol</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Advance MCP -->
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7483924915696328704/" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="cert-card animate-on-scroll waterfall" data-delay="0.4"
+                            style="--initial-rotation: 1.5deg">
+                            <img src="certificates/model context protocol advance.webp" alt="Advanced MCP Certificate"
+                                class="cert-image" loading="lazy">
+                            <div class="cert-info">
+                                <h3>Advance MCP</h3>
+                                <span class="cert-provider"><svg class="icon-svg fa-brain" viewBox="0 0 512 512"
+                                        aria-hidden="true" focusable="false">
+                                        <path fill="currentColor"
+                                            d="M120 56c0-30.9 25.1-56 56-56l24 0c17.7 0 32 14.3 32 32l0 448c0 17.7-14.3 32-32 32l-32 0c-29.8 0-54.9-20.4-62-48-.7 0-1.3 0-2 0-44.2 0-80-35.8-80-80 0-18 6-34.6 16-48-19.4-14.6-32-37.8-32-64 0-30.9 17.6-57.8 43.2-71.1-7.1-12-11.2-26-11.2-40.9 0-44.2 35.8-80 80-80l0-24zm272 0l0 24c44.2 0 80 35.8 80 80 0 15-4.1 29-11.2 40.9 25.7 13.3 43.2 40.1 43.2 71.1 0 26.2-12.6 49.4-32 64 10 13.4 16 30 16 48 0 44.2-35.8 80-80 80-.7 0-1.3 0-2 0-7.1 27.6-32.2 48-62 48l-32 0c-17.7 0-32-14.3-32-32l0-448c0-17.7 14.3-32 32-32l24 0c30.9 0 56 25.1 56 56z" />
+                                    </svg> Model Context Protocol</span>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Claude with the Anthropic API -->
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7482492957946757120/" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="cert-card animate-on-scroll waterfall" data-delay="0.5"
+                            style="--initial-rotation: -2deg">
+                            <img src="certificates/building_with_claudeAPI.webp"
+                                alt="Claude with the Anthropic API Certificate" class="cert-image" loading="lazy">
+
+                            <div class="cert-info">
+                                <h3>Claude with the Anthropic API</h3>
+                                <span class="cert-provider">
+                                    <svg class="icon-svg fa-robot" viewBox="0 0 640 512" aria-hidden="true"
+                                        focusable="false">
+                                        <path fill="currentColor"
+                                            d="M352 0c0-17.7-14.3-32-32-32S288-17.7 288 0l0 64-96 0c-53 0-96 43-96 96l0 224c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-224c0-53-43-96-96-96l-96 0 0-64zM160 368c0-13.3 10.7-24 24-24l32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0c-13.3 0-24-10.7-24-24zm120 0c0-13.3 10.7-24 24-24l32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0c-13.3 0-24-10.7-24-24zm120 0c0-13.3 10.7-24 24-24l32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0c-13.3 0-24-10.7-24-24zM224 176a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm144 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM64 224c0-17.7-14.3-32-32-32S0 206.3 0 224l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96zm544-32c-17.7 0-32 14.3-32 32l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96c0-17.7-14.3-32-32-32z" />
+                                    </svg> Anthropic
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════ PAGE 8 — ACHIEVEMENTS ═══════════════ -->
+        <section id="achievements">
+            <div class="section-padding">
+                <div class="section-header animate-on-scroll fade-up">
+                    <h2 class="section-title">Achievements & Recognition</h2>
+                    <p class="section-subtitle">Professional milestones, academic progress, and project work that
+                        reflect my
+                        growth as a developer.</p>
+                </div>
+
+                <!-- Stat Counters -->
+                <div class="stats-counters animate-on-scroll fade-up">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="2">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="6">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="4">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="2">0</span>
+                        <span class="stat-suffix"></span>
+                        <span class="stat-label">Research Papers</span>
+                    </div>
+                </div>
+
+                <!-- Achievement Cards -->
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7402723512219664385/" target="_blank"
                     rel="noopener noreferrer">
-                    <div class="cert-card animate-on-scroll waterfall" data-delay="0.3"
-                        style="--initial-rotation: -1deg">
-                        <img src="certificates/model context protocol.webp" alt="Introduction to MCP Certificate"
-                            class="cert-image" loading="lazy">
-                        <div class="cert-info">
-                            <h3>Introduction to MCP</h3>
-                            <span class="cert-provider"><svg class="icon-svg fa-brain" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M120 56c0-30.9 25.1-56 56-56l24 0c17.7 0 32 14.3 32 32l0 448c0 17.7-14.3 32-32 32l-32 0c-29.8 0-54.9-20.4-62-48-.7 0-1.3 0-2 0-44.2 0-80-35.8-80-80 0-18 6-34.6 16-48-19.4-14.6-32-37.8-32-64 0-30.9 17.6-57.8 43.2-71.1-7.1-12-11.2-26-11.2-40.9 0-44.2 35.8-80 80-80l0-24zm272 0l0 24c44.2 0 80 35.8 80 80 0 15-4.1 29-11.2 40.9 25.7 13.3 43.2 40.1 43.2 71.1 0 26.2-12.6 49.4-32 64 10 13.4 16 30 16 48 0 44.2-35.8 80-80 80-.7 0-1.3 0-2 0-7.1 27.6-32.2 48-62 48l-32 0c-17.7 0-32-14.3-32-32l0-448c0-17.7 14.3-32 32-32l24 0c30.9 0 56 25.1 56 56z"/></svg> Model Context Protocol</span>
+
+                    <div class="achievement-card">
+                        <div class="achievement-image">
+                            <img src="achievements/github contributor.webp" alt="GitHub Contributor Achievement"
+                                loading="lazy">
+                        </div>
+                        <div class="achievement-content">
+                            <span class="achievement-badge badge-professional"><svg class="icon-svg fa-trophy"
+                                    viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+                                    <path fill="currentColor"
+                                        d="M144.3 0l224 0c26.5 0 48.1 21.8 47.1 48.2-.2 5.3-.4 10.6-.7 15.8l49.6 0c26.1 0 49.1 21.6 47.1 49.8-7.5 103.7-60.5 160.7-118 190.5-15.8 8.2-31.9 14.3-47.2 18.8-20.2 28.6-41.2 43.7-57.9 51.8l0 73.1 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-192 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0 0-73.1c-16-7.7-35.9-22-55.3-48.3-18.4-4.8-38.4-12.1-57.9-23.1-54.1-30.3-102.9-87.4-109.9-189.9-1.9-28.1 21-49.7 47.1-49.7l49.6 0c-.3-5.2-.5-10.4-.7-15.8-1-26.5 20.6-48.2 47.1-48.2zM101.5 112l-52.4 0c6.2 84.7 45.1 127.1 85.2 149.6-14.4-37.3-26.3-86-32.8-149.6zM380 256.8c40.5-23.8 77.1-66.1 83.3-144.8L411 112c-6.2 60.9-17.4 108.2-31 144.8z" />
+                                </svg>
+                                Professional</span>
+                            <span class="achievement-year">2025</span>
+                            <h3>L-0 GitHub Contributor</h3>
+                            <p class="achievement-institution">GitHub</p>
+                            <p class="achievement-description">Recognised as a Level-0 GitHub Contributor, demonstrating
+                                consistent open-source engagement, code contributions, and active participation in the
+                                developer
+                                community through commits, pull requests, and repository management.</p>
                         </div>
                     </div>
                 </a>
-
-                <!-- Advance MCP -->
-                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7483924915696328704/" target="_blank"
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7467861950375522304/" target="_blank"
                     rel="noopener noreferrer">
-                    <div class="cert-card animate-on-scroll waterfall" data-delay="0.4"
-                        style="--initial-rotation: 1.5deg">
-                        <img src="certificates/model context protocol advance.webp" alt="Advanced MCP Certificate"
-                            class="cert-image" loading="lazy">
-                        <div class="cert-info">
-                            <h3>Advance MCP</h3>
-                            <span class="cert-provider"><svg class="icon-svg fa-brain" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M120 56c0-30.9 25.1-56 56-56l24 0c17.7 0 32 14.3 32 32l0 448c0 17.7-14.3 32-32 32l-32 0c-29.8 0-54.9-20.4-62-48-.7 0-1.3 0-2 0-44.2 0-80-35.8-80-80 0-18 6-34.6 16-48-19.4-14.6-32-37.8-32-64 0-30.9 17.6-57.8 43.2-71.1-7.1-12-11.2-26-11.2-40.9 0-44.2 35.8-80 80-80l0-24zm272 0l0 24c44.2 0 80 35.8 80 80 0 15-4.1 29-11.2 40.9 25.7 13.3 43.2 40.1 43.2 71.1 0 26.2-12.6 49.4-32 64 10 13.4 16 30 16 48 0 44.2-35.8 80-80 80-.7 0-1.3 0-2 0-7.1 27.6-32.2 48-62 48l-32 0c-17.7 0-32-14.3-32-32l0-448c0-17.7 14.3-32 32-32l24 0c30.9 0 56 25.1 56 56z"/></svg> Model Context Protocol</span>
+                    <div class="achievement-card">
+                        <div class="achievement-image ">
+                            <img src="certificates/reasearch paper publication.webp"
+                                alt="CyberSentinel Research Paper Publication" loading="lazy">
                         </div>
-                    </div>
-                </a>
-                <!-- Claude with the Anthropic API -->
-                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7482492957946757120/" target="_blank"
-                    rel="noopener noreferrer">
-                    <div class="cert-card animate-on-scroll waterfall" data-delay="0.5"
-                        style="--initial-rotation: -2deg">
-                        <img src="certificates/building_with_claudeAPI.webp"
-                            alt="Claude with the Anthropic API Certificate" class="cert-image" loading="lazy">
 
-                        <div class="cert-info">
-                            <h3>Claude with the Anthropic API</h3>
-                            <span class="cert-provider">
-                                <svg class="icon-svg fa-robot" viewBox="0 0 640 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M352 0c0-17.7-14.3-32-32-32S288-17.7 288 0l0 64-96 0c-53 0-96 43-96 96l0 224c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-224c0-53-43-96-96-96l-96 0 0-64zM160 368c0-13.3 10.7-24 24-24l32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0c-13.3 0-24-10.7-24-24zm120 0c0-13.3 10.7-24 24-24l32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0c-13.3 0-24-10.7-24-24zm120 0c0-13.3 10.7-24 24-24l32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0c-13.3 0-24-10.7-24-24zM224 176a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm144 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM64 224c0-17.7-14.3-32-32-32S0 206.3 0 224l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96zm544-32c-17.7 0-32 14.3-32 32l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96c0-17.7-14.3-32-32-32z"/></svg> Anthropic
+                        <div class="achievement-content">
+                            <span class="achievement-badge badge-academic">
+                                <svg class="icon-svg fa-file-alt" viewBox="0 0 384 512" aria-hidden="true"
+                                    focusable="false">
+                                    <path fill="currentColor"
+                                        d="M0 64C0 28.7 28.7 0 64 0L213.5 0c17 0 33.3 6.7 45.3 18.7L365.3 125.3c12 12 18.7 28.3 18.7 45.3L384 448c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm208-5.5l0 93.5c0 13.3 10.7 24 24 24L325.5 176 208 58.5zM120 256c-13.3 0-24 10.7-24 24s10.7 24 24 24l144 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-144 0zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24l144 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-144 0z" />
+                                </svg> Research Publication
                             </span>
+
+                            <span class="achievement-year">2025</span>
+
+                            <h3>CyberSentinel Research Publication</h3>
+
+                            <p class="achievement-institution">
+                                International Journal Publication
+                            </p>
+
+                            <p class="achievement-description">
+                                Published a research paper titled <strong>CyberSentinel</strong>, presenting an
+                                AI-powered
+                                cybersecurity framework for phishing URL detection using Machine Learning, URL analysis,
+                                and
+                                threat intelligence to improve online security.
+                            </p>
                         </div>
                     </div>
                 </a>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7467960938806083585/" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="achievement-card">
+                        <div class="achievement-image">
+                            <img src="certificates/certificate of  publication_attendance optimization.webp"
+                                alt="Attendance Optimisation Research Paper" loading="lazy">
+                        </div>
 
+                        <div class="achievement-content">
+                            <span class="achievement-badge badge-academic">
+                                <svg class="icon-svg fa-graduation-cap" viewBox="0 0 576 512" aria-hidden="true"
+                                    focusable="false">
+                                    <path fill="currentColor"
+                                        d="M48 195.8l209.2 86.1c9.8 4 20.2 6.1 30.8 6.1s21-2.1 30.8-6.1l242.4-99.8c9-3.7 14.8-12.4 14.8-22.1s-5.8-18.4-14.8-22.1L318.8 38.1C309 34.1 298.6 32 288 32s-21 2.1-30.8 6.1L14.8 137.9C5.8 141.6 0 150.3 0 160L0 456c0 13.3 10.7 24 24 24s24-10.7 24-24l0-260.2zm48 71.7L96 384c0 53 86 96 192 96s192-43 192-96l0-116.6-142.9 58.9c-15.6 6.4-32.2 9.7-49.1 9.7s-33.5-3.3-49.1-9.7L96 267.4z" />
+                                </svg> Research Publication
+                            </span>
+
+                            <span class="achievement-year">2025</span>
+
+                            <h3>Advanced Attendance Optimisation Research</h3>
+
+                            <p class="achievement-institution">
+                                International Journal Publication
+                            </p>
+
+                            <p class="achievement-description">
+                                Published a research paper proposing an intelligent attendance optimisation framework
+                                that
+                                leverages data analysis and predictive techniques to improve student attendance tracking
+                                and
+                                academic performance.
+                            </p>
+                        </div>
+                    </div>
+                </a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ═══════════════ PAGE 8 — ACHIEVEMENTS ═══════════════ -->
-    <section id="achievements">
-        <div class="section-padding">
-            <div class="section-header animate-on-scroll fade-up">
-                <h2 class="section-title">Achievements & Recognition</h2>
-                <p class="section-subtitle">Professional milestones, academic progress, and project work that reflect my
-                    growth as a developer.</p>
-            </div>
+        <!-- ═══════════════ PAGE 9 — CONTACT ═══════════════ -->
+        <section id="contact">
+            <div class="section-padding">
+                <div class="section-header animate-on-scroll fade-up">
+                    <h2 class="section-title">Let's Talk</h2>
+                    <p class="section-subtitle">Have a project in mind or just want to say hello? I'd love to hear from
+                        you.
+                    </p>
+                </div>
 
-            <!-- Stat Counters -->
-            <div class="stats-counters animate-on-scroll fade-up">
-                <div class="stat-item">
-                    <span class="stat-number" data-count="2">0</span>
-                    <span class="stat-suffix">+</span>
-                    <span class="stat-label">Years Experience</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="6">0</span>
-                    <span class="stat-suffix">+</span>
-                    <span class="stat-label">Certifications</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="4">0</span>
-                    <span class="stat-suffix">+</span>
-                    <span class="stat-label">Projects</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="2">0</span>
-                    <span class="stat-suffix"></span>
-                    <span class="stat-label">Research Papers</span>
-                </div>
-            </div>
-
-            <!-- Achievement Cards -->
-            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7402723512219664385/" target="_blank"
-                rel="noopener noreferrer">
-
-                <div class="achievement-card">
-                    <div class="achievement-image">
-                        <img src="achievements/github contributor.webp" alt="GitHub Contributor Achievement"
-                            loading="lazy">
-                    </div>
-                    <div class="achievement-content">
-                        <span class="achievement-badge badge-professional"><svg class="icon-svg fa-trophy" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M144.3 0l224 0c26.5 0 48.1 21.8 47.1 48.2-.2 5.3-.4 10.6-.7 15.8l49.6 0c26.1 0 49.1 21.6 47.1 49.8-7.5 103.7-60.5 160.7-118 190.5-15.8 8.2-31.9 14.3-47.2 18.8-20.2 28.6-41.2 43.7-57.9 51.8l0 73.1 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-192 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0 0-73.1c-16-7.7-35.9-22-55.3-48.3-18.4-4.8-38.4-12.1-57.9-23.1-54.1-30.3-102.9-87.4-109.9-189.9-1.9-28.1 21-49.7 47.1-49.7l49.6 0c-.3-5.2-.5-10.4-.7-15.8-1-26.5 20.6-48.2 47.1-48.2zM101.5 112l-52.4 0c6.2 84.7 45.1 127.1 85.2 149.6-14.4-37.3-26.3-86-32.8-149.6zM380 256.8c40.5-23.8 77.1-66.1 83.3-144.8L411 112c-6.2 60.9-17.4 108.2-31 144.8z"/></svg>
-                            Professional</span>
-                        <span class="achievement-year">2025</span>
-                        <h3>L-0 GitHub Contributor</h3>
-                        <p class="achievement-institution">GitHub</p>
-                        <p class="achievement-description">Recognised as a Level-0 GitHub Contributor, demonstrating
-                            consistent open-source engagement, code contributions, and active participation in the
-                            developer
-                            community through commits, pull requests, and repository management.</p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7467861950375522304/" target="_blank"
-                rel="noopener noreferrer">
-                <div class="achievement-card">
-                    <div class="achievement-image ">
-                        <img src="certificates/reasearch paper publication.webp"
-                            alt="CyberSentinel Research Paper Publication" loading="lazy">
+                <div class="contact-wrapper">
+                    <!-- Left: Contact Form -->
+                    <div class="contact-form-panel animate-on-scroll slide-from-bl">
+                        <h3 style="font-size:1.3rem;font-weight:700;color:var(--color-brown-dark);margin-bottom:2rem;">
+                            Send
+                            Me a Message</h3>
+                        <form class="contact-form" id="contactForm">
+                            <input type="hidden" name="access_key" value="c890ec3b-f6fd-4069-b72e-c7af863e64c7">
+                            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1"
+                                autocomplete="off">
+                            <div class="form-group">
+                                <input type="text" id="contactName" name="name" placeholder=" " required>
+                                <label for="contactName">Full Name</label>
+                                <span class="form-underline"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="contactEmail" name="email" placeholder=" " required>
+                                <label for="contactEmail">Email Address</label>
+                                <span class="form-underline"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="contactSubject" name="subject" placeholder=" " required>
+                                <label for="contactSubject">Subject</label>
+                                <span class="form-underline"></span>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="contactMessage" name="message" placeholder=" " rows="4"
+                                    required></textarea>
+                                <label for="contactMessage">Message</label>
+                                <span class="form-underline"></span>
+                            </div>
+                            <button type="submit" class="btn-send">
+                                <svg class="icon-svg fa-paper-plane" viewBox="0 0 576 512" aria-hidden="true"
+                                    focusable="false">
+                                    <path fill="currentColor"
+                                        d="M536.4-26.3c9.8-3.5 20.6-1 28 6.3s9.8 18.2 6.3 28l-178 496.9c-5 13.9-18.1 23.1-32.8 23.1-14.2 0-27-8.6-32.3-21.7l-64.2-158c-4.5-11-2.5-23.6 5.2-32.6l94.5-112.4c5.1-6.1 4.7-15-.9-20.6s-14.6-6-20.6-.9L229.2 276.1c-9.1 7.6-21.6 9.6-32.6 5.2L38.1 216.8c-13.1-5.3-21.7-18.1-21.7-32.3 0-14.7 9.2-27.8 23.1-32.8l496.9-178z" />
+                                </svg> <span class="btn-send-text">Send Message</span>
+                            </button>
+                        </form>
                     </div>
 
-                    <div class="achievement-content">
-                        <span class="achievement-badge badge-academic">
-                            <svg class="icon-svg fa-file-alt" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0 64C0 28.7 28.7 0 64 0L213.5 0c17 0 33.3 6.7 45.3 18.7L365.3 125.3c12 12 18.7 28.3 18.7 45.3L384 448c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm208-5.5l0 93.5c0 13.3 10.7 24 24 24L325.5 176 208 58.5zM120 256c-13.3 0-24 10.7-24 24s10.7 24 24 24l144 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-144 0zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24l144 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-144 0z"/></svg> Research Publication
-                        </span>
+                    <!-- Right: Contact Info -->
+                    <div class="contact-info-panel animate-on-scroll slide-from-br">
+                        <h3>Contact Information</h3>
 
-                        <span class="achievement-year">2025</span>
-
-                        <h3>CyberSentinel Research Publication</h3>
-
-                        <p class="achievement-institution">
-                            International Journal Publication
-                        </p>
-
-                        <p class="achievement-description">
-                            Published a research paper titled <strong>CyberSentinel</strong>, presenting an AI-powered
-                            cybersecurity framework for phishing URL detection using Machine Learning, URL analysis, and
-                            threat intelligence to improve online security.
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7467960938806083585/" target="_blank"
-                rel="noopener noreferrer">
-                <div class="achievement-card">
-                    <div class="achievement-image">
-                        <img src="certificates/certificate of  publication_attendance optimization.webp"
-                            alt="Attendance Optimisation Research Paper" loading="lazy">
-                    </div>
-
-                    <div class="achievement-content">
-                        <span class="achievement-badge badge-academic">
-                            <svg class="icon-svg fa-graduation-cap" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M48 195.8l209.2 86.1c9.8 4 20.2 6.1 30.8 6.1s21-2.1 30.8-6.1l242.4-99.8c9-3.7 14.8-12.4 14.8-22.1s-5.8-18.4-14.8-22.1L318.8 38.1C309 34.1 298.6 32 288 32s-21 2.1-30.8 6.1L14.8 137.9C5.8 141.6 0 150.3 0 160L0 456c0 13.3 10.7 24 24 24s24-10.7 24-24l0-260.2zm48 71.7L96 384c0 53 86 96 192 96s192-43 192-96l0-116.6-142.9 58.9c-15.6 6.4-32.2 9.7-49.1 9.7s-33.5-3.3-49.1-9.7L96 267.4z"/></svg> Research Publication
-                        </span>
-
-                        <span class="achievement-year">2025</span>
-
-                        <h3>Advanced Attendance Optimisation Research</h3>
-
-                        <p class="achievement-institution">
-                            International Journal Publication
-                        </p>
-
-                        <p class="achievement-description">
-                            Published a research paper proposing an intelligent attendance optimisation framework that
-                            leverages data analysis and predictive techniques to improve student attendance tracking and
-                            academic performance.
-                        </p>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <!-- ═══════════════ PAGE 9 — CONTACT ═══════════════ -->
-    <section id="contact">
-        <div class="section-padding">
-            <div class="section-header animate-on-scroll fade-up">
-                <h2 class="section-title">Let's Talk</h2>
-                <p class="section-subtitle">Have a project in mind or just want to say hello? I'd love to hear from you.
-                </p>
-            </div>
-
-            <div class="contact-wrapper">
-                <!-- Left: Contact Form -->
-                <div class="contact-form-panel animate-on-scroll slide-from-bl">
-                    <h3 style="font-size:1.3rem;font-weight:700;color:var(--color-brown-dark);margin-bottom:2rem;">Send
-                        Me a Message</h3>
-                    <form class="contact-form" id="contactForm">
-                        <input type="hidden" name="access_key" value="c890ec3b-f6fd-4069-b72e-c7af863e64c7">
-                        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
-                        <div class="form-group">
-                            <input type="text" id="contactName" name="name" placeholder=" " required>
-                            <label for="contactName">Full Name</label>
-                            <span class="form-underline"></span>
+                        <div class="contact-info-row">
+                            <span class="info-icon"><svg class="icon-svg fa-envelope" viewBox="0 0 512 512"
+                                    aria-hidden="true" focusable="false">
+                                    <path fill="currentColor"
+                                        d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z" />
+                                </svg></span>
+                            <div class="info-text">
+                                <a href="mailto:mohataseem89@gmail.com">mohataseem89@gmail.com</a>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="email" id="contactEmail" name="email" placeholder=" " required>
-                            <label for="contactEmail">Email Address</label>
-                            <span class="form-underline"></span>
+                        <div class="contact-info-row">
+                            <span class="info-icon"><svg class="icon-svg fa-phone-alt" viewBox="0 0 512 512"
+                                    aria-hidden="true" focusable="false">
+                                    <path fill="currentColor"
+                                        d="M351.8 25c7.8-18.8 28.4-28.9 48.1-23.5l5.5 1.5c64.6 17.6 119.8 80.2 103.7 156.4-37.1 175-174.8 312.7-349.8 349.8-76.3 16.2-138.8-39.1-156.4-103.7l-1.5-5.5c-5.4-19.7 4.7-40.3 23.5-48.1l97.3-40.5c16.5-6.9 35.6-2.1 47 11.8l38.6 47.2c70.3-34.9 126.8-93.3 159.3-164.9l-44.1-36.1c-13.9-11.3-18.6-30.4-11.8-47L351.8 25z" />
+                                </svg></span>
+                            <div class="info-text">
+                                <a href="tel:+919619553093">+91 9619553093</a>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="text" id="contactSubject" name="subject" placeholder=" " required>
-                            <label for="contactSubject">Subject</label>
-                            <span class="form-underline"></span>
+                        <div class="contact-info-row">
+                            <span class="info-icon"><svg class="icon-svg fa-map-marker-alt" viewBox="0 0 384 512"
+                                    aria-hidden="true" focusable="false">
+                                    <path fill="currentColor"
+                                        d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z" />
+                                </svg></span>
+                            <div class="info-text">Mumbai, India</div>
                         </div>
-                        <div class="form-group">
-                            <textarea id="contactMessage" name="message" placeholder=" " rows="4" required></textarea>
-                            <label for="contactMessage">Message</label>
-                            <span class="form-underline"></span>
-                        </div>
-                        <button type="submit" class="btn-send">
-                            <svg class="icon-svg fa-paper-plane" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M536.4-26.3c9.8-3.5 20.6-1 28 6.3s9.8 18.2 6.3 28l-178 496.9c-5 13.9-18.1 23.1-32.8 23.1-14.2 0-27-8.6-32.3-21.7l-64.2-158c-4.5-11-2.5-23.6 5.2-32.6l94.5-112.4c5.1-6.1 4.7-15-.9-20.6s-14.6-6-20.6-.9L229.2 276.1c-9.1 7.6-21.6 9.6-32.6 5.2L38.1 216.8c-13.1-5.3-21.7-18.1-21.7-32.3 0-14.7 9.2-27.8 23.1-32.8l496.9-178z"/></svg> <span class="btn-send-text">Send Message</span>
-                        </button>
-                    </form>
-                </div>
 
-                <!-- Right: Contact Info -->
-                <div class="contact-info-panel animate-on-scroll slide-from-br">
-                    <h3>Contact Information</h3>
-
-                    <div class="contact-info-row">
-                        <span class="info-icon"><svg class="icon-svg fa-envelope" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/></svg></span>
-                        <div class="info-text">
-                            <a href="mailto:mohataseem89@gmail.com">mohataseem89@gmail.com</a>
+                        <div class="contact-social">
+                            <a href="https://www.linkedin.com/in/mohataseem-khan/" target="_blank"
+                                rel="noopener noreferrer" aria-label="LinkedIn">
+                                <svg class="icon-svg fa-linkedin-in" viewBox="0 0 448 512" aria-hidden="true"
+                                    focusable="false">
+                                    <path fill="currentColor"
+                                        d="M100.3 448l-92.9 0 0-299.1 92.9 0 0 299.1zM53.8 108.1C24.1 108.1 0 83.5 0 53.8 0 39.5 5.7 25.9 15.8 15.8s23.8-15.8 38-15.8 27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3zM447.9 448l-92.7 0 0-145.6c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7l0 148.1-92.8 0 0-299.1 89.1 0 0 40.8 1.3 0c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3l0 164.3-.1 0z" />
+                                </svg>
+                            </a>
+                            <a href="https://github.com/Mohataseem89" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub">
+                                <svg class="icon-svg fa-github" viewBox="0 0 512 512" aria-hidden="true"
+                                    focusable="false">
+                                    <path fill="currentColor"
+                                        d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z" />
+                                </svg>
+                            </a>
                         </div>
-                    </div>
-                    <div class="contact-info-row">
-                        <span class="info-icon"><svg class="icon-svg fa-phone-alt" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M351.8 25c7.8-18.8 28.4-28.9 48.1-23.5l5.5 1.5c64.6 17.6 119.8 80.2 103.7 156.4-37.1 175-174.8 312.7-349.8 349.8-76.3 16.2-138.8-39.1-156.4-103.7l-1.5-5.5c-5.4-19.7 4.7-40.3 23.5-48.1l97.3-40.5c16.5-6.9 35.6-2.1 47 11.8l38.6 47.2c70.3-34.9 126.8-93.3 159.3-164.9l-44.1-36.1c-13.9-11.3-18.6-30.4-11.8-47L351.8 25z"/></svg></span>
-                        <div class="info-text">
-                            <a href="tel:+919619553093">+91 9619553093</a>
-                        </div>
-                    </div>
-                    <div class="contact-info-row">
-                        <span class="info-icon"><svg class="icon-svg fa-map-marker-alt" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z"/></svg></span>
-                        <div class="info-text">Mumbai, India</div>
-                    </div>
-
-                    <div class="contact-social">
-                        <a href="https://www.linkedin.com/in/mohataseem-khan/" target="_blank" rel="noopener noreferrer"
-                            aria-label="LinkedIn">
-                            <svg class="icon-svg fa-linkedin-in" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M100.3 448l-92.9 0 0-299.1 92.9 0 0 299.1zM53.8 108.1C24.1 108.1 0 83.5 0 53.8 0 39.5 5.7 25.9 15.8 15.8s23.8-15.8 38-15.8 27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3zM447.9 448l-92.7 0 0-145.6c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7l0 148.1-92.8 0 0-299.1 89.1 0 0 40.8 1.3 0c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3l0 164.3-.1 0z"/></svg>
-                        </a>
-                        <a href="https://github.com/Mohataseem89" target="_blank" rel="noopener noreferrer"
-                            aria-label="GitHub">
-                            <svg class="icon-svg fa-github" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg>
-                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
+
 
     <!-- ═══════════════ FOOTER ═══════════════ -->
     <footer>
@@ -1043,14 +1239,23 @@
             <p class="footer-tagline">Full Stack Developer | Cloud-Native Builder | DevOps Engineer</p>
             <div class="footer-social">
                 <a href="https://github.com/Mohataseem89" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <svg class="icon-svg fa-github" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg>
+                    <svg class="icon-svg fa-github" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+                        <path fill="currentColor"
+                            d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z" />
+                    </svg>
                 </a>
                 <a href="https://www.linkedin.com/in/mohataseem-khan/" target="_blank" rel="noopener noreferrer"
                     aria-label="LinkedIn">
-                    <svg class="icon-svg fa-linkedin-in" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M100.3 448l-92.9 0 0-299.1 92.9 0 0 299.1zM53.8 108.1C24.1 108.1 0 83.5 0 53.8 0 39.5 5.7 25.9 15.8 15.8s23.8-15.8 38-15.8 27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3zM447.9 448l-92.7 0 0-145.6c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7l0 148.1-92.8 0 0-299.1 89.1 0 0 40.8 1.3 0c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3l0 164.3-.1 0z"/></svg>
+                    <svg class="icon-svg fa-linkedin-in" viewBox="0 0 448 512" aria-hidden="true" focusable="false">
+                        <path fill="currentColor"
+                            d="M100.3 448l-92.9 0 0-299.1 92.9 0 0 299.1zM53.8 108.1C24.1 108.1 0 83.5 0 53.8 0 39.5 5.7 25.9 15.8 15.8s23.8-15.8 38-15.8 27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3zM447.9 448l-92.7 0 0-145.6c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7l0 148.1-92.8 0 0-299.1 89.1 0 0 40.8 1.3 0c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3l0 164.3-.1 0z" />
+                    </svg>
                 </a>
                 <a href="mailto:mohataseem89@gmail.com" aria-label="Email">
-                    <svg class="icon-svg fa-envelope" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/></svg>
+                    <svg class="icon-svg fa-envelope" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+                        <path fill="currentColor"
+                            d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z" />
+                    </svg>
                 </a>
             </div>
             <!-- <p class="footer-copyright">&copy; 2024 Mohataseem Khan. All rights reserved.</p> -->
@@ -1059,7 +1264,10 @@
 
     <!-- Scroll to Top Button -->
     <button class="scroll-top" aria-label="Scroll to top">
-        <svg class="icon-svg fa-chevron-up" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M201.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 173.3 54.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"/></svg>
+        <svg class="icon-svg fa-chevron-up" viewBox="0 0 448 512" aria-hidden="true" focusable="false">
+            <path fill="currentColor"
+                d="M201.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 173.3 54.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z" />
+        </svg>
     </button>
 
     <script src="script.min.js" defer></script>
