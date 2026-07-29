@@ -43,6 +43,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+:root{--color-brown-dark:#3D2B1F;--color-brown:#5C3D2E;--color-cream:#FFF8F0;--color-accent:#C4956A;--color-accent-light:#D4A574}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Inter',sans-serif;color:#2D1F14;background:var(--color-cream);overflow-x:hidden}
+section{min-height:100vh;position:relative}
+a{text-decoration:none;color:inherit}
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 5%;display:flex;justify-content:space-between;align-items:center;background:transparent;transition:background .3s,backdrop-filter .3s}
+.navbar.scrolled{background:rgba(61,43,31,.95);box-shadow:0 4px 20px rgba(61,43,31,.2);backdrop-filter:blur(10px)}
+.logo{font-size:1.5rem;font-weight:800;color:var(--color-cream);letter-spacing:2px}
+.nav-links{display:flex;list-style:none;gap:2rem}
+.nav-links a{color:var(--color-cream);font-weight:500;font-size:.9rem;position:relative;padding-bottom:4px;transition:color .3s}
+.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--color-accent);transition:width .3s}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:12px;margin:-12px}
+.hamburger span{width:25px;height:2px;background:var(--color-cream);transition:all .3s}
+#landing{min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at center,#4A3528 0%,#3D2B1F 40%,#2D1F14 100%)}
+.hero-content{text-align:center;max-width:800px;padding:2rem}
+.hero-logo{font-size:5rem;font-weight:900;color:var(--color-accent);margin-bottom:1rem;letter-spacing:4px}
+.hero-name{font-size:3.5rem;font-weight:800;color:var(--color-cream);margin-bottom:1rem;letter-spacing:-1px;line-height:1.1}
+.hero-designations{color:var(--color-accent-light);font-size:1.05rem;margin-bottom:2rem;font-weight:400;letter-spacing:.5px}
+.hero-intro{color:rgba(255,248,240,.8);line-height:1.8;font-size:1rem;max-width:700px;margin:0 auto 2.5rem;font-weight:300}
+.cta-buttons{display:flex;justify-content:center;gap:1rem;margin-bottom:2.5rem;flex-wrap:wrap}
+.btn-primary{background:var(--color-accent);color:var(--color-brown-dark);padding:14px 32px;border-radius:50px;border:none;font-family:inherit;font-size:.95rem;font-weight:600;cursor:pointer;transition:all .3s;display:inline-flex;align-items:center;gap:8px}
+.btn-primary:hover{background:var(--color-accent-light);transform:translateY(-3px)}
+.btn-secondary{background:transparent;color:var(--color-cream);padding:14px 32px;border-radius:50px;border:2px solid var(--color-cream);font-family:inherit;font-size:.95rem;font-weight:600;cursor:pointer;transition:all .3s;display:inline-flex;align-items:center;gap:8px}
+.btn-secondary:hover{background:var(--color-cream);color:var(--color-brown-dark)}
+.social-icons{display:flex;justify-content:center;gap:2rem}
+.social-icons a{color:var(--color-cream);font-size:1.3rem;display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,248,240,.2)}
+.social-icons a:hover{color:var(--color-accent);border-color:var(--color-accent);transform:scale(1.15)}
+.animate-on-scroll{opacity:0;transition:opacity .1s}
+.animate-on-scroll.animated{opacity:1}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.animated.fade-up{animation:fadeUp .8s ease forwards}
+@media (max-width:768px){.hero-name{font-size:2.5rem!important}.hero-logo{font-size:3.5rem!important}.navbar{padding:1rem 5%}.nav-links{display:none!important;position:fixed;top:68px;left:0;right:0;max-height:calc(100vh - 68px);overflow-y:auto;background:var(--color-brown-dark);flex-direction:column;padding:.5rem 2rem 1.5rem;gap:.25rem;box-shadow:0 4px 20px rgba(61,43,31,.2)}.nav-links.active{display:flex!important}.nav-links a{display:block;padding:14px 0;font-size:1rem;border-bottom:1px solid rgba(255,248,240,.08)}.hamburger{display:flex!important}.btn-primary,.btn-secondary{padding:13px 28px;font-size:.9rem}}
+@media (max-width:600px){.hero-content{padding:1.5rem}.hero-intro{font-size:.95rem;line-height:1.65}}
+@media (max-width:480px){.hero-name{font-size:2rem!important}.hero-logo{font-size:2.5rem!important}.hero-designations{font-size:.9rem}.cta-buttons{flex-direction:column;align-items:center}.logo{font-size:1.25rem}}
+@media (max-width:380px){.hero-name{font-size:1.75rem!important}.hero-logo{font-size:2.1rem!important}}
+    </style>
     <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="styles.css">
@@ -255,7 +294,7 @@
                     </div>
 
                     <div class="about-photo-wrapper animate-on-scroll slide-right">
-                        <img src="profile-pic.webp" alt="Mohataseem Khan - Profile Photo" loading="lazy">
+                        <img src="profile-pic-336w.webp" srcset="profile-pic-336w.webp 1x, profile-pic-672w.webp 2x" alt="Mohataseem Khan - Profile Photo" loading="lazy" width="336" height="505">
                     </div>
                 </div>
             </div>

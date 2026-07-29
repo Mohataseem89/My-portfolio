@@ -80,29 +80,50 @@ document.addEventListener('DOMContentLoaded', () => {
      4. ACTIVE NAV LINK TRACKING
      Highlights the nav link corresponding to the section
      currently in the viewport as the user scrolls.
+
+     Section offsets are measured once (on load + resize) and
+     cached, rather than re-read on every scroll event. Reading
+     offsetTop/offsetHeight on every scroll tick — interleaved
+     with the classList writes below, which trigger a layout-
+     affecting transition on .nav-links a::after — was causing
+     a forced synchronous reflow on every scroll frame.
   ---------------------------------------------------------- */
   const sections = document.querySelectorAll('section[id]');
   const navItems = document.querySelectorAll('.nav-links a');
 
+  let sectionOffsets = [];
+
+  const measureSectionOffsets = () => {
+    sectionOffsets = Array.from(sections).map((section) => ({
+      id: section.getAttribute('id'),
+      top: section.offsetTop,
+      height: section.offsetHeight,
+    }));
+  };
+
   const highlightActiveNav = () => {
     const scrollPos = window.scrollY + 200; // offset for better UX
 
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      const sectionId = section.getAttribute('id');
-
-      if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
-        navItems.forEach((item) => {
-          item.classList.remove('active');
-          if (item.getAttribute('href') === `#${sectionId}`) {
-            item.classList.add('active');
-          }
-        });
+    // Find the matching section using only cached values (no layout reads here)
+    let activeId = null;
+    for (const { id, top, height } of sectionOffsets) {
+      if (scrollPos >= top && scrollPos < top + height) {
+        activeId = id;
+        break;
       }
+    }
+
+    if (activeId === null) return;
+
+    // All writes happen after all reads are done
+    navItems.forEach((item) => {
+      const isActive = item.getAttribute('href') === `#${activeId}`;
+      item.classList.toggle('active', isActive);
     });
   };
 
+  measureSectionOffsets();
+  window.addEventListener('resize', measureSectionOffsets, { passive: true });
   window.addEventListener('scroll', highlightActiveNav, { passive: true });
 
   /* ----------------------------------------------------------
