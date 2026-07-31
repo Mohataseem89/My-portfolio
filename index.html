@@ -6,36 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png" />
-
     <meta name="description"
         content="Mohataseem Khan — Full Stack Developer specializing in React, Node.js, AWS and cloud-native apps. Computer Engineering graduate, open-source contributor. View projects & resume.">
     <meta name="keywords"
         content="Mohataseem Khan, Full Stack Developer, Computer Engineering, Docker, AWS, Cloud, Cloud Computing, Devops React, Node.js, Portfolio, Open Source, Software Engineer, Resume, Projects, Skills, Certifications, Achievements, Web Development, Frontend, Backend, MongoDB, Express.js, React.js, JavaScript, HTML5, CSS3, Responsive Design, REST APIs, JWT Authentication, CI/CD, Terraform, Kubernetes, Jenkins, Machine Learning, AI Applications, Cybersecurity, Research Projects, Vercel Deployment, Portfolio Website, Resume Download">
     <meta name="author" content="Mohataseem Khan">
     <meta name="robots" content="index, follow">
-
     <meta property="og:type" content="website">
-
     <meta property="og:title" content="Mohataseem Khan | Software Engineer">
-
     <meta property="og:description"
         content="Computer Engineering Graduate • Full Stack Developer • AWS • React • Open Source">
-
     <meta property="og:url" content="https://www.mohataseem.com/">
-
     <meta property="og:image" content="https://www.mohataseem.com/profile-pic.webp">
     <meta property="og:image:width" content="1023">
     <meta property="og:image:height" content="1538">
-
-
-
-
     <meta name="twitter:card" content="summary_large_image">
-
     <meta name="twitter:title" content="Mohataseem Khan | Software Engineer">
-
     <meta name="twitter:description" content="Full Stack Developer • React • AWS • Open Source">
-
     <meta name="twitter:image" content="https://www.mohataseem.com/profile-pic.webp">
     <title>
         Mohataseem Khan | Full Stack Developer (React, Node.js, AWS)
@@ -44,50 +31,365 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <style>
-:root{--color-brown-dark:#3D2B1F;--color-brown:#5C3D2E;--color-cream:#FFF8F0;--color-accent:#C4956A;--color-accent-light:#D4A574}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;font-size:16px}
-body{font-family:'Inter',sans-serif;color:#2D1F14;background:var(--color-cream);overflow-x:hidden}
-section{min-height:100vh;position:relative}
-a{text-decoration:none;color:inherit}
-.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 5%;display:flex;justify-content:space-between;align-items:center;background:transparent;transition:background .3s,backdrop-filter .3s}
-.navbar.scrolled{background:rgba(61,43,31,.95);box-shadow:0 4px 20px rgba(61,43,31,.2);backdrop-filter:blur(10px)}
-.logo{font-size:1.5rem;font-weight:800;color:var(--color-cream);letter-spacing:2px}
-.nav-links{display:flex;list-style:none;gap:2rem}
-.nav-links a{color:var(--color-cream);font-weight:500;font-size:.9rem;position:relative;padding-bottom:4px;transition:color .3s}
-.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--color-accent);transition:width .3s}
-.nav-links a:hover::after,.nav-links a.active::after{width:100%}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:12px;margin:-12px}
-.hamburger span{width:25px;height:2px;background:var(--color-cream);transition:all .3s}
-#landing{min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at center,#4A3528 0%,#3D2B1F 40%,#2D1F14 100%)}
-.hero-content{text-align:center;max-width:800px;padding:2rem}
-.hero-logo{font-size:5rem;font-weight:900;color:var(--color-accent);margin-bottom:1rem;letter-spacing:4px}
-.hero-name{font-size:3.5rem;font-weight:800;color:var(--color-cream);margin-bottom:1rem;letter-spacing:-1px;line-height:1.1}
-.hero-designations{color:var(--color-accent-light);font-size:1.05rem;margin-bottom:2rem;font-weight:400;letter-spacing:.5px}
-.hero-intro{color:rgba(255,248,240,.8);line-height:1.8;font-size:1rem;max-width:700px;margin:0 auto 2.5rem;font-weight:300}
-.cta-buttons{display:flex;justify-content:center;gap:1rem;margin-bottom:2.5rem;flex-wrap:wrap}
-.btn-primary{background:var(--color-accent);color:var(--color-brown-dark);padding:14px 32px;border-radius:50px;border:none;font-family:inherit;font-size:.95rem;font-weight:600;cursor:pointer;transition:all .3s;display:inline-flex;align-items:center;gap:8px}
-.btn-primary:hover{background:var(--color-accent-light);transform:translateY(-3px)}
-.btn-secondary{background:transparent;color:var(--color-cream);padding:14px 32px;border-radius:50px;border:2px solid var(--color-cream);font-family:inherit;font-size:.95rem;font-weight:600;cursor:pointer;transition:all .3s;display:inline-flex;align-items:center;gap:8px}
-.btn-secondary:hover{background:var(--color-cream);color:var(--color-brown-dark)}
-.social-icons{display:flex;justify-content:center;gap:2rem}
-.social-icons a{color:var(--color-cream);font-size:1.3rem;display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,248,240,.2)}
-.social-icons a:hover{color:var(--color-accent);border-color:var(--color-accent);transform:scale(1.15)}
-.animate-on-scroll{opacity:0;transition:opacity .1s}
-.animate-on-scroll.animated{opacity:1}
-@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-.animated.fade-up{animation:fadeUp .8s ease forwards}
-@media (max-width:768px){.hero-name{font-size:2.5rem!important}.hero-logo{font-size:3.5rem!important}.navbar{padding:1rem 5%}.nav-links{display:none!important;position:fixed;top:68px;left:0;right:0;max-height:calc(100vh - 68px);overflow-y:auto;background:var(--color-brown-dark);flex-direction:column;padding:.5rem 2rem 1.5rem;gap:.25rem;box-shadow:0 4px 20px rgba(61,43,31,.2)}.nav-links.active{display:flex!important}.nav-links a{display:block;padding:14px 0;font-size:1rem;border-bottom:1px solid rgba(255,248,240,.08)}.hamburger{display:flex!important}.btn-primary,.btn-secondary{padding:13px 28px;font-size:.9rem}}
-@media (max-width:600px){.hero-content{padding:1.5rem}.hero-intro{font-size:.95rem;line-height:1.65}}
-@media (max-width:480px){.hero-name{font-size:2rem!important}.hero-logo{font-size:2.5rem!important}.hero-designations{font-size:.9rem}.cta-buttons{flex-direction:column;align-items:center}.logo{font-size:1.25rem}}
-@media (max-width:380px){.hero-name{font-size:1.75rem!important}.hero-logo{font-size:2.1rem!important}}
+        :root {
+            --color-brown-dark: #3D2B1F;
+            --color-brown: #5C3D2E;
+            --color-cream: #FFF8F0;
+            --color-accent: #C4956A;
+            --color-accent-light: #D4A574
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #2D1F14;
+            background: var(--color-cream);
+            overflow-x: hidden
+        }
+
+        section {
+            min-height: 100vh;
+            position: relative
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: transparent;
+            transition: background .3s, backdrop-filter .3s
+        }
+
+        .navbar.scrolled {
+            background: rgba(61, 43, 31, .95);
+            box-shadow: 0 4px 20px rgba(61, 43, 31, .2);
+            backdrop-filter: blur(10px)
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--color-cream);
+            letter-spacing: 2px
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem
+        }
+
+        .nav-links a {
+            color: var(--color-cream);
+            font-weight: 500;
+            font-size: .9rem;
+            position: relative;
+            padding-bottom: 4px;
+            transition: color .3s
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-accent);
+            transition: width .3s
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 12px;
+            margin: -12px
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 2px;
+            background: var(--color-cream);
+            transition: all .3s
+        }
+
+        #landing {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(ellipse at center, #4A3528 0%, #3D2B1F 40%, #2D1F14 100%)
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            padding: 2rem
+        }
+
+        .hero-logo {
+            font-size: 5rem;
+            font-weight: 900;
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+            letter-spacing: 4px
+        }
+
+        .hero-name {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--color-cream);
+            margin-bottom: 1rem;
+            letter-spacing: -1px;
+            line-height: 1.1
+        }
+
+        .hero-designations {
+            color: var(--color-accent-light);
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            letter-spacing: .5px
+        }
+
+        .hero-intro {
+            color: rgba(255, 248, 240, .8);
+            line-height: 1.8;
+            font-size: 1rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            font-weight: 300
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap
+        }
+
+        .btn-primary {
+            background: var(--color-accent);
+            color: var(--color-brown-dark);
+            padding: 14px 32px;
+            border-radius: 50px;
+            border: none;
+            font-family: inherit;
+            font-size: .95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        .btn-primary:hover {
+            background: var(--color-accent-light);
+            transform: translateY(-3px)
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-cream);
+            padding: 14px 32px;
+            border-radius: 50px;
+            border: 2px solid var(--color-cream);
+            font-family: inherit;
+            font-size: .95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-cream);
+            color: var(--color-brown-dark)
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem
+        }
+
+        .social-icons a {
+            color: var(--color-cream);
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 248, 240, .2)
+        }
+
+        .social-icons a:hover {
+            color: var(--color-accent);
+            border-color: var(--color-accent);
+            transform: scale(1.15)
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transition: opacity .1s
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        .animated.fade-up {
+            animation: fadeUp .8s ease forwards
+        }
+
+        @media (max-width:768px) {
+            .hero-name {
+                font-size: 2.5rem !important
+            }
+
+            .hero-logo {
+                font-size: 3.5rem !important
+            }
+
+            .navbar {
+                padding: 1rem 5%
+            }
+
+            .nav-links {
+                display: none !important;
+                position: fixed;
+                top: 68px;
+                left: 0;
+                right: 0;
+                max-height: calc(100vh - 68px);
+                overflow-y: auto;
+                background: var(--color-brown-dark);
+                flex-direction: column;
+                padding: .5rem 2rem 1.5rem;
+                gap: .25rem;
+                box-shadow: 0 4px 20px rgba(61, 43, 31, .2)
+            }
+
+            .nav-links.active {
+                display: flex !important
+            }
+
+            .nav-links a {
+                display: block;
+                padding: 14px 0;
+                font-size: 1rem;
+                border-bottom: 1px solid rgba(255, 248, 240, .08)
+            }
+
+            .hamburger {
+                display: flex !important
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                padding: 13px 28px;
+                font-size: .9rem
+            }
+        }
+
+        @media (max-width:600px) {
+            .hero-content {
+                padding: 1.5rem
+            }
+
+            .hero-intro {
+                font-size: .95rem;
+                line-height: 1.65
+            }
+        }
+
+        @media (max-width:480px) {
+            .hero-name {
+                font-size: 2rem !important
+            }
+
+            .hero-logo {
+                font-size: 2.5rem !important
+            }
+
+            .hero-designations {
+                font-size: .9rem
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center
+            }
+
+            .logo {
+                font-size: 1.25rem
+            }
+        }
+
+        @media (max-width:380px) {
+            .hero-name {
+                font-size: 1.75rem !important
+            }
+
+            .hero-logo {
+                font-size: 2.1rem !important
+            }
+        }
     </style>
     <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="styles.css">
     </noscript>
-
-    <!-- Google Fonts: loaded non-blocking (preload, then swapped to stylesheet on load) -->
     <link rel="preload" as="style"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         onload="this.onload=null;this.rel='stylesheet'">
@@ -95,11 +397,7 @@ a{text-decoration:none;color:inherit}
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap">
     </noscript>
-
     <link rel="canonical" href="https://www.mohataseem.com/">
-
-
-
     <script type="application/ld+json">
     {
     "@context":"https://schema.org",
@@ -125,7 +423,6 @@ a{text-decoration:none;color:inherit}
 </head>
 
 <body>
-
     <nav class="navbar" id="navbar">
         <a href="#landing" class="logo">MK</a>
         <ul class="nav-links">
@@ -214,7 +511,7 @@ a{text-decoration:none;color:inherit}
             </div>
         </section>
 
-        <!--PAGE 2 — ABOUT ME -->
+        <!-- about me -->
         <section id="about">
             <div class="section-padding">
                 <div class="section-header animate-on-scroll fade-up">
@@ -239,21 +536,7 @@ a{text-decoration:none;color:inherit}
                             workflow. I am especially interested in building modern, responsive, and production-ready
                             digital experiences.</p>
 
-                        <!-- Mission & Vision -->
-                        <!-- <div class="mission-vision">
-                        <div class="mv-card animate-on-scroll flip-in">
-                            <h3><svg class="icon-svg fa-rocket" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M128 320L24.5 320c-24.9 0-40.2-27.1-27.4-48.5L50 183.3C58.7 168.8 74.3 160 91.2 160l95 0c76.1-128.9 189.6-135.4 265.5-124.3 12.8 1.9 22.8 11.9 24.6 24.6 11.1 75.9 4.6 189.4-124.3 265.5l0 95c0 16.9-8.8 32.5-23.3 41.2l-88.2 52.9c-21.3 12.8-48.5-2.6-48.5-27.4L192 384c0-35.3-28.7-64-64-64l-.1 0zM400 160a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg> Mission</h3>
-                            <p>To build scalable, responsive, and reliable web applications that solve real problems
-                                with clean design and practical engineering.</p>
-                        </div>
-                        <div class="mv-card animate-on-scroll flip-in" data-delay="0.2">
-                            <h3><svg class="icon-svg fa-eye" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6-46.8 43.5-78.1 95.4-93 131.1-3.3 7.9-3.3 16.7 0 24.6 14.9 35.7 46.2 87.7 93 131.1 47.1 43.7 111.8 80.6 192.6 80.6s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1 3.3-7.9 3.3-16.7 0-24.6-14.9-35.7-46.2-87.7-93-131.1-47.1-43.7-111.8-80.6-192.6-80.6zM144 256a144 144 0 1 1 288 0 144 144 0 1 1 -288 0zm144-64c0 35.3-28.7 64-64 64-11.5 0-22.3-3-31.7-8.4-1 10.9-.1 22.1 2.9 33.2 13.7 51.2 66.4 81.6 117.6 67.9s81.6-66.4 67.9-117.6c-12.2-45.7-55.5-74.8-101.1-70.8 5.3 9.3 8.4 20.1 8.4 31.7z"/></svg> Vision</h3>
-                            <p>To grow as a versatile software engineer who delivers impactful digital products across
-                                frontend, backend, cloud, and deployment workflows.</p>
-                        </div>
-                    </div> -->
-
-                        <!-- View My Work Buttons -->
+                        <!-- view my work btns -->
                         <div class="view-work-buttons">
                             <a href="#experience" class="view-work-btn animate-on-scroll fade-up" data-delay="0.1">
                                 <svg class="icon-svg fa-briefcase btn-icon" viewBox="0 0 512 512" aria-hidden="true"
@@ -294,7 +577,8 @@ a{text-decoration:none;color:inherit}
                     </div>
 
                     <div class="about-photo-wrapper animate-on-scroll slide-right">
-                        <img src="profile-pic-336w.webp" srcset="profile-pic-336w.webp 1x, profile-pic-672w.webp 2x" alt="Mohataseem Khan - Profile Photo" loading="lazy" width="336" height="505">
+                        <img src="profile-pic-336w.webp" srcset="profile-pic-336w.webp 1x, profile-pic-672w.webp 2x"
+                            alt="Mohataseem Khan - Profile Photo" loading="lazy" width="336" height="505">
                     </div>
                 </div>
             </div>
@@ -307,7 +591,7 @@ a{text-decoration:none;color:inherit}
                     <p class="section-subtitle">Professional roles and contributions</p>
                 </div>
 
-                <!-- Prodigy Infotech -->
+                <!-- prodigy infotech -->
                 <div class="experience-card animate-on-scroll slide-left">
                     <div class="exp-dark-panel">
                         <div class="company-name">Prodigy Infotech</div>
@@ -351,7 +635,7 @@ a{text-decoration:none;color:inherit}
             </div>
         </section>
 
-        <!-- ═══════════════ PAGE 4 — EDUCATION ═══════════════ -->
+        <!--education -->
         <section id="education">
             <div class="section-padding">
                 <div class="section-header animate-on-scroll fade-up">
@@ -359,7 +643,7 @@ a{text-decoration:none;color:inherit}
                     <p class="section-subtitle">Academic foundations and qualifications</p>
                 </div>
 
-                <!-- BE Computer Engineering -->
+                <!-- be engg -->
                 <div class="edu-card animate-on-scroll drop-in">
                     <div class="edu-header">
                         <div>
@@ -386,7 +670,7 @@ a{text-decoration:none;color:inherit}
                     </ul>
                 </div>
 
-                <!-- HSC -->
+                <!-- hsc/12 -->
                 <div class="edu-card animate-on-scroll rise-up">
                     <div class="edu-header">
                         <div>
@@ -412,7 +696,7 @@ a{text-decoration:none;color:inherit}
             </div>
         </section>
 
-        <!-- ═══════════════ PAGE 5 — PROJECTS ═══════════════ -->
+        <!-- projects -->
         <section id="projects">
             <div class="section-padding">
                 <div class="section-header animate-on-scroll fade-up">
@@ -420,7 +704,7 @@ a{text-decoration:none;color:inherit}
                     <p class="section-subtitle">Top picks from my real-world applications and solutions</p>
                 </div>
 
-                <!-- Project 1: CyberSentinel -->
+                <!-- project 1: cybersentinel -->
                 <div class="project-card animate-on-scroll slide-left">
                     <div class="project-dark-panel animate-on-scroll blur-to-sharp">
                         <span class="project-type-badge">Research & Development</span>
@@ -476,7 +760,7 @@ a{text-decoration:none;color:inherit}
                     </div>
                 </div>
 
-                <!-- Project 2: EngageDev -->
+                <!-- Project 2: engageDev -->
                 <div class="project-card animate-on-scroll slide-right">
                     <div class="project-dark-panel animate-on-scroll blur-to-sharp">
                         <span class="project-type-badge">Full Stack Application</span>
@@ -532,7 +816,7 @@ a{text-decoration:none;color:inherit}
                     </div>
                 </div>
 
-                <!-- Project 3: CineMax -->
+                <!-- project 3: cineMax -->
                 <div class="project-card animate-on-scroll slide-left">
                     <div class="project-dark-panel animate-on-scroll blur-to-sharp">
                         <span class="project-type-badge">Web Application</span>
@@ -588,7 +872,7 @@ a{text-decoration:none;color:inherit}
                     </div>
                 </div>
 
-                <!-- Project 4: Crime Classifier -->
+                <!-- project 4: crime classifier -->
                 <div class="project-card animate-on-scroll slide-right">
                     <div class="project-dark-panel animate-on-scroll blur-to-sharp">
                         <span class="project-type-badge">Machine Learning</span>
@@ -643,7 +927,7 @@ a{text-decoration:none;color:inherit}
                     </div>
                 </div>
 
-                <!-- More Projects CTA -->
+                <!-- more projects btn -->
                 <div class="more-projects-cta animate-on-scroll fade-up">
                     <a href="https://github.com/Mohataseem89?tab=repositories" target="_blank" rel="noopener noreferrer"
                         class="view-work-btn">
@@ -657,7 +941,7 @@ a{text-decoration:none;color:inherit}
             </div>
         </section>
 
-        <!-- ═══════════════ PAGE 6 — SKILLS ═══════════════ -->
+        <!-- skills -->
         <section id="skills">
             <div class="section-padding">
                 <div class="section-header animate-on-scroll fade-up">
@@ -710,10 +994,9 @@ a{text-decoration:none;color:inherit}
                         </div>
                     </div>
 
-                    <!-- Backend Development -->
+                    <!-- backend development -->
                     <div class="skill-category-card animate-on-scroll grid-wave" data-delay="0.1">
                         <div class="category-header">
-                            <!-- <span class="category-icon">⚙️</span> -->
                             <span class="category-name">Backend Development</span>
                         </div>
                         <div class="skill-item">
@@ -754,10 +1037,9 @@ a{text-decoration:none;color:inherit}
                         </div>
                     </div>
 
-                    <!-- Database -->
+                    <!-- database -->
                     <div class="skill-category-card animate-on-scroll grid-wave" data-delay="0.2">
                         <div class="category-header">
-                            <!-- <span class="category-icon">🗄️</span> -->
                             <span class="category-name">Database</span>
                         </div>
                         <div class="skill-item">
@@ -789,10 +1071,9 @@ a{text-decoration:none;color:inherit}
                         </div>
                     </div>
 
-                    <!-- Cloud & DevOps -->
+                    <!-- cloud and devOps -->
                     <div class="skill-category-card animate-on-scroll grid-wave" data-delay="0.3">
                         <div class="category-header">
-                            <!-- <span class="category-icon">☁️</span> -->
                             <span class="category-name">Cloud & DevOps</span>
                         </div>
                         <div class="skill-item">
@@ -833,10 +1114,9 @@ a{text-decoration:none;color:inherit}
                         </div>
                     </div>
 
-                    <!-- CI/CD & Tools -->
+                    <!-- CI/CD and tools -->
                     <div class="skill-category-card animate-on-scroll grid-wave" data-delay="0.4">
                         <div class="category-header">
-                            <!-- <span class="category-icon">🔧</span> -->
                             <span class="category-name">CI/CD & Tools</span>
                         </div>
                         <div class="skill-item">
@@ -868,10 +1148,9 @@ a{text-decoration:none;color:inherit}
                         </div>
                     </div>
 
-                    <!-- Programming Languages -->
+                    <!-- languages -->
                     <div class="skill-category-card animate-on-scroll grid-wave" data-delay="0.5">
                         <div class="category-header">
-                            <!-- <span class="category-icon">💻</span> -->
                             <span class="category-name">Programming Languages</span>
                         </div>
                         <div class="skill-item">
@@ -906,7 +1185,7 @@ a{text-decoration:none;color:inherit}
             </div>
         </section>
 
-        <!-- ═══════════════ PAGE 7 — CERTIFICATIONS ═══════════════ -->
+        <!-- certificates -->
         <section id="certifications">
             <div class="section-padding">
                 <div class="section-header animate-on-scroll fade-up">
@@ -915,7 +1194,7 @@ a{text-decoration:none;color:inherit}
                 </div>
 
                 <div class="cert-grid">
-                    <!-- AWS Cloud Foundations -->
+                    <!-- aws cloud Foundations -->
                     <a href="https://www.linkedin.com/posts/mohataseem_reactjs-webdevelopment-scaler-activity-7346150469532012545-KvkU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFZS5zwBJH16ZdS_tuHGx8ZbrMCAoK_Xhq0"
                         target="_blank" rel="noopener noreferrer">
                         <div class="cert-card animate-on-scroll waterfall" data-delay="0"
@@ -933,7 +1212,7 @@ a{text-decoration:none;color:inherit}
                         </div>
                     </a>
 
-                    <!-- React.js Course -->
+                    <!-- react course -->
                     <a href="https://www.linkedin.com/posts/mohataseem_reactjs-webdevelopment-scaler-activity-7346150469532012545-KvkU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFZS5zwBJH16ZdS_tuHGx8ZbrMCAoK_Xhq0"
                         target="_blank" rel="noopener noreferrer">
                         <div class="cert-card animate-on-scroll waterfall" data-delay="0.1"
@@ -951,7 +1230,7 @@ a{text-decoration:none;color:inherit}
                         </div>
                     </a>
 
-                    <!-- Frontend Internship -->
+                    <!-- prodigy internship -->
                     <a href="https://www.linkedin.com/posts/mohataseem_webdevelopment-internship-prodigyinfotech-activity-7303734866339151875-4Ddg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFZS5zwBJH16ZdS_tuHGx8ZbrMCAoK_Xhq0"
                         target="_blank" rel="noopener noreferrer">
                         <div class="cert-card animate-on-scroll waterfall" data-delay="0.2"
@@ -987,7 +1266,7 @@ a{text-decoration:none;color:inherit}
                         </div>
                     </a>
 
-                    <!-- Advance MCP -->
+                    <!-- advance mcp -->
                     <a href="https://www.linkedin.com/feed/update/urn:li:activity:7483924915696328704/" target="_blank"
                         rel="noopener noreferrer">
                         <div class="cert-card animate-on-scroll waterfall" data-delay="0.4"
@@ -1004,7 +1283,7 @@ a{text-decoration:none;color:inherit}
                             </div>
                         </div>
                     </a>
-                    <!-- Claude with the Anthropic API -->
+                    <!-- claude with the antjropic api -->
                     <a href="https://www.linkedin.com/feed/update/urn:li:activity:7482492957946757120/" target="_blank"
                         rel="noopener noreferrer">
                         <div class="cert-card animate-on-scroll waterfall" data-delay="0.5"
@@ -1029,7 +1308,7 @@ a{text-decoration:none;color:inherit}
             </div>
         </section>
 
-        <!-- ═══════════════ PAGE 8 — ACHIEVEMENTS ═══════════════ -->
+        <!-- achievements -->
         <section id="achievements">
             <div class="section-padding">
                 <div class="section-header animate-on-scroll fade-up">
@@ -1039,7 +1318,7 @@ a{text-decoration:none;color:inherit}
                         growth as a developer.</p>
                 </div>
 
-                <!-- Stat Counters -->
+                <!-- stat counters -->
                 <div class="stats-counters animate-on-scroll fade-up">
                     <div class="stat-item">
                         <span class="stat-number" data-count="2">0</span>
@@ -1063,7 +1342,7 @@ a{text-decoration:none;color:inherit}
                     </div>
                 </div>
 
-                <!-- Achievement Cards -->
+                <!-- achievement cards -->
                 <a href="https://www.linkedin.com/feed/update/urn:li:activity:7402723512219664385/" target="_blank"
                     rel="noopener noreferrer">
 
@@ -1113,7 +1392,6 @@ a{text-decoration:none;color:inherit}
                             <p class="achievement-institution">
                                 International Journal Publication
                             </p>
-
                             <p class="achievement-description">
                                 Published a research paper titled <strong>CyberSentinel</strong>, presenting an
                                 AI-powered
@@ -1162,7 +1440,7 @@ a{text-decoration:none;color:inherit}
             </div>
         </section>
 
-        <!-- ═══════════════ PAGE 9 — CONTACT ═══════════════ -->
+        <!-- contact -->
         <section id="contact">
             <div class="section-padding">
                 <div class="section-header animate-on-scroll fade-up">
@@ -1213,7 +1491,7 @@ a{text-decoration:none;color:inherit}
                         </form>
                     </div>
 
-                    <!-- Right: Contact Info -->
+                    <!-- Right: contact info -->
                     <div class="contact-info-panel animate-on-scroll slide-from-br">
                         <h3>Contact Information</h3>
 
@@ -1271,7 +1549,7 @@ a{text-decoration:none;color:inherit}
     </main>
 
 
-    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <!-- footer -->
     <footer>
         <div class="footer-content">
             <p class="footer-name">Mohataseem Khan</p>
@@ -1301,7 +1579,7 @@ a{text-decoration:none;color:inherit}
         </div>
     </footer>
 
-    <!-- Scroll to Top Button -->
+    <!-- dcroll to top btn -->
     <button class="scroll-top" aria-label="Scroll to top">
         <svg class="icon-svg fa-chevron-up" viewBox="0 0 448 512" aria-hidden="true" focusable="false">
             <path fill="currentColor"

@@ -1,18 +1,7 @@
-/* ============================================================
-   PORTFOLIO — Main JavaScript
-   Handles all interactivity, scroll animations, observers,
-   form handling, parallax, tilt effects, and counter animations.
-   No external libraries required.
-   ============================================================ */
-
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
-  /* ----------------------------------------------------------
-     1. NAVBAR SCROLL EFFECT
-     Adds a .scrolled class when page is scrolled past 100px
-     so CSS can apply a solid/blurred background.
-  ---------------------------------------------------------- */
+  //  navbar scroll effect
   const navbar = document.querySelector('.navbar');
 
   const handleNavbarScroll = () => {
@@ -26,11 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', handleNavbarScroll, { passive: true });
 
-  /* ----------------------------------------------------------
-     2. SMOOTH SCROLL FOR NAV LINKS
-     All anchor links that point to an ID smoothly scroll
-     to their target. Also closes mobile menu on click.
-  ---------------------------------------------------------- */
   const smoothScrollLinks = document.querySelectorAll('.nav-links a, a[href^="#"]');
 
   smoothScrollLinks.forEach((link) => {
@@ -50,11 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ----------------------------------------------------------
-     3. HAMBURGER MENU
-     Toggles .active on .nav-links for mobile menu.
-     Closes menu when clicking outside of it.
-  ---------------------------------------------------------- */
+  //  hamburger menu toggle
   const hamburger = document.querySelector('.hamburger');
   const navLinksContainer = document.querySelector('.nav-links');
 
@@ -76,18 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ----------------------------------------------------------
-     4. ACTIVE NAV LINK TRACKING
-     Highlights the nav link corresponding to the section
-     currently in the viewport as the user scrolls.
-
-     Section offsets are measured once (on load + resize) and
-     cached, rather than re-read on every scroll event. Reading
-     offsetTop/offsetHeight on every scroll tick — interleaved
-     with the classList writes below, which trigger a layout-
-     affecting transition on .nav-links a::after — was causing
-     a forced synchronous reflow on every scroll frame.
-  ---------------------------------------------------------- */
   const sections = document.querySelectorAll('section[id]');
   const navItems = document.querySelectorAll('.nav-links a');
 
@@ -126,12 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', measureSectionOffsets, { passive: true });
   window.addEventListener('scroll', highlightActiveNav, { passive: true });
 
-  /* ----------------------------------------------------------
-     5. INTERSECTION OBSERVER FOR SCROLL ANIMATIONS
-     Observes all .animate-on-scroll elements and adds
-     .animated class when they enter the viewport.
-     Supports data-delay for staggered timing.
-  ---------------------------------------------------------- */
   const scrollAnimObserver = new IntersectionObserver(
     (entries, observer) => {
       entries.forEach((entry) => {
@@ -158,12 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollAnimObserver.observe(el);
   });
 
-  /* ----------------------------------------------------------
-     6. LANDING PAGE ANIMATION SEQUENCE
-     Orchestrates a timed entry animation for hero elements.
-     Elements start invisible via JS, then classes trigger
-     CSS keyframes in sequence.
-  ---------------------------------------------------------- */
   const heroElements = {
     logo: document.querySelector('.hero-logo'),
     name: document.querySelector('.hero-name'),
@@ -196,10 +152,6 @@ document.addEventListener('DOMContentLoaded', () => {
     el.style.transform = 'translateY(20px)';
   });
 
-  /**
-   * Helper — adds animation classes and removes the inline
-   * hidden styles so CSS transitions / keyframes take over.
-   */
   const animateElement = (el, animationClass) => {
     if (!el) return;
     el.classList.add('animated', animationClass);
@@ -228,11 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, 1600);
 
-  /* ----------------------------------------------------------
-     7. PROGRESS BARS (Skills Section)
-     Fills progress bars and counts up the percentage text
-     when the #skills section scrolls into view.
-  ---------------------------------------------------------- */
+  // progress bar skill
   let skillsAnimated = false;
 
   const skillsSection = document.querySelector('#skills');
@@ -307,11 +255,6 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(step);
   }
 
-  /* ----------------------------------------------------------
-     8. STAT COUNTERS (Achievements Section)
-     Counts up each .stat-number from 0 to its data-count
-     value with an easeOutQuad curve over 2000ms.
-  ---------------------------------------------------------- */
   let statsAnimated = false;
 
   const statsContainer = document.querySelector('.stats-counters');
@@ -347,12 +290,7 @@ document.addEventListener('DOMContentLoaded', () => {
     statsObserver.observe(statsContainer);
   }
 
-  /* ----------------------------------------------------------
-     9. CONTACT FORM HANDLING
-     Submits the form to Web3Forms so messages land directly in
-     the inbox, regardless of whether the visitor has a mail
-     client configured. Shows loading / success / error states.
-  ---------------------------------------------------------- */
+  //  contact form
   const contactForm = document.querySelector('.contact-form');
 
   if (contactForm) {
@@ -411,11 +349,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /**
-   * Creates and displays a brief notification toast.
-   * Auto-fades and removes itself after a few seconds.
-   * type: 'success' | 'error' — controls the toast color.
-   */
   function showNotification(text, type = 'success') {
     const notification = document.createElement('div');
     notification.className = 'notification-toast';
@@ -465,11 +398,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3000);
   }
 
-  /* ----------------------------------------------------------
-     10. CERTIFICATION CARD TILT (Mouse Follow)
-     Applies a subtle 3D tilt to .cert-card elements based
-     on cursor position relative to the card center.
-  ---------------------------------------------------------- */
+  // certificate
   const certCards = document.querySelectorAll('.cert-card');
 
   certCards.forEach((card) => {
@@ -507,11 +436,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ----------------------------------------------------------
-     11. SCROLL TO TOP BUTTON
-     Shows a button when user scrolls past 500px.
-     Clicking it smoothly scrolls back to the top.
-  ---------------------------------------------------------- */
+  // scroll to top
   let scrollTopBtn = document.querySelector('.scroll-top');
 
   // Create the button if it doesn't exist in the DOM
@@ -568,11 +493,7 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollTopBtn.style.transform = 'scale(1)';
   });
 
-  /* ----------------------------------------------------------
-     12. EXPERIENCE CARD CURTAIN ANIMATION
-     Animates .exp-dark-panel with a curtain-open effect,
-     then staggers in bullet points when the card enters view.
-  ---------------------------------------------------------- */
+  // expte card curtain
   const experienceCards = document.querySelectorAll('.experience-card');
 
   if (experienceCards.length) {
@@ -608,12 +529,6 @@ document.addEventListener('DOMContentLoaded', () => {
     experienceCards.forEach((card) => expObserver.observe(card));
   }
 
-  /* ----------------------------------------------------------
-     13. PARALLAX ON LANDING
-     Subtle vertical parallax and opacity fade on the hero
-     content as the user scrolls down. Only active while
-     the viewport is within the hero area.
-  ---------------------------------------------------------- */
   const heroContent = document.querySelector('.hero-content');
 
   const handleParallax = () => {
@@ -632,12 +547,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', handleParallax, { passive: true });
 
-  /* ----------------------------------------------------------
-     14. FORM FIELD SEQUENTIAL ANIMATION
-     When #contact scrolls into view, each .form-underline
-     animates its width to 100% in sequence, followed by
-     a gentle pulse on the submit button.
-  ---------------------------------------------------------- */
+
   const contactSection = document.querySelector('#contact');
 
   if (contactSection) {
@@ -683,12 +593,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     contactObserver.observe(contactSection);
   }
-
-  /* ----------------------------------------------------------
-     INITIAL CALLS
-     Run handlers once on load so state is correct before
-     any scroll event fires.
-  ---------------------------------------------------------- */
   handleNavbarScroll();
   highlightActiveNav();
   handleScrollTopVisibility();

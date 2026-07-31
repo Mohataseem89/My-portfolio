@@ -1,8 +1,3 @@
-/* Inter font is now loaded via <link rel="preconnect"> + <link rel="stylesheet"> in index.html's <head> instead of @import, so it doesn't block CSS parsing. */
-
-/* ========================================
-   CSS CUSTOM PROPERTIES
-   ======================================== */
 :root {
   --color-brown-dark: #3D2B1F;
   --color-brown: #5C3D2E;
@@ -20,9 +15,6 @@
   --color-shadow-deep: rgba(61, 43, 31, 0.2);
 }
 
-/* ========================================
-   RESET & BASE
-   ======================================== */
 *,
 *::before,
 *::after {
@@ -33,7 +25,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: clamp(16px, 14.6px + 0.15vw, 22px);
 }
 
 img {
@@ -41,9 +33,6 @@ img {
   height: auto;
 }
 
-/* ========================================
-   ICON SVGs (replaces Font Awesome font icons)
-   ======================================== */
 .icon-svg {
   width: 1em;
   height: 1em;
@@ -64,6 +53,17 @@ img {
   word-spacing: normal;
 }
 
+.about-text p,
+.about-description,
+.project-description,
+.exp-content li,
+.edu-highlights li,
+.achievement-description,
+.mv-card p,
+.info-text {
+  max-width: 68ch;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   color: var(--color-text);
@@ -82,8 +82,9 @@ a {
 }
 
 .section-padding {
-  padding: 5rem 8%;
-  max-width: 1600px;
+  padding-block: clamp(80px, 60px + 2vw, 180px);
+  padding-inline: 8%;
+  max-width: clamp(1600px, 1120px + 29vw, 2700px);
   margin: 0 auto;
 }
 
@@ -106,9 +107,7 @@ a {
   margin: 0 auto;
 }
 
-/* ========================================
-   NAVBAR
-   ======================================== */
+/* navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -187,9 +186,7 @@ a {
   transition: all 0.3s;
 }
 
-/* ========================================
-   LANDING SECTION
-   ======================================== */
+/* landing */
 #landing {
   min-height: 100vh;
   display: flex;
@@ -202,17 +199,18 @@ a {
   text-align: center;
   /* max-width: 800px;
   padding: 2rem; */
-  width:min(100%,800px);
-  padding-inline:20px;
+  width: min(100%, 800px);
+  padding-inline: 20px;
 }
 
 .hero-logo,
 .hero-name,
 .hero-designations,
 .cta-buttons,
-.social-icons{
-    text-align:center;
+.social-icons {
+  text-align: center;
 }
+
 .hero-logo {
   font-size: 5rem;
   font-weight: 900;
@@ -327,9 +325,7 @@ a {
   transform: scale(1.15);
 }
 
-/* ========================================
-   ABOUT SECTION
-   ======================================== */
+/* abouts sec */
 #about {
   background: var(--color-cream);
 }
@@ -344,16 +340,11 @@ a {
   text-align: left;
 }
 
-
-
 .about-text {
-  flex: 1;
+  flex: 2;
   text-align: left;
   line-height: 1.8;
-  min-width:0;
-
-
-
+  min-width: 0;
 }
 
 .about-photo-wrapper {
@@ -458,9 +449,7 @@ a {
   transition: transform 0.3s;
 }
 
-/* ========================================
-   EXPERIENCE SECTION
-   ======================================== */
+/* expr sec */
 #experience {
   background: var(--color-cream);
   margin-top: -70px;
@@ -546,9 +535,7 @@ a {
   color: var(--color-text-light);
 }
 
-/* ========================================
-   EDUCATION SECTION
-   ======================================== */
+/* edu sec */
 #education {
   background: var(--color-cream-dark);
 }
@@ -624,9 +611,7 @@ a {
   animation: toss 0.6s ease;
 }
 
-/* ========================================
-   PROJECTS SECTION
-   ======================================== */
+/* proj sec */
 #projects {
   background: var(--color-cream);
 }
@@ -796,9 +781,7 @@ a {
   margin-top: 1rem;
 }
 
-/* ========================================
-   SKILLS SECTION
-   ======================================== */
+/* skill sec */
 #skills {
   background: var(--color-cream-dark);
 }
@@ -888,9 +871,7 @@ a {
   transition: width 1.2s ease-out;
 }
 
-/* ========================================
-   CERTIFICATIONS SECTION
-   ======================================== */
+/* cert section */
 #certifications {
   background: var(--color-cream);
 }
@@ -949,9 +930,7 @@ a {
   font-weight: 500;
 }
 
-/* ========================================
-   ACHIEVEMENTS SECTION
-   ======================================== */
+/* achiements */
 #achievements {
   background: var(--color-cream-dark);
 }
@@ -1067,9 +1046,7 @@ a {
   color: var(--color-text-light);
 }
 
-/* ========================================
-   CONTACT SECTION
-   ======================================== */
+/* contact */
 #contact {
   background: var(--color-cream);
 }
@@ -1276,9 +1253,7 @@ a {
   transform: scale(1.1);
 }
 
-/* ========================================
-   FOOTER
-   ======================================== */
+/* footer */
 footer {
   background: var(--color-brown-dark);
   color: var(--color-cream);
@@ -1327,9 +1302,7 @@ footer {
   color: rgba(255, 248, 240, 0.5);
 }
 
-/* ========================================
-   SCROLL TO TOP
-   ======================================== */
+/* scrooll top */
 .scroll-top {
   position: fixed;
   bottom: 2rem;
@@ -1359,9 +1332,7 @@ footer {
   transform: translateY(-3px);
 }
 
-/* ========================================
-   KEYFRAME ANIMATIONS
-   ======================================== */
+/* keyframe little animation */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -1681,9 +1652,6 @@ footer {
   }
 }
 
-/* ========================================
-   ANIMATION TRIGGER CLASSES
-   ======================================== */
 .animate-on-scroll {
   opacity: 0;
   transition: opacity 0.1s;
@@ -1757,9 +1725,7 @@ footer {
   animation: curtainOpen 0.8s ease forwards;
 }
 
-/* ========================================
-   RESPONSIVE - TABLET / LARGE PHONE (max-width: 768px)
-   ======================================== */
+/* responsive large screen */
 @media (max-width: 768px) {
   .hero-name {
     font-size: 2.5rem !important;
@@ -1804,8 +1770,6 @@ footer {
     width: 280px;
     height: 460px;
   }
-
-  /* .mission-vision { flex-direction: column; } */
 
   .experience-card {
     flex-direction: column;
@@ -1948,9 +1912,7 @@ footer {
   }
 }
 
-/* ========================================
-   RESPONSIVE - PHONE (max-width: 600px)
-   ======================================== */
+/* phone responsive */
 @media (max-width: 600px) {
   .section-padding {
     padding: 3.5rem 5%;
@@ -2008,9 +1970,6 @@ footer {
   }
 }
 
-/* ========================================
-   RESPONSIVE - SMALL PHONE (max-width: 480px)
-   ======================================== */
 @media (max-width: 480px) {
   .hero-name {
     font-size: 2rem !important;
@@ -2132,9 +2091,6 @@ footer {
   }
 }
 
-/* ========================================
-   RESPONSIVE - EXTRA SMALL PHONE (max-width: 380px)
-   ======================================== */
 @media (max-width: 380px) {
   .hero-name {
     font-size: 1.75rem !important;
@@ -2180,9 +2136,6 @@ footer {
   }
 }
 
-/* ========================================
-   RESPONSIVE - SHORT VIEWPORT / LANDSCAPE PHONE
-   ======================================== */
 @media (max-width: 900px) and (max-height: 520px) and (orientation: landscape) {
   #landing {
     min-height: auto;
@@ -2199,19 +2152,10 @@ footer {
 }
 
 
-/* ========================================
-   LARGE SCREEN & ULTRAWIDE RESPONSIVE
-   ======================================== */
-
 /* Large desktop */
 @media (min-width: 1440px) {
-  html {
-    font-size: 17px;
-  }
-
   .section-padding {
-    max-width: 1500px;
-    padding: 6rem 6%;
+    padding-inline: 6%;
   }
 
   .section-title {
@@ -2249,17 +2193,20 @@ footer {
   }
 }
 
-/* Full HD and higher */
-@media (min-width: 1920px) {
-  html {
-    font-size: 18px;
-  }
+
+@media (min-width:1600px) {
 
   .section-padding {
-    max-width: 1800px;
-    padding: 6rem 6%;
+    /* max-width:1600px; */
+    width: min(92%, 1600px);
+    width: 90%;
+    margin: auto;
   }
 
+}
+
+/* Full HD and higher */
+@media (min-width: 1920px) {
   .section-header {
     margin-bottom: 4rem;
   }
@@ -2290,8 +2237,16 @@ footer {
   }
 
   .hero-intro {
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     max-width: 820px;
+  }
+
+
+  .hero-intro,
+  .about-description {
+
+    font-size: 1.15rem;
+    line-height: 2;
   }
 
   .cta-buttons {
@@ -2326,13 +2281,8 @@ footer {
 
 /* QHD / 2K */
 @media (min-width: 2560px) {
-  html {
-    font-size: 19px;
-  }
-
   .section-padding {
-    max-width: 2000px;
-    padding: 7rem 5%;
+    padding-inline: 5%;
   }
 
   .navbar {
@@ -2408,15 +2358,6 @@ footer {
 
 /* Ultrawide */
 @media (min-width: 3440px) {
-  html {
-    font-size: 20px;
-  }
-
-  .section-padding {
-    max-width: 2200px;
-    padding: 9rem 5%;
-  }
-
   .section-title {
     font-size: 3.3rem;
   }
@@ -2445,6 +2386,8 @@ footer {
 
   .about-content {
     gap: 6rem;
+    display: flex;
+    align-items: center;
   }
 
   .skills-grid {
@@ -2464,17 +2407,44 @@ footer {
   }
 }
 
+/* 4K UHD (e.g. 3840x2160 at 100% browser zoom) */
+@media (min-width: 3840px) {
+  .section-title {
+    font-size: 3.4rem;
+  }
+
+  .hero-content {
+    width: min(100%, 1240px);
+  }
+
+  .hero-logo {
+    font-size: 7.25rem;
+  }
+
+  .hero-name {
+    font-size: 5.6rem;
+  }
+
+  .hero-intro {
+    font-size: 1.21rem;
+    max-width: 1010px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
+  }
+
+  .cert-grid {
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  }
+
+  .contact-wrapper {
+    max-width: 1350px;
+  }
+}
+
 /* Super ultrawide */
 @media (min-width: 5120px) {
-  html {
-    font-size: 21px;
-  }
-
-  .section-padding {
-    max-width: 2600px;
-    padding: 10rem 5%;
-  }
-
   .section-title {
     font-size: 3.7rem;
   }
